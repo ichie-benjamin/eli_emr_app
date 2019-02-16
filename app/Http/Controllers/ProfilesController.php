@@ -126,7 +126,9 @@ class ProfilesController extends Controller
     {
         $user = User::with('profile')->whereId(Auth::id())->first();
 
-        return view('admin.profiles.edit_my', compact('user'));
+        $countries = Country::pluck('name','id')->all();
+
+        return view('admin.profiles.edit_my', compact('user','countries'));
     }
 
     /**
