@@ -75,6 +75,7 @@
                                                                     </div>
                                                                     <div class="col-sm-12">
                                                                         <input id="email" disabled value="{{ old('email', optional($user)->email) }}" type="email" class=" form-control">
+                                                                        {!! $errors->first('email', '<p class="help-block">:message</p>') !!}
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group row">
@@ -97,6 +98,7 @@
                                                                     </div>
                                                                     <div class="col-sm-12">
                                                                         <input id="first_name" value="{{ old('first_name', optional($user)->profile->first_name) }}" name="first_name" type="text" class="form-control">
+                                                                        {!! $errors->first('first_name', '<p class="help-block">:message</p>') !!}
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group row">
@@ -105,6 +107,7 @@
                                                                     </div>
                                                                     <div class="col-sm-12">
                                                                         <input id="last_name" value="{{ old('last_name', optional($user)->profile->last_name) }}" name="last_name" type="text" class="form-control">
+                                                                        {!! $errors->first('last_name', '<p class="help-block">:message</p>') !!}
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group row">
@@ -113,6 +116,7 @@
                                                                     </div>
                                                                     <div class="col-sm-12">
                                                                         <input id="phone" name="phone" value="{{ old('phone', optional($user)->profile->phone ) }}" type="number" class="form-control phone">
+                                                                        {!! $errors->first('phone', '<p class="help-block">:message</p>') !!}
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group row">
@@ -120,21 +124,29 @@
                                                                         <label for="date" class="block">Date Of Birth</label>
                                                                     </div>
                                                                     <div class="col-sm-12">
-                                                                        <input id="date" name="Date Of Birth" type="text" class="form-control date-control">
+                                                                        <input id="date" name="Date Of Birth" type="date" class="form-control date-control">
+                                                                        @if ($errors->has('date_of_birth'))
+                                                                            <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('date_of_birth') }}</strong>
+                                    </span>
+                                                                        @endif
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group row">
                                                                     <div class="col-sm-12">
                                                                         Select Country</div>
                                                                     <div class="col-sm-12">
-                                                                        <select class="form-control required">
-                                                                            <option>Select State</option>
-                                                                            <option>Gujarat</option>
-                                                                            <option>Kerala</option>
-                                                                            <option>Manipur</option>
-                                                                            <option>Tripura</option>
-                                                                            <option>Sikkim</option>
+                                                                        <select class="form-control" id="country" name="country">
+                                                                            <option value="" style="display: none;" {{ old('country',  optional($user->profile)->country ?: '') == '' ? 'selected' : '' }} disabled selected>Select Country</option>
+                                                                            @foreach ($countries as $key => $country)
+                                                                                <option value="{{ $key }}" {{ old('country',  optional($user->profile)->country ?: '') == $key ? 'selected' : '' }}>
+                                                                                    {{ $country }}
+                                                                                </option>
+                                                                            @endforeach
                                                                         </select>
+
+                                                                        {!! $errors->first('country', '<p class="help-block">:message</p>') !!}
+
                                                                     </div>
                                                                 </div>
                                                             </fieldset>
@@ -154,24 +166,26 @@
                                                                         <label for="Country-2" class="block">Residential Address</label>
                                                                     </div>
                                                                     <div class="col-sm-12">
-                                                                        <input value="{{ old('residential_address', optional($user)->profile->residential_address) }}" id="Country-2a" name="residential_address" type="text" class="form-control required">
+                                                                        <input value="{{ old('residential_address', optional($user)->profile->residential_address) }}" id="" name="residential_address" type="text" class="form-control required">
                                                                         {!! $errors->first('residential_address', '<p class="help-block">:message</p>') !!}
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group row">
                                                                     <div class="col-sm-12">
-                                                                        <label for="Degreelevel-2" class="block">State </label>
+                                                                        <label for="" class="block">State </label>
                                                                     </div>
                                                                     <div class="col-sm-12">
-                                                                        <input id="Degreelevel-2a" name="Degree level" type="text" class="form-control required phone">
+                                                                        <input id="" name="state" value="{{ old('state', optional($user)->profile->state) }}" type="text" class="form-control required">
+                                                                        {!! $errors->first('state', '<p class="help-block">:message</p>') !!}
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group row">
                                                                     <div class="col-sm-12">
-                                                                        <label for="datejoin" class="block">City</label>
+                                                                        <label for="city" class="block">City</label>
                                                                     </div>
                                                                     <div class="col-sm-12">
-                                                                        <input id="datejoina" name="Date Of Birth" type="text" class="form-control required">
+                                                                        <input id="city" name="city" type="text" value="{{ old('city', optional($user)->profile->city) }}" class="form-control required">
+                                                                        {!! $errors->first('city', '<p class="help-block">:message</p>') !!}
                                                                     </div>
                                                                 </div>
                                                             </fieldset>
@@ -182,15 +196,53 @@
                                                                         <label for="Company-2" class="block">Gender:</label>
                                                                     </div>
                                                                     <div class="col-sm-12">
-                                                                        <input id="Company-2a" name="Company:" type="text" class="form-control required">
+                                                                        <select class="form-control" id="gender" name="gender">
+                                                                            <option value="" style="display: none;"
+                                                                                    {{ old('gender', optional($user->profile)->gender) == '' ? 'selected' : '' }} disabled
+                                                                                    selected>Select Gender
+                                                                            </option>
+                                                                            @foreach ([
+                                                                            'male' => 'Male',
+                                                                            'female' => 'Female',
+
+                                                                                      ]
+                                                                                         as $key => $text)
+                                                                                <option value="{{ $key }}" {{ old('gender', optional($user->profile)->gender) == $key ? 'selected' : '' }}>
+                                                                                    {{ $text }}
+                                                                                </option>
+                                                                            @endforeach
+                                                                        </select>
+
+
+                                                                        {!! $errors->first('gender', '<p class="help-block">:message</p>') !!}
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group row">
                                                                     <div class="col-sm-12">
-                                                                        <label for="CountryW-2" class="block">Marital Status</label>
+                                                                        <label for="marital_status" class="block">Marital Status</label>
                                                                     </div>
                                                                     <div class="col-sm-12">
-                                                                        <input id="CountryW-2a" name="Country" type="text" class="form-control required">
+                                                                        <select class="form-control" id="marital_status" name="marital_status">
+                                                                            <option value="" style="display: none;"
+                                                                                    {{ old('marital_status', optional($user->profile)->gender) == '' ? 'selected' : '' }} disabled
+                                                                                    selected>Select marital status
+                                                                            </option>
+                                                                            @foreach ([
+                                                                            'single' => 'Single',
+                                                                            'married' => 'Married',
+                                                                            'divorced' => 'Divorced',
+                                                                            'widow' => 'Widow',
+                                                                                      ]
+                                                                                         as $key => $text)
+                                                                                <option value="{{ $key }}" {{ old('marital_status', optional($user->profile)->gender) == $key ? 'selected' : '' }}>
+                                                                                    {{ $text }}
+                                                                                </option>
+                                                                            @endforeach
+                                                                        </select>
+
+
+
+                                                                        {!! $errors->first('marital_status', '<p class="help-block">:message</p>') !!}
                                                                     </div>
                                                                 </div>
 
