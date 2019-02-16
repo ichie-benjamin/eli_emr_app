@@ -6,6 +6,17 @@
 
         <div class="page-header card">
             <div class="row align-items-end">
+
+                @if ($errors->any())
+                    <div class="col-md-12">
+                        <ul class="alert alert-danger">
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+
+                @endif
                 @if(Session::has('success_message'))
                     <div class="col-md-12">
                         <div class="alert alert-success">
@@ -59,9 +70,11 @@
                                                         <form method="POST" class="wizard-form" id="basic-forms" action="{{ route('profiles.profile.update', $user->profile->id) }}">
                                                             {{ csrf_field() }}
                                                             <input name="_method" type="hidden" value="PUT">
+                                                            <input name="user_id" type="hidden" value="{{ $user->id }}">
+
                                                             <h3> Account Details </h3>
                                                             <fieldset>
-                                                                <div class="form-group row">
+                                                                <div class="form-group row {{ $errors->has('name') ? 'has-error' : '' }}">
                                                                     <div class="col-sm-12">
                                                                         <label for="userName-2" class="block">User name *</label>
                                                                     </div>
@@ -69,12 +82,13 @@
                                                                         <input id="userName" name="name" value="{{ old('name', optional($user)->name) }}" type="text" class=" form-control">
                                                                     </div>
                                                                 </div>
-                                                                <div class="form-group row">
+                                                                <div class="form-group row {{ $errors->has('email') ? 'has-error' : '' }}">
                                                                     <div class="col-sm-12">
                                                                         <label for="email-2" class="block">Email *</label>
                                                                     </div>
                                                                     <div class="col-sm-12">
                                                                         <input id="email" disabled value="{{ old('email', optional($user)->email) }}" type="email" class=" form-control">
+                                                                        <input name="email"  value="{{ old('email', optional($user)->email) }}" type="hidden" >
                                                                         {!! $errors->first('email', '<p class="help-block">:message</p>') !!}
                                                                     </div>
                                                                 </div>
@@ -92,7 +106,7 @@
                                                             </fieldset>
                                                             <h3> Profile information </h3>
                                                             <fieldset>
-                                                                <div class="form-group row">
+                                                                <div class="form-group row {{ $errors->has('first_name') ? 'has-error' : '' }}">
                                                                     <div class="col-sm-12">
                                                                         <label for="name-2" class="block">First name *</label>
                                                                     </div>
@@ -110,7 +124,7 @@
                                                                         {!! $errors->first('last_name', '<p class="help-block">:message</p>') !!}
                                                                     </div>
                                                                 </div>
-                                                                <div class="form-group row">
+                                                                <div class="form-group row {{ $errors->has('phone') ? 'has-error' : '' }}">
                                                                     <div class="col-sm-12">
                                                                         <label for="phone-2" class="block">Phone #</label>
                                                                     </div>
@@ -119,7 +133,7 @@
                                                                         {!! $errors->first('phone', '<p class="help-block">:message</p>') !!}
                                                                     </div>
                                                                 </div>
-                                                                <div class="form-group row">
+                                                                <div class="form-group row {{ $errors->has('date_of_birth') ? 'has-error' : '' }}">
                                                                     <div class="col-sm-12">
                                                                         <label for="date" class="block">Date Of Birth</label>
                                                                     </div>
@@ -154,7 +168,7 @@
                                                             <fieldset>
                                                                 <div class="form-group row">
                                                                     <div class="col-sm-12">
-                                                                        <label for="University-2" class="block">Parmenent Address</label>
+                                                                        <label for="parmenent_address" class="block">Parmenent Address</label>
                                                                     </div>
                                                                     <div class="col-sm-12">
                                                                         <input id="parmenent_address" value="{{ old('parmenent_address', optional($user)->profile->parmenent_address) }}" name="parmenent_address" type="text" class="form-control required">

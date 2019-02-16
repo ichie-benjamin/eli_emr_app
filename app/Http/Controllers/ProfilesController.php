@@ -141,7 +141,7 @@ class ProfilesController extends Controller
      */
     public function update($id, Request $request)
     {
-        try {
+//        try {
             
             $data = $this->getData($request);
             
@@ -150,14 +150,16 @@ class ProfilesController extends Controller
             $profile->update($data);
             $user->update($data);
 
+//            return $user;
+
             return redirect()->back()
                              ->with('success_message', 'Profile was successfully updated!');
 
-        } catch (Exception $exception) {
-
-            return back()->withInput()
-                         ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request!']);
-        }        
+//        } catch (Exception $exception) {
+//
+//            return back()->withInput()
+//                         ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request!']);
+//        }
     }
 
     /**
@@ -193,9 +195,10 @@ class ProfilesController extends Controller
     protected function getData(Request $request)
     {
         $rules = [
-            'password'  =>  'required|string|min:6|confirmed',
+            'password'  =>  'string|min:6|confirmed',
             'name'      =>  'nullable',
-            'email'     =>  'required|string|email|max:255|unique:users',
+            'email'     =>  'required|string|email|max:255|unique:users,email,'. $request['user_id'],
+//            'email'     =>  'required|string|email|max:255|unique:users',
             'user_id'   =>  'nullable',
             'first_name'=>  'string|min:1|nullable',
             'last_name' =>  'string|min:1|nullable',
