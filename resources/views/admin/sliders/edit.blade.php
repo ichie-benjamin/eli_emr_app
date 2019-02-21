@@ -12,11 +12,11 @@
             <div class="btn-group btn-group-sm pull-right" role="group">
 
                 <a href="{{ route('sliders.slider.index') }}" class="btn btn-primary" title="Show All Slider">
-                    <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                    <span class="feather icon-list" aria-hidden="true"></span>
                 </a>
 
                 <a href="{{ route('sliders.slider.create') }}" class="btn btn-success" title="Create New Slider">
-                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    <span class="feather icon-plus" aria-hidden="true"></span>
                 </a>
 
             </div>

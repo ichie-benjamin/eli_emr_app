@@ -33,6 +33,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('admin/files/assets/css/style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('admin/files/assets/css/widget.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('admin/files/assets/css/pages.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/datatables.min.css') }}">
 <style>
     .box.box-success {
         border-top-color: #6da252;

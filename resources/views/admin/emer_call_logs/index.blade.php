@@ -8,7 +8,7 @@
                 <div class="page-header-title">
                     <i class="feather icon-list bg-c-blue"></i>
                     <div class="d-inline">
-                        <h5>[% model_plural %]</h5>
+                        <h5>Emer Call Logs</h5>
 
                     </div>
                 </div>
@@ -17,7 +17,7 @@
                 <div class="page-header-breadcrumb">
                     <ul class=" breadcrumb breadcrumb-title">
                         <li class="breadcrumb-item">
-                            <a href="{{ route('[% create_route_name %]') }}" class="btn btn-success" title="[% create_model %]">
+                            <a href="{{ route('emer_call_logs.emer_call_log.create') }}" class="btn btn-success" title="Create New Emer Call Log">
                                 <span class="feather icon-plus" aria-hidden="true"></span>
                             </a>
                         </li>
@@ -34,55 +34,63 @@
                     <div class="row">
 
                         @if(Session::has('success_message'))
-                         <div class="col-md-12">
-                            <div class="alert alert-success">
-                                <span class="glyphicon glyphicon-ok"></span>
-                                {!! session('success_message') !!}
+                            <div class="col-md-12">
+                                <div class="alert alert-success">
+                                    <span class="glyphicon glyphicon-ok"></span>
+                                    {!! session('success_message') !!}
 
-                                <button type="button" class="close" data-dismiss="alert" aria-label="close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
 
-                            </div>
+                                </div>
                             </div>
                         @endif
 
                         <div class="col-md-12">
-        @if(count($[% model_name_plural_variable %]) == 0)
+        @if(count($emerCallLogs) == 0)
             <div class="panel-body text-center">
-                <h4>[% no_models_available %]</h4>
+                <h4>No Emer Call Logs Available!</h4>
             </div>
         @else
             <div class="panel-body panel-body-with-table">
                 <div class="table-responsive">
 
-                    <table class="table table-striped" id="datatable">
+                    <table class="table table-striped table-bordered table-condensed" id="datatable">
                         <thead>
                         <tr>
-                            [% header_cells %]
+                                                        <th>Caller Name</th>
+                            <th>User</th>
+                            <th>Caller Phone</th>
+                            <th>Time</th>
+
                             <th></th>
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($[% model_name_plural_variable %] as $[% model_name_singular_variable %])
+                        @foreach($emerCallLogs as $emerCallLog)
                             <tr>
-                                [% body_cells %]
+                                                            <td>{{ $emerCallLog->caller_name }}</td>
+                            <td>{{ optional($emerCallLog->user)->name }}</td>
+                            <td>{{ $emerCallLog->caller_phone }}</td>
+                            <td>{{ $emerCallLog->time }}</td>
+
                                 <td>
 
-                                    <form method="POST" action="{!! route('[% destroy_route_name %]', $[% model_name_singular_variable %]->[% primary_key %]) !!}" accept-charset="UTF-8">
+                                    <form method="POST" action="{!! route('emer_call_logs.emer_call_log.destroy', $emerCallLog->id) !!}" accept-charset="UTF-8">
                                         <input name="_method" value="DELETE" type="hidden">
                                         {{ csrf_field() }}
 
                                         <div class="btn-group btn-group-xs pull-right" role="group">
-                                            <a href="{{ route('[% show_route_name %]', $[% model_name_singular_variable %]->[% primary_key %] ) }}" class="btn btn-sm btn-info" title="[% show_model %]">
-                                                <span class="feather icon-eye" aria-hidden="true"></span>
+                                            <a href="{{ route('emer_call_logs.emer_call_log.show', $emerCallLog->id ) }}" class="btn btn-sm btn-info" title="Show Emer Call Log">
+                                                <span class="feather icon-eye" aria-hidden="true"></span>view
                                             </a>
-                                            <a href="{{ route('[% edit_route_name %]', $[% model_name_singular_variable %]->[% primary_key %] ) }}" class="btn btn-sm btn-primary" title="[% edit_model %]">
-                                                <span class="feather icon-edit" aria-hidden="true"></span>
+                                            <a href="{{ route('emer_call_logs.emer_call_log.edit', $emerCallLog->id ) }}" class="btn btn-sm btn-primary" title="Edit Emer Call Log">
+                                                <span class="feather icon-edit" aria-hidden="true"></span>edit
                                             </a>
 
-                                            <button type="submit" class="btn btn-sm btn-danger" title="[% delete_model %]" onclick="return confirm(&quot;[% confirm_delete %]&quot;)">
-                                                <span class="feather icon-trash" aria-hidden="true"></span>
+                                            <button type="submit" class="btn btn-sm btn-danger" title="Delete Emer Call Log" onclick="return confirm(&quot;Delete Emer Call Log?&quot;)">
+                                                <span class="feather icon-trash" aria-hidden="true"></span>delete
                                             </button>
                                         </div>
 
@@ -98,7 +106,7 @@
             </div>
 
             <div class="panel-footer">
-                {!! $[% model_name_plural_variable %]->render() !!}
+                {!! $emerCallLogs->render() !!}
             </div>
 
         @endif

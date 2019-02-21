@@ -76,10 +76,10 @@
                                                             <fieldset>
                                                                 <div class="form-group row {{ $errors->has('name') ? 'has-error' : '' }}">
                                                                     <div class="col-sm-12">
-                                                                        <label for="userName-2" class="block">User name *</label>
+                                                                        <label for="username" class="block">User name *</label>
                                                                     </div>
                                                                     <div class="col-sm-12">
-                                                                        <input id="userName" name="name" value="{{ old('name', optional($user)->name) }}" type="text" class=" form-control">
+                                                                        <input id="username" name="name" value="{{ old('name', optional($user)->name) }}" type="text" class=" form-control">
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group row {{ $errors->has('email') ? 'has-error' : '' }}">
@@ -101,6 +101,28 @@
                                                                         <img src="{{ asset($user->avatar) }}" style="height: 200px">
                                                                     </div>
                                                                 </div>
+
+
+
+
+                                                                <div class="input-group col-md-10">
+   <span class="input-group-btn">
+     <a id="lfm" data-input="thumbnail" data-preview="holder" class="btn btn-primary">
+       <i class="fa fa-picture-o"></i> Choose Image
+     </a>
+   </span>
+
+                                                                    <input value="{{ old('image', optional($user)->avatar) }}" placeholder="Select Image" id="thumbnail" class="form-control" type="text" name="image">
+                                                                    {!! $errors->first('image', '<p class="help-block">:message</p>') !!}
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <img id="holder" style="margin-top:0px;max-height:100px;">
+
+                                                                </div>
+
+
+
+
 
 
                                                             </fieldset>
@@ -138,11 +160,11 @@
                                                                         <label for="date" class="block">Date Of Birth</label>
                                                                     </div>
                                                                     <div class="col-sm-12">
-                                                                        <input id="date" name="Date Of Birth" type="date" class="form-control date-control">
+                                                                        <input id="date" name="Date Of Birth" value="{{ old('date_of_birth', optional($user)->profile->date_of_birth ) }}" type="date" class="form-control date-control">
                                                                         @if ($errors->has('date_of_birth'))
                                                                             <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('date_of_birth') }}</strong>
-                                    </span>
+                                                                                <strong>{{ $errors->first('date_of_birth') }}</strong>
+                                                                            </span>
                                                                         @endif
                                                                     </div>
                                                                 </div>

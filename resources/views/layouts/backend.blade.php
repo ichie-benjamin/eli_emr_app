@@ -104,6 +104,7 @@
 <script src="{{ asset('admin/files/assets/js/vertical/vertical-layout.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('admin/files/assets/pages/dashboard/custom-dashboard.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('admin/files/assets/js/script.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/datatables.min.js') }}"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 
@@ -111,6 +112,9 @@
 <style>
     .wizard>.content {
         min-height: 32em;
+    }
+    .table td {
+        padding: 0 .75rem;
     }
 </style>
 
@@ -121,7 +125,12 @@
     tinymce.init({
         selector: '#textarea'
     });
+    $(document).ready(function() {
+        $('#datatable').DataTable();
+    } );
 </script>
+
+
 
 <script>
     window.dataLayer = window.dataLayer || [];

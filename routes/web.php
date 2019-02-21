@@ -18,17 +18,44 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('bt-admin', 'AdminController@index')->name('admin.home');
-Route::get('bt-admin/media', 'AdminController@media')->name('admin.media');
-Route::get('bt-admin/profile', 'AdminController@profile')->name('admin.profile');
+Route::get('bt_admin', 'AdminController@index')->name('admin.home');
+Route::get('bt_admin/media', 'AdminController@media')->name('admin.media');
+Route::get('bt_admin/profile', 'AdminController@profile')->name('admin.profile');
 //['middleware' => ['role:admin']],
-Route::group([ 'prefix' => 'bt-admin','middleware' => ['auth', 'level:1']], function () {
+Route::group([ 'prefix' => 'bt_admin','middleware' => ['auth', 'level:1']], function () {
     Route::get('/my_profile', 'ProfilesController@myProfile')->name('profiles.profile.myprofile');
     Route::get('/coming-soon', 'AdminController@soon')->name('coming');
     Route::get('/patient/create', 'ProfilesController@patientCreate')->name('patients.patient.create');
     Route::get('/patient/all', 'UsersController@patients')->name('patients.patient.index');
     Route::get('/patient/show/{patient}','UsersController@show')->name('patients.patient.show')->where('id', '[0-9]+');
     Route::get('/edit_profile', 'ProfilesController@editMyProfile')->name('profiles.profile.edit_my_profile');
+            Route::group(['prefix' => '/emer_call_logs',], function () {
+        Route::get('/', 'EmerCallLogsController@index')
+            ->name('emer_call_logs.emer_call_log.index');
+
+        Route::get('/create','EmerCallLogsController@create')
+            ->name('emer_call_logs.emer_call_log.create');
+
+        Route::get('/show/{emerCallLog}','EmerCallLogsController@show')
+            ->name('emer_call_logs.emer_call_log.show')
+            ->where('id', '[0-9]+');
+
+        Route::get('/{emerCallLog}/edit','EmerCallLogsController@edit')
+            ->name('emer_call_logs.emer_call_log.edit')
+            ->where('id', '[0-9]+');
+
+        Route::post('/', 'EmerCallLogsController@store')
+            ->name('emer_call_logs.emer_call_log.store');
+
+        Route::put('emer_call_log/{emerCallLog}', 'EmerCallLogsController@update')
+            ->name('emer_call_logs.emer_call_log.update')
+            ->where('id', '[0-9]+');
+
+        Route::delete('/emer_call_log/{emerCallLog}','EmerCallLogsController@destroy')
+            ->name('emer_call_logs.emer_call_log.destroy')
+            ->where('id', '[0-9]+');
+
+    });
     Route::group(['prefix' => 'profiles',], function () {
     Route::get('/', 'ProfilesController@index')->name('profiles.profile.index');
     Route::get('/create','ProfilesController@create')->name('profiles.profile.create');
@@ -37,6 +64,7 @@ Route::group([ 'prefix' => 'bt-admin','middleware' => ['auth', 'level:1']], func
     Route::post('/', 'ProfilesController@store')->name('profiles.profile.store');
     Route::put('profile/{profile}', 'ProfilesController@update')->name('profiles.profile.update')->where('id', '[0-9]+');
     Route::delete('/profile/{profile}','ProfilesController@destroy')->name('profiles.profile.destroy')->where('id', '[0-9]+');
+
 });
 });
 
@@ -199,3 +227,5 @@ Route::group(
          ->where('id', '[0-9]+');
 
 });
+
+

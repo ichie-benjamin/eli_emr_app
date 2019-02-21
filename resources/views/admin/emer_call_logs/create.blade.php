@@ -8,9 +8,9 @@
             <div class="row">
                 <div class="col-lg-8 col-xs-8">
                     <div class="page-header-title pull-left">
-                        <i class="feather icon-edit bg-c-blue"></i>
+                        <i class="feather icon-plus bg-c-blue"></i>
                         <div class="d-inline">
-                            <h4 class="mt-5 mb-5">{{ !empty([% model_header %]) ? [% model_header %] : '[% model_name_title %]' }}</h4>
+                            <h4 class="mt-5 mb-5">Create New Emer Call Log</h4>
                         </div>
                     </div>
                 </div>
@@ -18,13 +18,8 @@
                     <div class="page-header-breadcrumb">
                         <ul class=" breadcrumb breadcrumb-title">
                             <li class="breadcrumb-item">
-                                <a href="{{ route('[% index_route_name %]') }}" class="btn btn-primary" title="[% show_all_models %]">
+                                <a href="{{ route('emer_call_logs.emer_call_log.index') }}" class="btn btn-primary" title="Show All Emer Call Log">
                                     <span class="feather icon-list" aria-hidden="true"></span>
-                                </a>
-                            </li>
-                            <li class="breadcrumb-item">
-                                <a href="{{ route('[% create_route_name %]') }}" class="btn btn-success" title="[% create_model %]">
-                                    <span class="feather icon-plus" aria-hidden="true"></span>
                                 </a>
                             </li>
                         </ul>
@@ -51,18 +46,18 @@
                 </ul>
             @endif
 
-            <form method="POST" action="{{ route('[% update_route_name %]', $[% model_name_singular_variable %]->[% primary_key %]) }}" id="[% form_id %]" name="[% form_name %]" accept-charset="UTF-8" class="form-horizontal"[% upload_files %]>
+            <form method="POST" action="{{ route('emer_call_logs.emer_call_log.store') }}" accept-charset="UTF-8" id="create_emer_call_log_form" name="create_emer_call_log_form" class="form-horizontal">
                 {{ csrf_field() }}
-                <input name="_method" type="hidden" value="PUT">
-                @include ('[% form_view_name %]', [
-                                            '[% model_name_singular_variable %]' => $[% model_name_singular_variable %],
+                @include ('admin.emer_call_logs.form', [
+                                            'emerCallLog' => null,
                                           ])
 
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
-                        <input class="btn btn-primary" type="submit" value="[% update %]">
+                        <input class="btn btn-primary" type="submit" value="Add">
                     </div>
                 </div>
+
             </form>
                             </div>
                         </div>
@@ -73,3 +68,5 @@
     </div>
 
 @endsection
+
+
