@@ -8,7 +8,7 @@
                 <div class="page-header-title">
                     <i class="feather icon-list bg-c-blue"></i>
                     <div class="d-inline">
-                        <h5>Emergency Call Logs</h5>
+                        <h5>Patient Call Logs</h5>
 
                     </div>
                 </div>
@@ -17,7 +17,7 @@
                 <div class="page-header-breadcrumb">
                     <ul class=" breadcrumb breadcrumb-title">
                         <li class="breadcrumb-item">
-                            <a href="{{ route('emer_call_logs.emer_call_log.create') }}" class="btn btn-success" title="Create New Emer Call Log">
+                            <a href="{{ route('patient_call_logs.patient_call_log.create') }}" class="btn btn-success" title="Create New Patient Call Log">
                                 <span class="feather icon-plus" aria-hidden="true"></span>
                             </a>
                         </li>
@@ -34,63 +34,61 @@
                     <div class="row">
 
                         @if(Session::has('success_message'))
-                            <div class="col-md-12">
-                                <div class="alert alert-success">
-                                    <span class="glyphicon glyphicon-ok"></span>
-                                    {!! session('success_message') !!}
+                         <div class="col-md-12">
+                            <div class="alert alert-success">
+                                <span class="glyphicon glyphicon-ok"></span>
+                                {!! session('success_message') !!}
 
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
 
-                                </div>
+                            </div>
                             </div>
                         @endif
 
                         <div class="col-md-12">
-        @if(count($emerCallLogs) == 0)
+        @if(count($patientCallLogs) == 0)
             <div class="panel-body text-center">
-                <h4>No Emergency Call Logs Available!</h4>
+                <h4>No Patient Call Logs Available!</h4>
             </div>
         @else
             <div class="panel-body panel-body-with-table">
                 <div class="table-responsive">
 
-                    <table class="table table-striped table-bordered table-condensed" id="datatable">
+                    <table class="table table-striped" id="datatable">
                         <thead>
                         <tr>
-                                                        <th>Caller Name</th>
-                            <th>User</th>
-                            <th>Caller Phone</th>
+                                                        {{--<th>Staff</th>--}}
+                            <th>Patient</th>
                             <th>Time</th>
 
                             <th></th>
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($emerCallLogs as $emerCallLog)
+                        @foreach($patientCallLogs as $patientCallLog)
                             <tr>
-                                                            <td>{{ $emerCallLog->caller_name }}</td>
-                            <td>{{ optional($emerCallLog->user)->name }}</td>
-                            <td>{{ $emerCallLog->caller_phone }}</td>
-                            <td>{{ $emerCallLog->time }}</td>
+{{--                                                            <td>{{ optional($patientCallLog->staff)->id }}</td>--}}
+                            <td>{{ optional($patientCallLog->patient)->name }}</td>
+                            <td>{{ $patientCallLog->time }}</td>
 
                                 <td>
 
-                                    <form method="POST" action="{!! route('emer_call_logs.emer_call_log.destroy', $emerCallLog->id) !!}" accept-charset="UTF-8">
+                                    <form method="POST" action="{!! route('patient_call_logs.patient_call_log.destroy', $patientCallLog->id) !!}" accept-charset="UTF-8">
                                         <input name="_method" value="DELETE" type="hidden">
                                         {{ csrf_field() }}
 
                                         <div class="btn-group btn-group-xs pull-right" role="group">
-                                            <a href="{{ route('emer_call_logs.emer_call_log.show', $emerCallLog->id ) }}" class="btn btn-sm btn-info" title="Show Emer Call Log">
-                                                <span class="feather icon-eye" aria-hidden="true"></span>view
+                                            <a href="{{ route('patient_call_logs.patient_call_log.show', $patientCallLog->id ) }}" class="btn btn-sm btn-info" title="Show Patient Call Log">
+                                                <span class="feather icon-eye" aria-hidden="true"></span>
                                             </a>
-                                            <a href="{{ route('emer_call_logs.emer_call_log.edit', $emerCallLog->id ) }}" class="btn btn-sm btn-primary" title="Edit Emer Call Log">
-                                                <span class="feather icon-edit" aria-hidden="true"></span>edit
+                                            <a href="{{ route('patient_call_logs.patient_call_log.edit', $patientCallLog->id ) }}" class="btn btn-sm btn-primary" title="Edit Patient Call Log">
+                                                <span class="feather icon-edit" aria-hidden="true"></span>
                                             </a>
 
-                                            <button type="submit" class="btn btn-sm btn-danger" title="Delete Emer Call Log" onclick="return confirm(&quot;Delete Emer Call Log?&quot;)">
-                                                <span class="feather icon-trash" aria-hidden="true"></span>delete
+                                            <button type="submit" class="btn btn-sm btn-danger" title="Delete Patient Call Log" onclick="return confirm(&quot;Delete Patient Call Log?&quot;)">
+                                                <span class="feather icon-trash" aria-hidden="true"></span>
                                             </button>
                                         </div>
 
@@ -106,7 +104,7 @@
             </div>
 
             <div class="panel-footer">
-                {!! $emerCallLogs->render() !!}
+                {!! $patientCallLogs->render() !!}
             </div>
 
         @endif

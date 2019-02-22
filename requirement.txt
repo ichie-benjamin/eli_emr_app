@@ -1,0 +1,17 @@
+please add this to the dashboard:
+1) Emergency call log
+2) Patient call log
+3) Admission
+ 4)Mortality rate
+    Maternal mortality
+    Infant mortality rate
+    general mortality rate
+5) HIV/AIDS registry or Ledger
+6) Graphical reports. we need to be able to run a monthly report and have a graphical presentation
+7) Number of visits log
+8) Discharge log
+Under the Nurses Dashboard
+1) Vital Signs
+9) Pharmacy
+
+    Mortality rate per facility

@@ -55,6 +55,26 @@
                     </ul>
                 </li>
 
+                <li class="{{ active(['patient_call_logs.patient_call_log.*'], 'pcoded-trigger') }} {{ active(['patient_call_logs.patient_call_log.*']) }} pcoded-hasmenu">
+                    <a href="#" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="feather icon-phone-call"></i></span>
+                        <span class="pcoded-mtext">Patient Call Log</span>
+                    </a>
+                    <ul class="pcoded-submenu">
+                        <li class="{{ active('patient_call_logs.patient_call_log.create') }}">
+                            <a href="{{ route('patient_call_logs.patient_call_log.create') }}" class="waves-effect waves-dark">
+                                <span class="pcoded-mtext">Register Call</span>
+                            </a>
+                        </li>
+                        <li class="{{ active('patient_call_logs.patient_call_log.index') }}">
+                            <a href="{{ route('patient_call_logs.patient_call_log.index') }}" class="waves-effect waves-dark">
+                                <span class="pcoded-mtext">All Calls</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
                 <li class=" pcoded-hasmenu {{ active(['users.user.*'], 'pcoded-trigger') }} {{ active(['users.user.*']) }}">
                     <a href="#" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-user"></i></span>

@@ -8,9 +8,9 @@
             <div class="row">
                 <div class="col-lg-8 col-xs-8">
                     <div class="page-header-title pull-left">
-                        <i class="feather icon-plus bg-c-blue"></i>
+                        <i class="feather icon-edit bg-c-blue"></i>
                         <div class="d-inline">
-                            <h4 class="mt-5 mb-5"> New Emergency Call Log</h4>
+                            <h4 class="mt-5 mb-5">{{ !empty($title) ? $title : 'Patient Call Log' }}</h4>
                         </div>
                     </div>
                 </div>
@@ -18,8 +18,13 @@
                     <div class="page-header-breadcrumb">
                         <ul class=" breadcrumb breadcrumb-title">
                             <li class="breadcrumb-item">
-                                <a href="{{ route('emer_call_logs.emer_call_log.index') }}" class="btn btn-primary" title="Show All Emer Call Log">
+                                <a href="{{ route('patient_call_logs.patient_call_log.index') }}" class="btn btn-primary" title="Show All Patient Call Log">
                                     <span class="feather icon-list" aria-hidden="true"></span>
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="{{ route('patient_call_logs.patient_call_log.create') }}" class="btn btn-success" title="Create New Patient Call Log">
+                                    <span class="feather icon-plus" aria-hidden="true"></span>
                                 </a>
                             </li>
                         </ul>
@@ -46,18 +51,18 @@
                 </ul>
             @endif
 
-            <form method="POST" action="{{ route('emer_call_logs.emer_call_log.store') }}" accept-charset="UTF-8" id="create_emer_call_log_form" name="create_emer_call_log_form" class="form-horizontal">
+            <form method="POST" action="{{ route('patient_call_logs.patient_call_log.update', $patientCallLog->id) }}" id="edit_patient_call_log_form" name="edit_patient_call_log_form" accept-charset="UTF-8" class="form-horizontal">
                 {{ csrf_field() }}
-                @include ('admin.emer_call_logs.form', [
-                                            'emerCallLog' => null,
+                <input name="_method" type="hidden" value="PUT">
+                @include ('patient_call_logs.form', [
+                                            'patientCallLog' => $patientCallLog,
                                           ])
 
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
-                        <input class="btn btn-primary" type="submit" value="Add">
+                        <input class="btn btn-primary" type="submit" value="Update">
                     </div>
                 </div>
-
             </form>
                             </div>
                         </div>
@@ -68,5 +73,3 @@
     </div>
 
 @endsection
-
-

@@ -229,3 +229,35 @@ Route::group(
 });
 
 
+
+Route::group(
+[
+    'prefix' => 'patient_call_logs',
+], function () {
+
+    Route::get('/', 'PatientCallLogsController@index')
+         ->name('patient_call_logs.patient_call_log.index');
+
+    Route::get('/create','PatientCallLogsController@create')
+         ->name('patient_call_logs.patient_call_log.create');
+
+    Route::get('/show/{patientCallLog}','PatientCallLogsController@show')
+         ->name('patient_call_logs.patient_call_log.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{patientCallLog}/edit','PatientCallLogsController@edit')
+         ->name('patient_call_logs.patient_call_log.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'PatientCallLogsController@store')
+         ->name('patient_call_logs.patient_call_log.store');
+               
+    Route::put('patient_call_log/{patientCallLog}', 'PatientCallLogsController@update')
+         ->name('patient_call_logs.patient_call_log.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/patient_call_log/{patientCallLog}','PatientCallLogsController@destroy')
+         ->name('patient_call_logs.patient_call_log.destroy')
+         ->where('id', '[0-9]+');
+
+});
