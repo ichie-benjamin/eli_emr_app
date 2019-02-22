@@ -138,13 +138,13 @@
 
                                 <li><a href="contact.html">Contact Us</a></li>
                                 @guest
-                                    <li class="dropdown"><a href="#">Account</a>
-                                        <ul>
-                                            <li><a href="{{ route('register') }}">Sign Up</a></li>
-                                            <li><a href="{{ route('login') }}">login</a></li>
+                                    {{--<li class="dropdown"><a href="#">Account</a>--}}
+                                        {{--<ul>--}}
+                                            {{--<li><a href="{{ route('register') }}">Sign Up</a></li>--}}
+                                            <li><a href="{{ route('login') }}">Staff login</a></li>
 
-                                        </ul>
-                                    </li>
+                                        {{--</ul>--}}
+                                    {{--</li>--}}
                                     @else
                                     <li class="dropdown"><a href="#">Account</a>
                                         <ul>
@@ -226,13 +226,16 @@
                                     </ul>
                                 </li>
                                 <li><a href="contact.html">Contact Us</a></li>
+                                @guest
                                 <li class="dropdown"><a href="#">Account</a>
                                     <ul>
-                                        <li><a href="register.html">Sign Up</a></li>
-                                        <li><a href="login.html">login</a></li>
+                                        <li><a href="{{ url('login') }}">Staff Login</a></li>
 
                                     </ul>
                                 </li>
+                                    @else
+                                    <li><a href="{{ route('admin.home') }}">Account</a></li>
+                                @endguest
                             </ul>
                         </div>
                     </nav><!-- Main Menu End-->

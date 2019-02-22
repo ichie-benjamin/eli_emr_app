@@ -57,7 +57,7 @@
 
                 <li class="{{ active(['patient_call_logs.patient_call_log.*'], 'pcoded-trigger') }} {{ active(['patient_call_logs.patient_call_log.*']) }} pcoded-hasmenu">
                     <a href="#" class="waves-effect waves-dark">
-                        <span class="pcoded-micon"><i class="feather icon-phone-call"></i></span>
+                        <span class="pcoded-micon"><i class="feather icon-phone-forwarded"></i></span>
                         <span class="pcoded-mtext">Patient Call Log</span>
                     </a>
                     <ul class="pcoded-submenu">
