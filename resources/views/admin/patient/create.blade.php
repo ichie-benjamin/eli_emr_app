@@ -311,7 +311,7 @@
 
                                                                 <div class="form-group row">
                                                                     <div class="col-md-offset-2 col-md-10">
-                                                                        <input class="btn btn-primary" type="submit" value="Update">
+                                                                        <input class="btn btn-primary" type="submit" value="Save Record">
                                                                     </div>
                                                                 </div>
 
