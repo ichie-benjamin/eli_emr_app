@@ -61,7 +61,7 @@ class ProfilesController extends Controller
      */
     public function store(Request $request)
     {
-        try {
+//        try {
 
             $data = $this->getData($request);
 
@@ -84,12 +84,12 @@ class ProfilesController extends Controller
 
             return redirect()->back()
                 ->with('success_message', 'Patients Successfully Registered!');
-
-        } catch (Exception $exception) {
-
-            return back()->withInput()
-                         ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request!']);
-        }
+//
+//        } catch (Exception $exception) {
+//
+//            return back()->withInput()
+//                         ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request!']);
+//        }
     }
 
     /**
