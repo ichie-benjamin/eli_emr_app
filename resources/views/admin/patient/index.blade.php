@@ -17,7 +17,7 @@
                     <div class="page-header-breadcrumb">
                         <ul class=" breadcrumb breadcrumb-title">
                             <li class="breadcrumb-item">
-                                <a href="{{ route('patients.patient.create') }}" class="btn btn-success" title="Create New User">
+                                <a href="{{ route('patients.patient.create') }}" class="btn btn-success" title="Add New User">
                                     <span class="feather icon-plus" aria-hidden="true"></span>
                                 </a>
                             </li>
@@ -54,14 +54,14 @@
                                     <div class="panel-body panel-body-with-table">
                                         <div class="table-responsive">
 
-                                            <table class="table table-striped ">
+                                            <table class="table table-striped " id="datatable">
                                                 <thead>
                                                 <tr>
                                                     <th>First Name</th>
                                                     <th>Last Name</th>
                                                     <th>Email</th>
-                                                    <th>Country</th>
-                                                    <th>State</th>
+                                                    {{--<th>Country</th>--}}
+                                                    {{--<th>State</th>--}}
                                                     <th>Phone</th>
 
                                                     <td>Status</td>
@@ -75,8 +75,8 @@
                                                         <td>{{ optional($user->profile)->first_name }}</td>
                                                         <td>{{ optional($user->profile)->last_name }}</td>
                                                         <td>{{ $user->email }}</td>
-                                                        <td>{{ optional($user->profile)->country }}</td>
-                                                        <td>{{ optional($user->profile)->state }}</td>
+                                                        {{--<td>{{ optional($user->profile)->country }}</td>--}}
+                                                        {{--<td>{{ optional($user->profile)->state }}</td>--}}
                                                         <td>{{ optional($user->profile)->phone }}</td>
                                                         <td>{{ $user->status }}</td>
                                                         <td>
@@ -85,15 +85,15 @@
                                                                 <input name="_method" value="DELETE" type="hidden">
                                                                 {{ csrf_field() }}
 
-                                                                <div class="btn-group btn-group-xs pull-right" role="group">
-                                                                    <a href="{{ route('patients.patient.show', $user->id ) }}" class="btn btn-info" title="Show User">
+                                                                <div class="btn-group btn-group-sm pull-right" role="group">
+                                                                    <a href="{{ route('patients.patient.show', $user->id ) }}" class="btn btn-sm btn-info" title="Show User">
                                                                         <span class="feather icon-eye " aria-hidden="true"></span>
                                                                     </a>
-                                                                    <a href="{{ route('users.user.edit', $user->id ) }}" class="btn btn-primary" title="Edit User">
+                                                                    <a href="{{ route('users.user.edit', $user->id ) }}" class="btn btn-sm btn-primary" title="Edit User">
                                                                         <span class="feather icon-edit" aria-hidden="true"></span>
                                                                     </a>
 
-                                                                    <button type="submit" class="btn btn-danger" title="Delete User" onclick="return confirm(&quot;Delete User?&quot;)">
+                                                                    <button type="submit" class="btn btn-danger btn-sm" title="Delete User" onclick="return confirm(&quot;Delete User?&quot;)">
                                                                         <span class="feather icon-trash" aria-hidden="true"></span>
                                                                     </button>
                                                                 </div>

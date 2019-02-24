@@ -82,7 +82,7 @@ class ProfilesController extends Controller
 
             Profile::create($profileData);
 
-            return redirect()->back()
+            return redirect()->route('patients.patient.index')
                 ->with('success_message', 'Patients Successfully Registered!');
 //
 //        } catch (Exception $exception) {
