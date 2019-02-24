@@ -240,6 +240,28 @@
                         </ul>
                     </li>
 
+                    <li class="pcoded-hasmenu ">
+                        <a href="#" class="waves-effect waves-dark">
+                            <span class="pcoded-micon"><i class="feather icon-activity"></i></span>
+                            <span class="pcoded-mtext">Accounts</span>
+                        </a>
+                        <ul class="pcoded-submenu">
+                            <li class="active pcoded-hasmenu">
+                                <a href="{{ route('coming') }}" class="waves-effect waves-dark">
+                                    <span class="pcoded-mtext">Make Payments</span>
+                                </a>
+                            </li>
+                                    <li class="">
+                                        <a href="{{ route('coming') }}" class="waves-effect waves-dark">
+                                            <span class="pcoded-mtext">Manage Payments</span>
+                                        </a>
+                                    </li>
+
+
+                        </ul>
+
+                    </li>
+
 
                         <li class="pcoded-hasmenu {{ active(['settings.setting.*','roles.role.*','sliders.slider.*'], 'pcoded-trigger') }} {{ active(['settings.setting.*','roles.role.*','sliders.slider.*']) }}">
                             <a href="#" class="waves-effect waves-dark">
