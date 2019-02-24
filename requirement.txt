@@ -13,5 +13,4 @@ please add this to the dashboard:
 Under the Nurses Dashboard
 1) Vital Signs
 9) Pharmacy
-
     Mortality rate per facility

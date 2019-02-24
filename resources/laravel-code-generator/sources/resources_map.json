@@ -38,5 +38,33 @@
     {
         "model-name": "PatientCallLog",
         "resource-file": "patient_call_logs.json"
+    },
+    {
+        "model-name": "HIVRegistry",
+        "resource-file": "h_i_v_registries.json"
+    },
+    {
+        "model-name": "hivPatients",
+        "resource-file": "hiv_patients.json"
+    },
+    {
+        "model-name": "hivPatient",
+        "resource-file": "hiv_patients.json"
+    },
+    {
+        "model-name": "ClinicianAssessment",
+        "resource-file": "clinician_assessments.json"
+    },
+    {
+        "model-name": "artTreatment",
+        "resource-file": "art_treatments.json"
+    },
+    {
+        "model-name": "TreatmentInterruption",
+        "resource-file": "treatment_interruptions.json"
+    },
+    {
+        "model-name": "TreatmentRecord",
+        "resource-file": "treatment_records.json"
     }
 ]

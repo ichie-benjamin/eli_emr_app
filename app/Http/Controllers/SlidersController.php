@@ -19,7 +19,7 @@ class SlidersController extends Controller
     {
         $sliders = Slider::paginate(25);
 
-        return view('admin.sliders.index', compact('sliders'));
+        return view('sliders.index', compact('sliders'));
     }
 
     /**
@@ -31,7 +31,7 @@ class SlidersController extends Controller
     {
         
         
-        return view('admin.sliders.create');
+        return view('sliders.create');
     }
 
     /**
@@ -70,7 +70,7 @@ class SlidersController extends Controller
     {
         $slider = Slider::findOrFail($id);
 
-        return view('admin.sliders.show', compact('slider'));
+        return view('sliders.show', compact('slider'));
     }
 
     /**
@@ -85,7 +85,7 @@ class SlidersController extends Controller
         $slider = Slider::findOrFail($id);
         
 
-        return view('admin.sliders.edit', compact('slider'));
+        return view('sliders.edit', compact('slider'));
     }
 
     /**
@@ -150,8 +150,12 @@ class SlidersController extends Controller
         $rules = [
             'title' => 'string|min:1|max:255|nullable',
             'description' => 'string|min:1|max:1000|nullable',
-            'image' => 'string|nullable',
+            'image' => 'numeric|nullable',
             'is_active' => 'boolean|nullable',
+            'sub_title' => 'string|min:1|nullable',
+            'first_link' => 'string|min:1|nullable',
+            'second_link' => 'string|min:1|nullable',
+            'position' => 'nullable',
      
         ];
         

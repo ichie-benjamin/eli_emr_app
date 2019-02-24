@@ -15,19 +15,26 @@
     </div>
 </div>
 
-<div class="input-group col-md-10">
-   <span class="input-group-btn">
-     <a id="lfm" data-input="thumbnail" data-preview="holder" class="btn btn-primary">
-       <i class="fa fa-picture-o"></i> Choose Image
-     </a>
-   </span>
-
-    <input value="{{ old('image', optional($slider)->image) }}" placeholder="Select Image" id="thumbnail" class="form-control" type="text" name="image">
-    {!! $errors->first('image', '<p class="help-block">:message</p>') !!}
+<div class="form-group {{ $errors->has('image') ? 'has-error' : '' }}">
+    <label for="image" class="col-md-2 control-label">Image</label>
+    <div class="col-md-10">
+        <input class="form-control" name="image" type="number" id="image" value="{{ old('image', optional($slider)->image) }}" placeholder="Enter image here...">
+        {!! $errors->first('image', '<p class="help-block">:message</p>') !!}
+    </div>
 </div>
-<div class="col-md-12">
-    <img id="holder" style="margin-top:0px;max-height:100px;">
 
+<div class="form-group {{ $errors->has('is_active') ? 'has-error' : '' }}">
+    <label for="is_active" class="col-md-2 control-label">Is Active</label>
+    <div class="col-md-10">
+        <div class="checkbox">
+            <label for="is_active_1">
+            	<input id="is_active_1" class="" name="is_active" type="checkbox" value="1" {{ old('is_active', optional($slider)->is_active) == '1' ? 'checked' : '' }}>
+                Yes
+            </label>
+        </div>
+
+        {!! $errors->first('is_active', '<p class="help-block">:message</p>') !!}
+    </div>
 </div>
 
 <div class="form-group {{ $errors->has('sub_title') ? 'has-error' : '' }}">
@@ -58,34 +65,17 @@
     <label for="position" class="col-md-2 control-label">Position</label>
     <div class="col-md-10">
         <select class="form-control" id="position" name="position">
-            <option value="" style="display: none;" {{ old('position', optional($slider)->position ?: '') == '' ? 'selected' : '' }} disabled selected>Select position</option>
-            @foreach (['left' => 'Left',
+        	    <option value="" style="display: none;" {{ old('position', optional($slider)->position ?: '') == '' ? 'selected' : '' }} disabled selected>Select position</option>
+        	@foreach (['left' => 'Left',
 'center' => 'Center',
 'right' => 'Right'] as $key => $text)
-                <option value="{{ $key }}" {{ old('position', optional($slider)->position) == $key ? 'selected' : '' }}>
-                    {{ $text }}
-                </option>
-            @endforeach
+			    <option value="{{ $key }}" {{ old('position', optional($slider)->position) == $key ? 'selected' : '' }}>
+			    	{{ $text }}
+			    </option>
+			@endforeach
         </select>
-
+        
         {!! $errors->first('position', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-
-
-
-<div class="form-group {{ $errors->has('is_active') ? 'has-error' : '' }}">
-    <label for="is_active" class="col-md-2 control-label">Is Active</label>
-    <div class="col-md-10">
-        <div class="checkbox">
-            <label for="is_active_1">
-            	<input id="is_active_1" class="" name="is_active" type="checkbox" value="1" {{ old('is_active', optional($slider)->is_active) == '1' ? 'checked' : '' }}>
-                Yes
-            </label>
-        </div>
-
-        {!! $errors->first('is_active', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
-
 

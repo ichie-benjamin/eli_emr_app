@@ -261,3 +261,166 @@ Route::group(
          ->where('id', '[0-9]+');
 
 });
+
+Route::group(
+[
+    'prefix' => 'hiv_patients',
+], function () {
+
+    Route::get('/', 'HivPatientsController@index')
+         ->name('hiv_patients.hiv_patient.index');
+
+    Route::get('/create','HivPatientsController@create')
+         ->name('hiv_patients.hiv_patient.create');
+
+//    Route::get('/create','HivPatientsController@createStepTwo')
+//         ->name('hiv_patients.hiv_patient.create_step_two');
+
+    Route::get('/show/{hivPatient}','HivPatientsController@show')
+         ->name('hiv_patients.hiv_patient.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{hivPatient}/edit','HivPatientsController@edit')
+         ->name('hiv_patients.hiv_patient.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'HivPatientsController@storeStepOne')
+         ->name('hiv_patients.hiv_patient.store_step_one');
+               
+    Route::put('hiv_patient/{hivPatient}', 'HivPatientsController@update')
+         ->name('hiv_patients.hiv_patient.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/hiv_patient/{hivPatient}','HivPatientsController@destroy')
+         ->name('hiv_patients.hiv_patient.destroy')
+         ->where('id', '[0-9]+');
+
+});
+
+Route::group(
+[
+    'prefix' => 'clinician_assessments',
+], function () {
+
+    Route::get('/', 'ClinicianAssessmentsController@index')
+         ->name('clinician_assessments.clinician_assessment.index');
+
+    Route::get('/create','ClinicianAssessmentsController@create')
+         ->name('clinician_assessments.clinician_assessment.create');
+
+    Route::get('/show/{clinicianAssessment}','ClinicianAssessmentsController@show')
+         ->name('clinician_assessments.clinician_assessment.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{clinicianAssessment}/edit','ClinicianAssessmentsController@edit')
+         ->name('clinician_assessments.clinician_assessment.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'ClinicianAssessmentsController@store')
+         ->name('clinician_assessments.clinician_assessment.store');
+               
+    Route::put('clinician_assessment/{clinicianAssessment}', 'ClinicianAssessmentsController@update')
+         ->name('clinician_assessments.clinician_assessment.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/clinician_assessment/{clinicianAssessment}','ClinicianAssessmentsController@destroy')
+         ->name('clinician_assessments.clinician_assessment.destroy')
+         ->where('id', '[0-9]+');
+
+});
+
+Route::group(
+[
+    'prefix' => 'art_treatments',
+], function () {
+
+    Route::get('/', 'ArtTreatmentsController@index')
+         ->name('art_treatments.art_treatment.index');
+
+    Route::get('/create','ArtTreatmentsController@create')
+         ->name('art_treatments.art_treatment.create');
+
+    Route::get('/show/{artTreatment}','ArtTreatmentsController@show')
+         ->name('art_treatments.art_treatment.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{artTreatment}/edit','ArtTreatmentsController@edit')
+         ->name('art_treatments.art_treatment.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'ArtTreatmentsController@store')
+         ->name('art_treatments.art_treatment.store');
+               
+    Route::put('art_treatment/{artTreatment}', 'ArtTreatmentsController@update')
+         ->name('art_treatments.art_treatment.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/art_treatment/{artTreatment}','ArtTreatmentsController@destroy')
+         ->name('art_treatments.art_treatment.destroy')
+         ->where('id', '[0-9]+');
+
+});
+
+Route::group(
+[
+    'prefix' => 'treatment_interruptions',
+], function () {
+
+    Route::get('/', 'TreatmentInterruptionsController@index')
+         ->name('treatment_interruptions.treatment_interruption.index');
+
+    Route::get('/create','TreatmentInterruptionsController@create')
+         ->name('treatment_interruptions.treatment_interruption.create');
+
+    Route::get('/show/{treatmentInterruption}','TreatmentInterruptionsController@show')
+         ->name('treatment_interruptions.treatment_interruption.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{treatmentInterruption}/edit','TreatmentInterruptionsController@edit')
+         ->name('treatment_interruptions.treatment_interruption.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'TreatmentInterruptionsController@store')
+         ->name('treatment_interruptions.treatment_interruption.store');
+               
+    Route::put('treatment_interruption/{treatmentInterruption}', 'TreatmentInterruptionsController@update')
+         ->name('treatment_interruptions.treatment_interruption.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/treatment_interruption/{treatmentInterruption}','TreatmentInterruptionsController@destroy')
+         ->name('treatment_interruptions.treatment_interruption.destroy')
+         ->where('id', '[0-9]+');
+
+});
+
+Route::group(
+[
+    'prefix' => 'treatment_records',
+], function () {
+
+    Route::get('/', 'TreatmentRecordsController@index')
+         ->name('treatment_records.treatment_record.index');
+
+    Route::get('/create','TreatmentRecordsController@create')
+         ->name('treatment_records.treatment_record.create');
+
+    Route::get('/show/{treatmentRecord}','TreatmentRecordsController@show')
+         ->name('treatment_records.treatment_record.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{treatmentRecord}/edit','TreatmentRecordsController@edit')
+         ->name('treatment_records.treatment_record.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'TreatmentRecordsController@store')
+         ->name('treatment_records.treatment_record.store');
+               
+    Route::put('treatment_record/{treatmentRecord}', 'TreatmentRecordsController@update')
+         ->name('treatment_records.treatment_record.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/treatment_record/{treatmentRecord}','TreatmentRecordsController@destroy')
+         ->name('treatment_records.treatment_record.destroy')
+         ->where('id', '[0-9]+');
+
+});

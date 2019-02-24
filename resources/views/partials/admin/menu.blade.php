@@ -36,6 +36,28 @@
                     </ul>
                 </li>
 
+
+                <li class="{{ active(['hiv_patients.hiv_patient.*'], 'pcoded-trigger') }} {{ active(['hiv_patients.hiv_patient.*']) }} pcoded-hasmenu">
+                    <a href="#" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="feather icon-user-check"></i></span>
+                        <span class="pcoded-mtext">Hiv Patients</span>
+                    </a>
+                    <ul class="pcoded-submenu">
+                        <li class="{{ active('hiv_patients.hiv_patient.create') }}">
+                            <a href="{{ route('hiv_patients.hiv_patient.create') }}" class="waves-effect waves-dark">
+                                <span class="pcoded-mtext">Add Patient</span>
+                            </a>
+                        </li>
+                        <li class="{{ active('hiv_patients.hiv_patient.index') }}">
+                            <a href="{{ route('hiv_patients.hiv_patient.index') }}" class="waves-effect waves-dark">
+                                <span class="pcoded-mtext">View Patients</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+
                 <li class="{{ active(['emer_call_logs.emer_call_log.*'], 'pcoded-trigger') }} {{ active(['emer_call_logs.emer_call_log.*']) }} pcoded-hasmenu">
                     <a href="#" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-phone-call"></i></span>

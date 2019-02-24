@@ -31,7 +31,11 @@ class Slider extends Model
                   'title',
                   'description',
                   'image',
-                  'is_active'
+                  'is_active',
+                  'sub_title',
+                  'first_link',
+                  'second_link',
+                  'position'
               ];
 
     /**

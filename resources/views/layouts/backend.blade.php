@@ -116,6 +116,16 @@
     .table td {
         padding: 0 .75rem;
     }
+    .card .card-block .help-block {
+        line-height: 1.4;
+        color: red;
+    }
+    .form-group .has-error input {
+        border-color: red;
+    }
+    .form-group .has-error select {
+        border-color: red;
+    }
 </style>
 
 {{--<script src="https://cloud.tinymce.com/5/tinymce.min.js"></script>--}}
