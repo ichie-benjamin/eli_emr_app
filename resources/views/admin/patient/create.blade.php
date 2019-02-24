@@ -71,7 +71,7 @@
                                                             <h3> Account Details </h3>
                                                             <fieldset>
                                                                 <div class="form-group row">
-                                                                    <div class="col-md-6 row">
+                                                                    <div class="col-md-12 row">
                                                                         <div class="col-sm-12">
                                                                             <label for="userName-2" class="block">User name *</label>
                                                                         </div>
@@ -84,19 +84,19 @@
                                                                             @endif
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-6 row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="email" class="block">Email Address *</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input id="email" name="email" required value="{{ old('email') }}" type="email" class=" form-control {{ $errors->has('email') ? ' is-invalid' : '' }}">
-                                                                            @if ($errors->has('email'))
-                                                                                <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                                                            @endif
-                                                                        </div>
-                                                                    </div>
+                                                                    {{--<div class="col-md-6 row">--}}
+                                                                        {{--<div class="col-sm-12">--}}
+                                                                            {{--<label for="email" class="block">Email Address *</label>--}}
+                                                                        {{--</div>--}}
+                                                                        {{--<div class="col-sm-12">--}}
+                                                                            {{--<input id="email" name="email" required value="{{ old('email') }}" type="email" class=" form-control {{ $errors->has('email') ? ' is-invalid' : '' }}">--}}
+                                                                            {{--@if ($errors->has('email'))--}}
+                                                                                {{--<span class="invalid-feedback" role="alert">--}}
+                                        {{--<strong>{{ $errors->first('email') }}</strong>--}}
+                                    {{--</span>--}}
+                                                                            {{--@endif--}}
+                                                                        {{--</div>--}}
+                                                                    {{--</div>--}}
                                                                 </div>
                                                                 <div class="form-group row">
                                                                     <div class="col-sm-12">
