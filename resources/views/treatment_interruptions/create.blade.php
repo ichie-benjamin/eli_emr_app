@@ -66,7 +66,8 @@
                 <fieldset>
                     <div class="ro">
                 @include ('treatment_interruptions.form', [
-                                            'treatmentInterruption' => $hivPatient,
+                                            'hiv_patient' => $hivPatient,
+                                            'treatmentInterruption' =>  $treatmentInterruption
                                           ])
                     </div>
 
