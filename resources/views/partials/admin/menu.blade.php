@@ -37,6 +37,31 @@
                 </li>
 
 
+                <li class="{{ active(['coming'], 'pcoded-trigger') }} {{ active(['coming']) }} pcoded-hasmenu">
+                    <a href="#" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="feather icon-delete"></i></span>
+                        <span class="pcoded-mtext">Mortality Rate</span>
+                    </a>
+                    <ul class="pcoded-submenu">
+                        <li class="{{ active('patients.patient.create') }}">
+                            <a href="{{ route('coming') }}" class="waves-effect waves-dark">
+                                <span class="pcoded-mtext">Maternal Mortality</span>
+                            </a>
+                        </li>
+                        <li class="{{ active('coming') }}">
+                            <a href="{{ route('coming') }}" class="waves-effect waves-dark">
+                                <span class="pcoded-mtext">Infant mortality rate</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="{{ route('coming') }}" class="waves-effect waves-dark">
+                                <span class="pcoded-mtext">General mortality rate</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
                 <li class="{{ active(['hiv_patients.hiv_patient.*'], 'pcoded-trigger') }} {{ active(['hiv_patients.hiv_patient.*']) }} pcoded-hasmenu">
                     <a href="#" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-user-check"></i></span>

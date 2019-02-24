@@ -4,46 +4,24 @@
 
     <div class="pcoded-content">
 
-        <div class="page-header card">
-            <div class="row">
-                <div class="col-lg-8 col-xs-8">
-                    <div class="page-header-title pull-left">
-                        <i class="feather icon-plus bg-c-blue"></i>
-                        <div class="d-inline">
-                            <h4 class="mt-5 mb-5">Create New Treatment Interruption</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xs-4">
-                    <div class="page-header-breadcrumb">
-                        <ul class=" breadcrumb breadcrumb-title">
-                            <li class="breadcrumb-item">
-                                <a href="{{ route('treatment_interruptions.treatment_interruption.index') }}" class="btn btn-primary" title="Show All Treatment Interruption">
-                                    <span class="feather icon-list" aria-hidden="true"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
         <div class="pcoded-inner-content">
             <div class="main-body">
                 <div class="col-md-12">
                     <div class="row col">
                         <div class="col-md-3">
-                            <a href="" class="btn btn-success">Treatment Interruptions</a>
+                            <a href="{{ route('hiv_patients.hiv_patient.create') }}" class="btn btn-success btn-sm"> << Patient Identification</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="" class="btn btn-success">Treatment Interruptions</a>
+                            <a href="{{ route('clinician_assessments.clinician_assessment.create') }}" class="btn btn-success btn-sm"><< Initial Assessment by Clinician</a>
                         </div>
-                        <div class="col-md-3">
-                            <a href="" class="btn btn-success">Treatment Interruptions</a>
-                        </div><div class="col-md-3">
-                            <a href="" class="btn btn-success">Treatment Interruptions</a>
+                        <div class="col-md-2">
+                            <a href="{{ route('art_treatments.art_treatment.create') }}"  class="btn btn-success btn-sm"><< ART Treatment </a>
+                        </div>
+                        <div class="col-md-2">
+                            <button disabled type="button" class="btn btn-warning btn-sm ">Treatment Interruptions</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button disabled type="button" class="btn btn-default btn-sm">Treatment Record >></button>
                         </div>
                     </div>
                 </div>
@@ -92,11 +70,19 @@
                                           ])
                     </div>
 
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <input class="btn btn-primary" type="submit" value="Add">
+                    <div class=" row">
+                        {{--<div class="col">--}}
+                        <div class=" col-md-6">
+                            <a href="{{ route('art_treatments.art_treatment.create') }}" class="btn btn-success"><< Back</a>
+
+                        </div>
+
+                        <div class=" col-md-6">
+                            <input class="btn btn-primary pull-right" type="submit" value="Next">
+                        </div>
+                        {{--</div>--}}
+
                     </div>
-                </div>
                 </fieldset>
 
             </form>

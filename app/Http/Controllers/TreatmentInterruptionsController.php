@@ -44,20 +44,28 @@ class TreatmentInterruptionsController extends Controller
      */
     public function store(Request $request)
     {
-        try {
+
             
-            $data = $this->getData($request);
-            
-            TreatmentInterruption::create($data);
+//            $data = $this->getData($request);
+            $validatedData = $this->getData($request);
 
-            return redirect()->route('treatment_interruptions.treatment_interruption.index')
-                             ->with('success_message', 'Treatment Interruption was successfully added!');
 
-        } catch (Exception $exception) {
-
-            return back()->withInput()
-                         ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request!']);
+        if(empty($request->session()->get('treatmentInterruption'))){
+            $treatmentInterruption = treatmentInterruption::create($validatedData);
+            $request->session()->put('treatmentInterruption', $treatmentInterruption);
+        }else{
+            $treatmentInterruption = $request->session()->get('treatmentInterruption');
+//            $hivPatient = hivPatient::findOrFail($patients->id);
+            $treatmentInterruption->fill($validatedData);
+            $request->session()->put('treatmentInterruption', $treatmentInterruption);
         }
+            
+//            TreatmentInterruption::create($data);
+
+            return redirect()->route('treatment_records.treatment_record.create')
+                             ->with('success_message', 'Treatment Interruption was successfully added! Pls Add Patient Treatment Record');
+
+
     }
 
     /**
