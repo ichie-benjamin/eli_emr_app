@@ -35,16 +35,16 @@
                 <div class="col-md-12">
                     <div class="row col">
                         <div class="col-md-3">
-                            <a href="" class="btn btn-success btn-sm"> << Patient Identification</a>
+                            <a href="{{ route('hiv_patients.hiv_patient.create') }}" class="btn btn-success btn-sm"> << Patient Identification</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="" class="btn btn-success btn-sm"><< Initial Assessment by Clinician</a>
+                            <a href="{{ route('clinician_assessments.clinician_assessment.create') }}" class="btn btn-success btn-sm"><< Initial Assessment by Clinician</a>
                         </div>
                         <div class="col-md-2">
-                            <a href="" class="btn btn-success btn-sm"><< ART Treatment </a>
+                            <a href="{{ route('art_treatments.art_treatment.create') }}" class="btn btn-success btn-sm"><< ART Treatment </a>
                         </div>
                         <div class="col-md-2">
-                            <a href="" class="btn btn-success btn-sm "><< Treatment Interruptions</a>
+                            <a href="{{ route('treatment_interruptions.treatment_interruption.create') }}" class="btn btn-success btn-sm "><< Treatment Interruptions</a>
                         </div>
                         <div class="col-md-2">
                             <a href="" class="btn btn-warning btn-sm">Treatment Record</a>
@@ -92,7 +92,7 @@
 
                 <div class="row">
                     <div class=" col-md-6">
-                        <a href="" class="btn btn-success"><< Back</a>
+                        <a href="{{ route('treatment_interruptions.treatment_interruption.create') }}" class="btn btn-success"><< Back</a>
                     </div>
                     <div class=" col-md-5">
                         <input class="btn btn-primary pull-right" type="submit" value="Save Record">

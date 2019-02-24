@@ -159,11 +159,11 @@ class TreatmentInterruptionsController extends Controller
     {
         $rules = [
             'hiv_patient_id' => 'nullable',
-            'first_interruption_reasonfirst_interruption_data' => 'string|min:1|nullable',
-            'second_interruption_reason' => 'string|min:1|nullable',
-            'second_interruption_data' => 'string|min:1|nullable',
-            'departure_from_treatment_reason' => 'string|min:1|nullable',
-            'departure_from_treatment_data' => 'string|min:1|nullable',
+            'first_interruption_reasonfirst_interruption_data' => 'nullable',
+            'second_interruption_reason' => 'nullable',
+            'second_interruption_data' => 'nullable',
+            'departure_from_treatment_reason' => 'nullable',
+            'departure_from_treatment_data' => 'nullable',
      
         ];
         

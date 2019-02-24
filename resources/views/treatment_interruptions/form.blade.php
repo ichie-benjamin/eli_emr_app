@@ -5,7 +5,7 @@
             <label for="first_interruption_reasonfirst_interruption_data" class="block">First Interruption Reason</label>
         </div>
         <div class="col-md-12">
-            <input class="form-control" name="first_interruption_reasonfirst_interruption_data" type="text" id="first_interruption_reasonfirst_interruption_data" value="{{ old('first_interruption_reasonfirst_interruption_data', optional($treatmentInterruption)->first_interruption_reasonfirst_interruption_data) }}" minlength="1" placeholder="Enter first interruption reasonfirst interruption data here...">
+            <input class="form-control" name="first_interruption_reasonfirst_interruption_data" type="text" id="first_interruption_reasonfirst_interruption_data" value="{{ old('first_interruption_reasonfirst_interruption_data', optional($treatmentInterruption)->first_interruption_reasonfirst_interruption_data) }}" minlength="1" placeholder="Enter first interruption reason...">
             {!! $errors->first('first_interruption_reasonfirst_interruption_data', '<p class="help-block">:message</p>') !!}
         </div>
     </div>

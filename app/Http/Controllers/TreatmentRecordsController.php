@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\artTreatment;
+use App\Models\ClinicianAssessment;
 use App\Models\hivPatient;
+use App\Models\TreatmentInterruption;
 use Illuminate\Http\Request;
 use App\Models\TreatmentRecord;
 use App\Http\Controllers\Controller;
@@ -28,11 +31,12 @@ class TreatmentRecordsController extends Controller
      *
      * @return Illuminate\View\View
      */
-    public function create()
+    public function create(Request $request)
     {
-        $hivPatients = hivPatient::pluck('patient_name','id')->all();
+        $hivPatient = $request->session()->get('hiv_patients');
+        $treatmentRecord = $request->session()->get('treatmentInterruption');
         
-        return view('treatment_records.create', compact('hivPatients'));
+        return view('treatment_records.create', compact('hivPatient','treatmentRecord'));
     }
 
     /**
@@ -47,9 +51,26 @@ class TreatmentRecordsController extends Controller
         $data = $this->getData($request);
 
         TreatmentRecord::create($data);
+        $treatmentInterruptionData = $request->session()->get('treatmentInterruption');
+        $hivPatientData = $request->session()->get('hiv_patients');
+        $clinicianAssessmentData = $request->session()->get('clinicianAssessment');
+        $artTreatmentData = $request->session()->get('artTreatment');
 
-        return redirect()->route('treatment_records.treatment_record.index')
-            ->with('success_message', 'Treatment Record was successfully added!');
+
+        $hivPatient = hivPatient::findOrFail($hivPatientData->id);
+        $hivPatient->update($hivPatientData);
+
+        $clinicianAssessment = clinicianAssessment::findOrFail($clinicianAssessmentData->id);
+        $clinicianAssessment->update($clinicianAssessmentData);
+
+        $artTreatment = artTreatment::findOrFail($artTreatmentData->id);
+        $artTreatment->update($artTreatmentData);
+
+        $treatmentInterruption = TreatmentInterruption::findOrFail($treatmentInterruptionData->id);
+        $treatmentInterruption->update($treatmentInterruptionData);
+
+        return redirect()->route('hiv_patients.hiv_patient.index')
+            ->with('success_message', 'All Patients Record was successfully added!');
 //        try {
 //
 //            $data = $this->getData($request);

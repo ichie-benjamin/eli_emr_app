@@ -1,4 +1,4 @@
-<input value="" name="hiv_patient_id">
+<input value="{{ $hivPatient->id }}" type="hidden" name="hiv_patient_id">
 <div class="form-group row">
 {{--<div class="col-md-3 row {{ $errors->has('hiv_patient_id') ? 'has-error' : '' }}">--}}
     {{----}}
@@ -29,12 +29,22 @@
 </div>
     <div class="col-md-4 row {{ $errors->has('scheduled') ? 'has-error' : '' }}">
         <div class="col-md-12">
-            <label for="scheduled" class="block">Scheduled</label>
+            <label for="scheduled" class="block">Scheduled ?</label>
         </div>
         <div class="col-md-12">
-            <input class="form-control" name="scheduled" type="text" id="scheduled" value="{{ old('scheduled', optional($treatmentRecord)->scheduled) }}" minlength="1" placeholder="Enter scheduled here...">
+            <select class="form-control" id="scheduled" name="scheduled">
+                <option value="" style="display: none;" {{ old('scheduled', optional($hivPatient)->scheduled ?: '') == '' ? 'selected' : '' }} disabled selected>Select Yes/No</option>
+                @foreach (['Yes' => 'Yes',
+    'No' => 'No'] as $key => $text)
+                    <option value="{{ $key }}" {{ old('sex', optional($hivPatient)->sex) == $key ? 'selected' : '' }}>
+                        {{ $text }}
+                    </option>
+                @endforeach
+            </select>
+
             {!! $errors->first('scheduled', '<p class="help-block">:message</p>') !!}
         </div>
+
     </div>
     <div class="col-md-4 row {{ $errors->has('clinician') ? 'has-error' : '' }}">
         <div class="col-md-12">
@@ -83,7 +93,7 @@
             <label for="height" class="block">Height</label>
         </div>
         <div class="col-md-12">
-            <input class="form-control" name="height" type="text" id="height" value="{{ old('height', optional($treatmentRecord)->height) }}" minlength="1" placeholder="Enter height here...">
+            <input class="form-control" name="height" type="number" id="height" value="{{ old('height', optional($treatmentRecord)->height) }}" minlength="1" placeholder="Enter height here...">
             {!! $errors->first('height', '<p class="help-block">:message</p>') !!}
         </div>
     </div>
@@ -93,7 +103,7 @@
     <label for="weight" class="block">Weight</label>
 </div>
     <div class="col-md-12">
-        <input class="form-control" name="weight" type="text" id="weight" value="{{ old('weight', optional($treatmentRecord)->weight) }}" minlength="1" placeholder="Enter weight here...">
+        <input class="form-control" name="weight" type="number" id="weight" value="{{ old('weight', optional($treatmentRecord)->weight) }}" minlength="1" placeholder="Enter weight here...">
         {!! $errors->first('weight', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
@@ -216,7 +226,7 @@
     <label for="date_of_next_visit" class="block">Date Of Next Visit</label>
 </div>
     <div class="col-md-12">
-        <input class="form-control" name="date_of_next_visit" type="text" id="date_of_next_visit" value="{{ old('date_of_next_visit', optional($treatmentRecord)->date_of_next_visit) }}" placeholder="Enter date of next visit here...">
+        <input class="form-control" name="date_of_next_visit" type="date" id="date_of_next_visit" value="{{ old('date_of_next_visit', optional($treatmentRecord)->date_of_next_visit) }}" placeholder="Enter date of next visit here...">
         {!! $errors->first('date_of_next_visit', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
