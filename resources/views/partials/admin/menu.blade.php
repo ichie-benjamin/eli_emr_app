@@ -141,6 +141,39 @@
                     </ul>
                 </li>
 
+                <li class=" pcoded-hasmenu">
+                    <a href="#" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="feather icon-arrow-down"></i></span>
+                        <span class="pcoded-mtext">Pharmacy</span>
+                    </a>
+                    <ul class="pcoded-submenu">
+                        <li class=" {{ active(['users.user.create']) }}">
+                            <a href="{{ route('coming') }}" class="waves-effect waves-dark">
+                                <span class="pcoded-mtext">Mortality Rate </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="">
+                    {{--<li class=" {{ active(['patient', 'users/*', 'posts.*', 'pages.contact']) }} pcoded-trigger">--}}
+                    <a href="{{ route('coming') }}" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                        <span class="pcoded-mtext">Number of Visits Log</span>
+                    </a>
+
+                </li>
+
+                <li class="">
+                    {{--<li class=" {{ active(['patient', 'users/*', 'posts.*', 'pages.contact']) }} pcoded-trigger">--}}
+                    <a href="" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                        <span class="pcoded-mtext">Discharge Log</span>
+                    </a>
+
+                </li>
+
 
                 <li class="pcoded-hasmenu ">
                     <a href="#" class="waves-effect waves-dark">
