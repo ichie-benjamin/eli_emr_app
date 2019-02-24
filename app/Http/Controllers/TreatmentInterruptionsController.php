@@ -28,11 +28,12 @@ class TreatmentInterruptionsController extends Controller
      *
      * @return Illuminate\View\View
      */
-    public function create()
+    public function create(Request $request)
     {
-        $hivPatients = hivPatient::pluck('patient_name','id')->all();
-        
-        return view('treatment_interruptions.create', compact('hivPatients'));
+        $hivPatient = $request->session()->get('hiv_patients');
+        $treatmentInterruption = $request->session()->get('treatmentInterruption');
+
+        return view('treatment_interruptions.create', compact('hivPatient','treatmentInterruption'));
     }
 
     /**

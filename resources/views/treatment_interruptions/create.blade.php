@@ -64,9 +64,9 @@
             <form method="POST" action="{{ route('treatment_interruptions.treatment_interruption.store') }}" accept-charset="UTF-8" id="create_treatment_interruption_form" name="create_treatment_interruption_form" class="form-horizontal">
                 {{ csrf_field() }}
                 <fieldset>
-                    <div class="row">
+                    <div class="ro">
                 @include ('treatment_interruptions.form', [
-                                            'treatmentInterruption' => null,
+                                            'treatmentInterruption' => $hivPatient,
                                           ])
                     </div>
 

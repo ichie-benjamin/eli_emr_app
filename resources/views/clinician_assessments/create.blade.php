@@ -62,7 +62,7 @@
                 <fieldset>
                     <div class="row">
                         @include ('clinician_assessments.form', [
-                                           'clinicianAssessment' => $clinicianAssessment,
+                                           'clinicianAssessment' => [$clinicianAssessment,$hivPatient],
                                          ])
                     </div>
 
