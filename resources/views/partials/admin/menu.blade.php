@@ -3,10 +3,16 @@
         <div class="pcoded-inner-navbar main-menu">
             <ul class="pcoded-item pcoded-left-item">
                 <li class="{{ active('admin.home') }}">
-                {{--<li class=" {{ active(['patient', 'users/*', 'posts.*', 'pages.contact']) }} pcoded-trigger">--}}
                     <a href="{{ route('admin.home') }}" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-home"></i></span>
                         <span class="pcoded-mtext">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="{{ active('patients.patient.create') }}">
+                    <a href="{{ route('patients.patient.create') }}" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="feather icon-compass"></i></span>
+                        <span class="pcoded-mtext">Admission</span>
                     </a>
 
                 </li>
