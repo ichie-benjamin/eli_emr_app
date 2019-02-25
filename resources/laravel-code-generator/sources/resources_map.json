@@ -90,5 +90,9 @@
     {
         "model-name": "Ethnicity",
         "resource-file": "ethnicities.json"
+    },
+    {
+        "model-name": "InfantMortality",
+        "resource-file": "infant_mortalities.json"
     }
 ]

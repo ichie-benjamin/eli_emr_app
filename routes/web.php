@@ -586,3 +586,35 @@ Route::group(
          ->where('id', '[0-9]+');
 
 });
+
+Route::group(
+[
+    'prefix' => 'infant_mortalities',
+], function () {
+
+    Route::get('/', 'InfantMortalitiesController@index')
+         ->name('infant_mortalities.infant_mortality.index');
+
+    Route::get('/create','InfantMortalitiesController@create')
+         ->name('infant_mortalities.infant_mortality.create');
+
+    Route::get('/show/{infantMortality}','InfantMortalitiesController@show')
+         ->name('infant_mortalities.infant_mortality.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{infantMortality}/edit','InfantMortalitiesController@edit')
+         ->name('infant_mortalities.infant_mortality.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'InfantMortalitiesController@store')
+         ->name('infant_mortalities.infant_mortality.store');
+               
+    Route::put('infant_mortality/{infantMortality}', 'InfantMortalitiesController@update')
+         ->name('infant_mortalities.infant_mortality.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/infant_mortality/{infantMortality}','InfantMortalitiesController@destroy')
+         ->name('infant_mortalities.infant_mortality.destroy')
+         ->where('id', '[0-9]+');
+
+});

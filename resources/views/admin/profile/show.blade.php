@@ -66,7 +66,7 @@
 
         <!-- Edit -->
         <div>
-            <a href="{{ url("/customer/profile/update_profile") }}" class="btn btn-primary btn-block"><b>Edit Profile</b></a>
+            <a href="{{ route('profiles.profile.edit_my_profile') }}" class="btn btn-primary btn-block"><b>Edit Profile</b></a>
             <!-- /.box-body -->
         </div>
     </div>
