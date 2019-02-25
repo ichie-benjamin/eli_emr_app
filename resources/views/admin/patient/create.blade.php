@@ -198,7 +198,7 @@
                                                                         <select class="form-control" id="country" name="country">
                                                                             <option value="" style="display: none;" {{ old('country') == '' ? 'selected' : '' }} disabled selected>Select Country</option>
                                                                             @foreach ($countries as $key => $country)
-                                                                                <option value="{{ $key }}" {{ old('country') == $key ? 'selected' : '' }}>
+                                                                                <option value="{{ $country }}" {{ old('country') == $country ? 'selected' : '' }}>
                                                                                     {{ $country }}
                                                                                 </option>
                                                                             @endforeach
