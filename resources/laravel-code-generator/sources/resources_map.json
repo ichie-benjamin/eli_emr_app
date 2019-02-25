@@ -66,5 +66,9 @@
     {
         "model-name": "TreatmentRecord",
         "resource-file": "treatment_records.json"
+    },
+    {
+        "model-name": "DeathCause",
+        "resource-file": "death_causes.json"
     }
 ]

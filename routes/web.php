@@ -424,3 +424,35 @@ Route::group(
          ->where('id', '[0-9]+');
 
 });
+
+Route::group(
+[
+    'prefix' => 'death_causes',
+], function () {
+
+    Route::get('/', 'DeathCausesController@index')
+         ->name('death_causes.death_cause.index');
+
+    Route::get('/create','DeathCausesController@create')
+         ->name('death_causes.death_cause.create');
+
+    Route::get('/show/{deathCause}','DeathCausesController@show')
+         ->name('death_causes.death_cause.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{deathCause}/edit','DeathCausesController@edit')
+         ->name('death_causes.death_cause.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'DeathCausesController@store')
+         ->name('death_causes.death_cause.store');
+               
+    Route::put('death_cause/{deathCause}', 'DeathCausesController@update')
+         ->name('death_causes.death_cause.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/death_cause/{deathCause}','DeathCausesController@destroy')
+         ->name('death_causes.death_cause.destroy')
+         ->where('id', '[0-9]+');
+
+});
