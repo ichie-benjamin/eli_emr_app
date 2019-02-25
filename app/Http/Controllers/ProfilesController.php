@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Country;
 use App\User;
 use App\Models\Profile;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Exception;
@@ -41,10 +42,13 @@ class ProfilesController extends Controller
     {
         $users = User::pluck('name','id')->all();
 
+
+
         return view('admin.profiles.create', compact('users'));
     }
 
     public function patientCreate(){
+
         $users = User::pluck('name','id')->all();
         $user = User::findOrFail(Auth::id());
         $countries = Country::pluck('name','id')->all();
@@ -79,6 +83,14 @@ class ProfilesController extends Controller
             $p_data = ['user_id'    =>  $user->id];
 
             $profileData = array_merge($data,$p_data);
+
+
+
+        $code = date('md').sprintf('%03d',$user->id);
+
+//        $user = User::findOrFail($user->id);
+
+        $user->update(['identification_code'    =>  $code]);
 
             Profile::create($profileData);
 
@@ -197,7 +209,7 @@ class ProfilesController extends Controller
         $rules = [
             'password'  =>  'string|min:6|confirmed',
             'name'      =>  'nullable',
-            'email'     =>  'required|string|email|max:255|unique:users,email,'. $request['user_id'],
+            'email'     =>  'string|email|max:255|unique:users,email,'. $request['user_id'],
 //            'email'     =>  'required|string|email|max:255|unique:users',
             'user_id'   =>  'nullable',
             'first_name'=>  'string|min:1|nullable',

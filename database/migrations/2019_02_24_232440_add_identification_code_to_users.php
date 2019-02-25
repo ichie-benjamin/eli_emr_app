@@ -14,7 +14,7 @@ class AddIdentificationCodeToUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('identification_code')->unique();
+            $table->string('identification_code')->unique()->nullable();
         });
     }
 
