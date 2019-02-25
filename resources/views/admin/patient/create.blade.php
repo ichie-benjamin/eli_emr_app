@@ -100,10 +100,10 @@
                                                                 </div>
                                                                 <div class="form-group row">
                                                                     <div class="col-sm-12">
-                                                                        <label for="email" class="block">Email Address *</label>
+                                                                        <label for="email" class="block">Email Address </label>
                                                                     </div>
                                                                     <div class="col-sm-12">
-                                                                        <input id="email" name="email" required value="{{ old('email') }}" type="email" class=" form-control {{ $errors->has('email') ? ' is-invalid' : '' }}">
+                                                                        <input id="email" name="email" value="{{ old('email') }}" type="email" class=" form-control {{ $errors->has('email') ? ' is-invalid' : '' }}">
                                                                         @if ($errors->has('email'))
                                                                             <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('email') }}</strong>
@@ -114,10 +114,10 @@
 
                                                                 <div class="form-group row">
                                                                     <div class="col-sm-12">
-                                                                        <label for="password" class="block">Password  *</label>
+                                                                        <label for="password" class="block">Password  </label>
                                                                     </div>
                                                                     <div class="col-sm-12">
-                                                                        <input id="password" required value="" name="password" type="password" class="{{ $errors->has('password') ? ' is-invalid' : '' }} form-control">
+                                                                        <input id="password" value="" name="password" type="password" class="{{ $errors->has('password') ? ' is-invalid' : '' }} form-control">
                                                                         @if ($errors->has('password'))
                                                                             <span class="invalid-feedback" role="alert">
                                                                             <strong>{{ $errors->first('password') }}</strong>
@@ -128,10 +128,10 @@
 
                                                                 <div class="form-group row">
                                                                     <div class="col-sm-12">
-                                                                        <label for="password_confirmation" class="block">Confirm Password *</label>
+                                                                        <label for="password_confirmation" class="block">Confirm Password </label>
                                                                     </div>
                                                                     <div class="col-sm-12">
-                                                                        <input id="password_confirmation" name="password_confirmation" required type="password" class=" form-control">
+                                                                        <input id="password_confirmation" name="password_confirmation" type="password" class=" form-control">
                                                                     </div>
                                                                 </div>
 

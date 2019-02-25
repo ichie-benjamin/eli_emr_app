@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7861fb1a-2fb1-484c-8386-186c13a6677e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_232440_add_identification_code_to_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_232440_add_identification_code_to_users.php" afterDir="false" />
-    </list>
+    <list default="true" id="7861fb1a-2fb1-484c-8386-186c13a6677e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="-488">
+              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
             </state>
           </provider>
         </entry>
@@ -538,18 +534,17 @@
       <workItem from="1550777991154" duration="25540000" />
       <workItem from="1550852888327" duration="12633000" />
       <workItem from="1550899486970" duration="14374000" />
-      <workItem from="1551013344634" duration="29227000" />
+      <workItem from="1551013344634" duration="29901000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213863000" />
+    <option name="totallyTimeSpent" value="214537000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24622357" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24622357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -563,7 +558,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924472" visible="true" weight="0.23317684" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49924472" visible="true" weight="0.1517997" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007553" side_tool="true" weight="0.26604068" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="12" visible="true" weight="0.3286385" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -958,8 +953,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="-488">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
         </state>
       </provider>
     </entry>
