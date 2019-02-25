@@ -105,16 +105,17 @@
     <label for="causes_of_death" class="block">Causes Of Death</label>
 </div>
     <div class="col-md-12">
-        <select class="form-control" id="causes_of_death[]" name="causes_of_death[]" multiple="multiple">
-        	    <option value="" style="display: none;" {{ old('causes_of_death', optional($infantMortality)->causes_of_death ?: '') == '' ? 'selected' : '' }} disabled selected>Select causes of death</option>
+        {{--<select class="form-control" id="causes_of_death[]" name="causes_of_death[]" multiple="multiple">--}}
+        	    {{--<option value="" style="display: none;" {{ old('causes_of_death', optional($infantMortality)->causes_of_death ?: '') == '' ? 'selected' : '' }} disabled selected>Select causes of death</option>--}}
         	@foreach (['Malaria' => 'Malaria',
 'Typhoid' => 'Thyphoid',
 'Measles' => 'Measles'] as $key => $text)
-			    <option value="{{ $key }}" {{ in_array($key, old('causes_of_death', optional($infantMortality)->causes_of_death) ?: []) ? 'selected' : '' }}>
-			    	{{ $text }}
-			    </option>
+                <label class="form-check-label">
+                    <input type="checkbox" name="causes_of_death[]" class="form-check-inpu" value="{{ $key }}" {{ in_array($key, old('causes_of_death', optional($infantMortality)->causes_of_death) ?: []) ? 'selected' : '' }}> {{ $text }}
+                </label><br>
 			@endforeach
-        </select>
+        {{--</select>--}}
+
         
         {!! $errors->first('causes_of_death', '<p class="help-block">:message</p>') !!}
     </div>

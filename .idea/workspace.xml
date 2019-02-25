@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7861fb1a-2fb1-484c-8386-186c13a6677e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/infant_mortalities/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/infant_mortalities/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/infant_mortalities/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/infant_mortalities/form.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="-1411">
               <caret line="45" column="150" selection-start-line="45" selection-start-column="150" selection-end-line="45" selection-end-column="150" />
             </state>
           </provider>
@@ -80,11 +79,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/infant_mortalities/form.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+            <state relative-caret-position="388">
+              <caret line="120" column="8" lean-forward="true" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -206,10 +205,10 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_02_25_185909_create_infant_mortalities_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/InfantMortalitiesController.php" />
         <option value="$PROJECT_DIR$/app/Models/InfantMortality.php" />
-        <option value="$PROJECT_DIR$/resources/views/infant_mortalities/form.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/profile/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/infant_mortalities/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/infant_mortalities/form.blade.php" />
       </list>
     </option>
   </component>
@@ -559,12 +558,12 @@
       <workItem from="1550852888327" duration="12633000" />
       <workItem from="1550899486970" duration="14374000" />
       <workItem from="1551013344634" duration="45011000" />
-      <workItem from="1551110216932" duration="10296000" />
+      <workItem from="1551110216932" duration="10996000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239943000" />
+    <option name="totallyTimeSpent" value="240643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
@@ -961,13 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/infant_mortalities/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/infant_mortalities/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -991,8 +983,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
+        <state relative-caret-position="-1411">
           <caret line="45" column="150" selection-start-line="45" selection-start-column="150" selection-end-line="45" selection-end-column="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/infant_mortalities/form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="120" column="8" lean-forward="true" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
         </state>
       </provider>
     </entry>
