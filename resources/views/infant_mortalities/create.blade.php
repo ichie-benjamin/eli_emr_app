@@ -34,9 +34,12 @@
             <div class="main-body">
                 <div class="page-wrapper">
                     <div class="page-body">
-
-                        <div class="row">
-                            <div class="col-md-12 col-xl-12">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="row">
+                                    <div class="col-md-12 col-xl-12">
+                                        <div id="wizard">
+                                            <section>
 
             @if ($errors->any())
                 <ul class="alert alert-danger">
@@ -59,6 +62,10 @@
                 </div>
 
             </form>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -43,7 +43,7 @@
                 </li>
 
 
-                <li class="{{ active(['coming'], 'pcoded-trigger') }} {{ active(['coming']) }} pcoded-hasmenu">
+                <li class="{{ active(['infant_mortalities.infant_mortality.*'], 'pcoded-trigger') }} {{ active(['infant_mortalities.infant_mortality.*']) }} pcoded-hasmenu">
                     <a href="#" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-delete"></i></span>
                         <span class="pcoded-mtext">Mortality Rate</span>
@@ -54,8 +54,8 @@
                                 <span class="pcoded-mtext">Maternal Mortality</span>
                             </a>
                         </li>
-                        <li class="{{ active('coming') }}">
-                            <a href="{{ route('coming') }}" class="waves-effect waves-dark">
+                        <li class="{{ active('infant_mortalities.infant_mortality.*') }}">
+                            <a href="{{ route('infant_mortalities.infant_mortality.index') }}" class="waves-effect waves-dark">
                                 <span class="pcoded-mtext">Infant mortality rate</span>
                             </a>
                         </li>
