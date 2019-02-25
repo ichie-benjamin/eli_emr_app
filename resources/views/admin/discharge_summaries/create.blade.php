@@ -10,7 +10,7 @@
                     <div class="page-header-title pull-left">
                         <i class="feather icon-plus bg-c-blue"></i>
                         <div class="d-inline">
-                            <h4 class="mt-5 mb-5">Create New Discharge Summary</h4>
+                            <h4 class="mt-5 mb-5">Discharge Summary</h4>
                         </div>
                     </div>
                 </div>
@@ -35,8 +35,27 @@
                 <div class="page-wrapper">
                     <div class="page-body">
 
-                        <div class="row">
-                            <div class="col-md-12 col-xl-12">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="row">
+                                    <div class="col-md-12 col-xl-12">
+                                        <div id="wizard">
+                                            <section>
+
+                                                @if(Session::has('success_message'))
+                                                    <div class="row">
+                                                        <div class="alert alert-success">
+                                                            <span class="glyphicon glyphicon-ok"></span>
+                                                            {!! session('success_message') !!}
+
+                                                            <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+
+                                                        </div>
+                                                    </div>
+                                                @endif
+
 
             @if ($errors->any())
                 <ul class="alert alert-danger">
@@ -48,7 +67,7 @@
 
             <form method="POST" action="{{ route('discharge_summaries.discharge_summary.store') }}" accept-charset="UTF-8" id="create_discharge_summary_form" name="create_discharge_summary_form" class="form-horizontal">
                 {{ csrf_field() }}
-                @include ('discharge_summaries.form', [
+                @include ('admin.discharge_summaries.form', [
                                             'dischargeSummary' => null,
                                           ])
 
@@ -59,6 +78,11 @@
                 </div>
 
             </form>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>

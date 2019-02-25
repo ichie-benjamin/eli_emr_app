@@ -82,5 +82,13 @@
     {
         "model-name": "DischargeSummary",
         "resource-file": "discharge_summaries.json"
+    },
+    {
+        "model-name": "Facility",
+        "resource-file": "facilities.json"
+    },
+    {
+        "model-name": "Ethnicity",
+        "resource-file": "ethnicities.json"
     }
 ]

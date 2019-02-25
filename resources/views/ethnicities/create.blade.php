@@ -8,9 +8,9 @@
             <div class="row">
                 <div class="col-lg-8 col-xs-8">
                     <div class="page-header-title pull-left">
-                        <i class="feather icon-edit bg-c-blue"></i>
+                        <i class="feather icon-plus bg-c-blue"></i>
                         <div class="d-inline">
-                            <h4 class="mt-5 mb-5">{{ !empty($title) ? $title : 'Discharge Summary' }}</h4>
+                            <h4 class="mt-5 mb-5">Create New Ethnicity</h4>
                         </div>
                     </div>
                 </div>
@@ -18,13 +18,8 @@
                     <div class="page-header-breadcrumb">
                         <ul class=" breadcrumb breadcrumb-title">
                             <li class="breadcrumb-item">
-                                <a href="{{ route('discharge_summaries.discharge_summary.index') }}" class="btn btn-primary" title="Show All Discharge Summary">
+                                <a href="{{ route('ethnicities.ethnicity.index') }}" class="btn btn-primary" title="Show All Ethnicity">
                                     <span class="feather icon-list" aria-hidden="true"></span>
-                                </a>
-                            </li>
-                            <li class="breadcrumb-item">
-                                <a href="{{ route('discharge_summaries.discharge_summary.create') }}" class="btn btn-success" title="Create New Discharge Summary">
-                                    <span class="feather icon-plus" aria-hidden="true"></span>
                                 </a>
                             </li>
                         </ul>
@@ -51,18 +46,18 @@
                 </ul>
             @endif
 
-            <form method="POST" action="{{ route('discharge_summaries.discharge_summary.update', $dischargeSummary->id) }}" id="edit_discharge_summary_form" name="edit_discharge_summary_form" accept-charset="UTF-8" class="form-horizontal">
+            <form method="POST" action="{{ route('ethnicities.ethnicity.store') }}" accept-charset="UTF-8" id="create_ethnicity_form" name="create_ethnicity_form" class="form-horizontal">
                 {{ csrf_field() }}
-                <input name="_method" type="hidden" value="PUT">
-                @include ('discharge_summaries.form', [
-                                            'dischargeSummary' => $dischargeSummary,
+                @include ('ethnicities.form', [
+                                            'ethnicity' => null,
                                           ])
 
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
-                        <input class="btn btn-primary" type="submit" value="Update">
+                        <input class="btn btn-primary" type="submit" value="Add">
                     </div>
                 </div>
+
             </form>
                             </div>
                         </div>
@@ -73,3 +68,5 @@
     </div>
 
 @endsection
+
+

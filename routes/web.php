@@ -522,3 +522,67 @@ Route::group(
          ->where('id', '[0-9]+');
 
 });
+
+Route::group(
+[
+    'prefix' => 'facilities',
+], function () {
+
+    Route::get('/', 'FacilitiesController@index')
+         ->name('facilities.facility.index');
+
+    Route::get('/create','FacilitiesController@create')
+         ->name('facilities.facility.create');
+
+    Route::get('/show/{facility}','FacilitiesController@show')
+         ->name('facilities.facility.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{facility}/edit','FacilitiesController@edit')
+         ->name('facilities.facility.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'FacilitiesController@store')
+         ->name('facilities.facility.store');
+               
+    Route::put('facility/{facility}', 'FacilitiesController@update')
+         ->name('facilities.facility.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/facility/{facility}','FacilitiesController@destroy')
+         ->name('facilities.facility.destroy')
+         ->where('id', '[0-9]+');
+
+});
+
+Route::group(
+[
+    'prefix' => 'ethnicities',
+], function () {
+
+    Route::get('/', 'EthnicitiesController@index')
+         ->name('ethnicities.ethnicity.index');
+
+    Route::get('/create','EthnicitiesController@create')
+         ->name('ethnicities.ethnicity.create');
+
+    Route::get('/show/{ethnicity}','EthnicitiesController@show')
+         ->name('ethnicities.ethnicity.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{ethnicity}/edit','EthnicitiesController@edit')
+         ->name('ethnicities.ethnicity.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'EthnicitiesController@store')
+         ->name('ethnicities.ethnicity.store');
+               
+    Route::put('ethnicity/{ethnicity}', 'EthnicitiesController@update')
+         ->name('ethnicities.ethnicity.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/ethnicity/{ethnicity}','EthnicitiesController@destroy')
+         ->name('ethnicities.ethnicity.destroy')
+         ->where('id', '[0-9]+');
+
+});

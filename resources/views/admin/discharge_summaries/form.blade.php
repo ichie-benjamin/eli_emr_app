@@ -15,25 +15,29 @@
         {!! $errors->first('patient_id', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('surname') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="surname" class="block">Surname</label>
-</div>
-    <div class="col-md-12">
-        <input class="form-control" name="surname" type="text" id="surname" value="{{ old('surname', optional($dischargeSummary)->surname) }}" minlength="1" placeholder="Enter surname here...">
-        {!! $errors->first('surname', '<p class="help-block">:message</p>') !!}
+
+<div class="form-group row">
+    <div class="col-md-6 row {{ $errors->has('surname') ? 'has-error' : '' }}">
+        <div class="col-md-12">
+            <label for="surname" class="block">Surname</label>
+        </div>
+        <div class="col-md-12">
+            <input class="form-control" name="surname" type="text" id="surname" value="{{ old('surname', optional($dischargeSummary)->surname) }}" minlength="1" placeholder="Enter surname here...">
+            {!! $errors->first('surname', '<p class="help-block">:message</p>') !!}
+        </div>
+    </div>
+    <div class="col-md-6 row {{ $errors->has('forname') ? 'has-error' : '' }}">
+        <div class="col-md-12">
+            <label for="forname" class="block">Forname</label>
+        </div>
+        <div class="col-md-12">
+            <input class="form-control" name="forname" type="text" id="forname" value="{{ old('forname', optional($dischargeSummary)->forname) }}" minlength="1" placeholder="Enter forname here...">
+            {!! $errors->first('forname', '<p class="help-block">:message</p>') !!}
+        </div>
     </div>
 </div>
-<div class="form-group {{ $errors->has('forname') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="forname" class="block">Forname</label>
-</div>
-    <div class="col-md-12">
-        <input class="form-control" name="forname" type="text" id="forname" value="{{ old('forname', optional($dischargeSummary)->forname) }}" minlength="1" placeholder="Enter forname here...">
-        {!! $errors->first('forname', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
-<div class="form-group {{ $errors->has('date_of_birth') ? 'has-error' : '' }}">
+<div class="form-group row">
+<div class="col-md-6 row {{ $errors->has('date_of_birth') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="date_of_birth" class="block">Date Of Birth</label>
 </div>
@@ -42,7 +46,7 @@
         {!! $errors->first('date_of_birth', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('NHS') ? 'has-error' : '' }}">
+<div class="col-md-6 row {{ $errors->has('NHS') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="NHS" class="block">N H S</label>
 </div>
@@ -51,7 +55,9 @@
         {!! $errors->first('NHS', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('address') ? 'has-error' : '' }}">
+</div>
+<div class="form-group row">
+<div class="col-md-6 row {{ $errors->has('address') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="address" class="block">Address</label>
 </div>
@@ -60,7 +66,7 @@
         {!! $errors->first('address', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('phone') ? 'has-error' : '' }}">
+<div class="col-md-6 row {{ $errors->has('phone') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="phone" class="block">Phone</label>
 </div>
@@ -69,7 +75,10 @@
         {!! $errors->first('phone', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('discharging_consultant') ? 'has-error' : '' }}">
+</div>
+
+<div class="form-group row">
+<div class="col-md-6 row  {{ $errors->has('discharging_consultant') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="discharging_consultant" class="block">Discharging Consultant</label>
 </div>
@@ -78,7 +87,7 @@
         {!! $errors->first('discharging_consultant', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('discharging_specialty') ? 'has-error' : '' }}">
+<div class="col-md-6 row  {{ $errors->has('discharging_specialty') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="discharging_specialty" class="block">Discharging Specialty</label>
 </div>
@@ -87,7 +96,28 @@
         {!! $errors->first('discharging_specialty', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('method_of_admission') ? 'has-error' : '' }}">
+</div>
+
+<div class="form-group row">
+    <div class="col-md-4 row {{ $errors->has('medication_stopped') ? 'has-error' : '' }}">
+        <div class="col-md-12">
+            <label for="medication_stopped" class="block">Medication Stopped / Changed</label>
+        </div>
+        <div class="col-md-12">
+            <select class="form-control" id="medication_stopped" name="medication_stopped">
+                <option value="" style="display: none;" {{ old('medication_stopped', optional($dischargeSummary)->medication_stopped ?: '') == '' ? 'selected' : '' }} disabled selected>Select medication stopped</option>
+                @foreach (['Yes' => 'Yes',
+    'No' => 'No'] as $key => $text)
+                    <option value="{{ $key }}" {{ old('medication_stopped', optional($dischargeSummary)->medication_stopped) == $key ? 'selected' : '' }}>
+                        {{ $text }}
+                    </option>
+                @endforeach
+            </select>
+
+            {!! $errors->first('medication_stopped', '<p class="help-block">:message</p>') !!}
+        </div>
+    </div>
+<div class="col-md-4 row  {{ $errors->has('method_of_admission') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="method_of_admission" class="block">Method Of Admission</label>
 </div>
@@ -96,7 +126,7 @@
         {!! $errors->first('method_of_admission', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('date_of_discharge') ? 'has-error' : '' }}">
+<div class="col-md-4 row  {{ $errors->has('date_of_discharge') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="date_of_discharge" class="block">Date Of Discharge</label>
 </div>
@@ -105,7 +135,10 @@
         {!! $errors->first('date_of_discharge', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('GP_details') ? 'has-error' : '' }}">
+</div>
+
+<div class="form-group row">
+<div class="col-md-6 row  {{ $errors->has('GP_details') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="GP_details" class="block">G P Details</label>
 </div>
@@ -114,7 +147,7 @@
         {!! $errors->first('GP_details', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('diagnosis_at_discharge') ? 'has-error' : '' }}">
+<div class="col-md-6 row  {{ $errors->has('diagnosis_at_discharge') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="diagnosis_at_discharge" class="block">Diagnosis At Discharge</label>
 </div>
@@ -123,7 +156,10 @@
         {!! $errors->first('diagnosis_at_discharge', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('operation_and_procedures') ? 'has-error' : '' }}">
+</div>
+
+<div class="form-group row">
+<div class="col-md-6 row  {{ $errors->has('operation_and_procedures') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="operation_and_procedures" class="block">Operation And Procedures</label>
 </div>
@@ -132,7 +168,7 @@
         {!! $errors->first('operation_and_procedures', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('reasons_for_admission_and_presenting_complaint') ? 'has-error' : '' }}">
+<div class="col-md-6 row  {{ $errors->has('reasons_for_admission_and_presenting_complaint') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="reasons_for_admission_and_presenting_complaint" class="block">Reasons For Admission And Presenting Complaint</label>
 </div>
@@ -141,7 +177,10 @@
         {!! $errors->first('reasons_for_admission_and_presenting_complaint', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('clinical_narrative') ? 'has-error' : '' }}">
+</div>
+
+<div class="form-group row">
+<div class="col-md-6 row {{ $errors->has('clinical_narrative') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="clinical_narrative" class="block">Clinical Narrative</label>
 </div>
@@ -150,7 +189,7 @@
         {!! $errors->first('clinical_narrative', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('relevant_investigation_and_result') ? 'has-error' : '' }}">
+<div class="col-md-6 row  {{ $errors->has('relevant_investigation_and_result') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="relevant_investigation_and_result" class="block">Relevant Investigation And Result</label>
 </div>
@@ -159,25 +198,31 @@
         {!! $errors->first('relevant_investigation_and_result', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('discharge_destination') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="discharge_destination" class="block">Discharge Destination</label>
 </div>
+
+<div class="form-group row">
+<div class="col-md-6 row {{ $errors->has('relevant_legal_information') ? 'has-error' : '' }}">
     <div class="col-md-12">
-        <input class="form-control" name="discharge_destination" type="text" id="discharge_destination" value="{{ old('discharge_destination', optional($dischargeSummary)->discharge_destination) }}" minlength="1" placeholder="Enter discharge destination here...">
-        {!! $errors->first('discharge_destination', '<p class="help-block">:message</p>') !!}
+        <label for="relevant_legal_information" class="block">Relevant Legal Information</label>
     </div>
-</div>
-<div class="form-group {{ $errors->has('relevant_legal_information') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="relevant_legal_information" class="block">Relevant Legal Information</label>
-</div>
     <div class="col-md-12">
         <textarea class="form-control textarea" name="relevant_legal_information" cols="50" rows="10" id="relevant_legal_information" minlength="1" placeholder="Enter relevant legal information here...">{{ old('relevant_legal_information', optional($dischargeSummary)->relevant_legal_information) }}</textarea>
         {!! $errors->first('relevant_legal_information', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('information_given_to_patient') ? 'has-error' : '' }}">
+    <div class="col-md-6 row {{ $errors->has('strategies_for_potential_problems') ? 'has-error' : '' }}">
+        <div class="col-md-12">
+            <label for="strategies_for_potential_problems" class="block">Strategies For Potential Problems</label>
+        </div>
+        <div class="col-md-12">
+            <textarea class="form-control textarea" name="strategies_for_potential_problems" cols="50" rows="10" id="strategies_for_potential_problems" minlength="1" placeholder="Enter strategies for potential problems here...">{{ old('strategies_for_potential_problems', optional($dischargeSummary)->strategies_for_potential_problems) }}</textarea>
+            {!! $errors->first('strategies_for_potential_problems', '<p class="help-block">:message</p>') !!}
+        </div>
+    </div>
+
+</div>
+<div class="form-group row">
+<div class="col-md-6 row {{ $errors->has('information_given_to_patient') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="information_given_to_patient" class="block">Information Given To Patient</label>
 </div>
@@ -186,7 +231,7 @@
         {!! $errors->first('information_given_to_patient', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('GP_actions') ? 'has-error' : '' }}">
+<div class="col-md-6 row {{ $errors->has('GP_actions') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="GP_actions" class="block">G P Actions (Pls Specify Date)</label>
 </div>
@@ -195,34 +240,19 @@
         {!! $errors->first('GP_actions', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('strategies_for_potential_problems') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="strategies_for_potential_problems" class="block">Strategies For Potential Problems</label>
 </div>
-    <div class="col-md-12">
-        <textarea class="form-control textarea" name="strategies_for_potential_problems" cols="50" rows="10" id="strategies_for_potential_problems" minlength="1" placeholder="Enter strategies for potential problems here...">{{ old('strategies_for_potential_problems', optional($dischargeSummary)->strategies_for_potential_problems) }}</textarea>
-        {!! $errors->first('strategies_for_potential_problems', '<p class="help-block">:message</p>') !!}
+
+<div class="form-group row">
+    <div class="col-md-4 row {{ $errors->has('discharge_destination') ? 'has-error' : '' }}">
+        <div class="col-md-12">
+            <label for="discharge_destination" class="block">Discharge Destination</label>
+        </div>
+        <div class="col-md-12">
+            <input class="form-control" name="discharge_destination" type="text" id="discharge_destination" value="{{ old('discharge_destination', optional($dischargeSummary)->discharge_destination) }}" minlength="1" placeholder="Enter discharge destination here...">
+            {!! $errors->first('discharge_destination', '<p class="help-block">:message</p>') !!}
+        </div>
     </div>
-</div>
-<div class="form-group {{ $errors->has('medication_stopped') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="medication_stopped" class="block">Medication Stopped</label>
-</div>
-    <div class="col-md-12">
-        <select class="form-control" id="medication_stopped" name="medication_stopped">
-        	    <option value="" style="display: none;" {{ old('medication_stopped', optional($dischargeSummary)->medication_stopped ?: '') == '' ? 'selected' : '' }} disabled selected>Select medication stopped</option>
-        	@foreach (['Yes' => 'Yes',
-'No' => 'No'] as $key => $text)
-			    <option value="{{ $key }}" {{ old('medication_stopped', optional($dischargeSummary)->medication_stopped) == $key ? 'selected' : '' }}>
-			    	{{ $text }}
-			    </option>
-			@endforeach
-        </select>
-        
-        {!! $errors->first('medication_stopped', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
-<div class="form-group {{ $errors->has('discharging_doctor_name') ? 'has-error' : '' }}">
+    <div class="col-md-4 row {{ $errors->has('discharging_doctor_name') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="discharging_doctor_name" class="block">Discharging Doctor Name</label>
 </div>
@@ -231,7 +261,7 @@
         {!! $errors->first('discharging_doctor_name', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('bleep_no') ? 'has-error' : '' }}">
+<div class="col-md-4 row {{ $errors->has('bleep_no') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="bleep_no" class="block">Bleep No</label>
 </div>
@@ -239,5 +269,6 @@
         <input class="form-control" name="bleep_no" type="text" id="bleep_no" value="{{ old('bleep_no', optional($dischargeSummary)->bleep_no) }}" minlength="1" placeholder="Enter bleep no here...">
         {!! $errors->first('bleep_no', '<p class="help-block">:message</p>') !!}
     </div>
+</div>
 </div>
 

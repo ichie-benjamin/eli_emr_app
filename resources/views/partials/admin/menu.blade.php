@@ -263,7 +263,7 @@
                     </li>
 
 
-                        <li class="pcoded-hasmenu {{ active(['settings.setting.*','death_causes.death_cause.*','roles.role.*','sliders.slider.*'], 'pcoded-trigger') }} {{ active(['settings.setting.*','death_causes.death_cause.*','roles.role.*','sliders.slider.*']) }}">
+                        <li class="pcoded-hasmenu {{ active(['facilities.facility.*','ethnicities.ethnicity.*','settings.setting.*','death_causes.death_cause.*','roles.role.*','sliders.slider.*'], 'pcoded-trigger') }} {{ active(['settings.setting.*','death_causes.death_cause.*','roles.role.*','sliders.slider.*','facilities.facility.*','ethnicities.ethnicity.*']) }}">
                             <a href="#" class="waves-effect waves-dark">
 <span class="pcoded-micon">
 <i class="fa fa-cog"></i>
@@ -279,6 +279,16 @@
                                 <li class=" {{ active('death_causes.death_cause.*') }} ">
                                     <a href="{{ route('death_causes.death_cause.index') }}" class="waves-effect waves-dark">
                                         <span class="pcoded-mtext">Death Causes</span>
+                                    </a>
+                                </li>
+                                <li class=" {{ active('facilities.facility.*') }} ">
+                                    <a href="{{ route('facilities.facility.index') }}" class="waves-effect waves-dark">
+                                        <span class="pcoded-mtext">Facilities</span>
+                                    </a>
+                                </li>
+                                <li class=" {{ active('ethnicities.ethnicity.*') }} ">
+                                    <a href="{{ route('ethnicities.ethnicity.index') }}" class="waves-effect waves-dark">
+                                        <span class="pcoded-mtext">Ethnicities</span>
                                     </a>
                                 </li>
                                 <li class=" ">
