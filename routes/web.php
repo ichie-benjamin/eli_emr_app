@@ -54,6 +54,37 @@ Route::group([ 'prefix' => 'bt_admin','middleware' => ['auth', 'level:1']], func
             ->where('id', '[0-9]+');
 
     });
+            Route::group(
+        [
+            'prefix' => 'drugs',
+        ], function () {
+
+        Route::get('/', 'DrugsController@index')
+            ->name('drugs.drug.index');
+
+        Route::get('/create','DrugsController@create')
+            ->name('drugs.drug.create');
+
+        Route::get('/show/{drug}','DrugsController@show')
+            ->name('drugs.drug.show')
+            ->where('id', '[0-9]+');
+
+        Route::get('/{drug}/edit','DrugsController@edit')
+            ->name('drugs.drug.edit')
+            ->where('id', '[0-9]+');
+
+        Route::post('/', 'DrugsController@store')
+            ->name('drugs.drug.store');
+
+        Route::put('drug/{drug}', 'DrugsController@update')
+            ->name('drugs.drug.update')
+            ->where('id', '[0-9]+');
+
+        Route::delete('/drug/{drug}','DrugsController@destroy')
+            ->name('drugs.drug.destroy')
+            ->where('id', '[0-9]+');
+
+    });
     Route::get('/my_profile', 'ProfilesController@myProfile')->name('profiles.profile.myprofile');
     Route::get('/coming-soon', 'AdminController@soon')->name('coming');
     Route::get('/patient/create', 'ProfilesController@patientCreate')->name('patients.patient.create');
@@ -455,5 +486,7 @@ Route::group(
          ->where('id', '[0-9]+');
 
 });
+
+
 
 

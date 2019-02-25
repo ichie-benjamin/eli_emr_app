@@ -147,19 +147,19 @@
                     </ul>
                 </li>
 
-                <li class=" pcoded-hasmenu">
+                <li class="{{ active(['drugs.drug.*'], 'pcoded-trigger') }} {{ active(['drugs.drug.*']) }} pcoded-hasmenu">
                     <a href="#" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-arrow-down"></i></span>
                         <span class="pcoded-mtext">Pharmacy</span>
                     </a>
                     <ul class="pcoded-submenu">
-                        <li class=" {{ active(['users.user.create']) }}">
-                            <a href="{{ route('coming') }}" class="waves-effect waves-dark">
-                                <span class="pcoded-mtext">Add Drugs </span>
+                        <li class=" {{ active(['drugs.drug.create']) }}">
+                            <a href="{{ route('drugs.drug.create') }}" class="waves-effect waves-dark">
+                                <span class="pcoded-mtext">Add Drug </span>
                             </a>
                         </li>
-                        <li class=" {{ active(['users.user.create']) }}">
-                            <a href="{{ route('coming') }}" class="waves-effect waves-dark">
+                        <li class=" {{ active(['drugs.drug.index']) }}">
+                            <a href="{{ route('drugs.drug.index') }}" class="waves-effect waves-dark">
                                 <span class="pcoded-mtext">Manage Drugs </span>
                             </a>
                         </li>

@@ -70,5 +70,13 @@
     {
         "model-name": "DeathCause",
         "resource-file": "death_causes.json"
+    },
+    {
+        "model-name": "Drugs",
+        "resource-file": "drugs.json"
+    },
+    {
+        "model-name": "Drug",
+        "resource-file": "drugs.json"
     }
 ]
