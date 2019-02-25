@@ -60,6 +60,7 @@
                                                     <th>First Name</th>
                                                     <th>Last Name</th>
                                                     <th>Email</th>
+                                                    <th>ID Number</th>
                                                     {{--<th>Country</th>--}}
                                                     {{--<th>State</th>--}}
                                                     <th>Phone</th>
@@ -75,6 +76,7 @@
                                                         <td>{{ optional($user->profile)->first_name }}</td>
                                                         <td>{{ optional($user->profile)->last_name }}</td>
                                                         <td>{{ $user->email }}</td>
+                                                        <td>{{ $user->identification_code }}</td>
                                                         {{--<td>{{ optional($user->profile)->country }}</td>--}}
                                                         {{--<td>{{ optional($user->profile)->state }}</td>--}}
                                                         <td>{{ optional($user->profile)->phone }}</td>

@@ -247,55 +247,6 @@
                 <div class="link-box"><a href="contact.html" class="theme-btn normal-link">Request A Quote</a></div>
             </div>
 
-            <div class="row clearfix">
-                <!--Featured Service Column-->
-                <div class="featured-service-column col-md-4 col-sm-6 col-xs-12">
-                    <div class="inner-box wow fadeIn" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="image-box">
-                            <div class="icon-box"><span class="flaticon-first-aid-kit"></span></div>
-                            <figure class="image"><a href="#"><img src="images/resource/featured-image-1.jpg" alt=""></a></figure>
-                            <a href="#" class="theme-btn service-title">Best Record Systems</a>
-                        </div>
-                        <div class="lower-content">
-                            <div class="text">We have a secured record system backed by up to date security structure.</div>
-                            <div class="link-box"><a href="#" class="theme-btn normal-link">Read More</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Featured Service Column-->
-                <div class="featured-service-column col-md-4 col-sm-6 col-xs-12">
-                    <div class="inner-box wow fadeIn" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <div class="image-box">
-                            <div class="icon-box"><span class="flaticon-test-tube-experiment"></span></div>
-                            <figure class="image"><a href="#"><img src="images/resource/featured-image-2.jpg" alt=""></a></figure>
-                            <a href="#" class="theme-btn service-title">Medical Excellence</a>
-                        </div>
-                        <div class="lower-content">
-                            <div class="text">We are known for effective service delivery.</div>
-                            <div class="link-box"><a href="#" class="theme-btn normal-link">Read More</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Featured Service Column-->
-                <div class="featured-service-column col-md-4 col-sm-6 col-xs-12">
-                    <div class="inner-box wow fadeIn" data-wow-delay="600ms" data-wow-duration="1500ms">
-                        <div class="image-box">
-                            <div class="icon-box"><span class="flaticon-monitor"></span></div>
-                            <figure class="image"><a href="#"><img src="images/resource/featured-image-3.jpg" alt=""></a></figure>
-                            <a href="#" class="theme-btn service-title">Latest Technologies</a>
-                        </div>
-                        <div class="lower-content">
-                            <div class="text">We use latest technology across our facility centres.</div>
-                            <div class="link-box"><a href="#" class="theme-btn normal-link">Read More</a></div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
 
         </div>
     </section>
