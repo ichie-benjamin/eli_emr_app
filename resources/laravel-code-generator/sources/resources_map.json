@@ -78,5 +78,9 @@
     {
         "model-name": "Drug",
         "resource-file": "drugs.json"
+    },
+    {
+        "model-name": "DischargeSummary",
+        "resource-file": "discharge_summaries.json"
     }
 ]

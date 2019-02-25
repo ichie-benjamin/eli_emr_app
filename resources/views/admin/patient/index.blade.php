@@ -60,7 +60,7 @@
                                                     <th>First Name</th>
                                                     <th>Last Name</th>
                                                     <th>Email</th>
-                                                    <th>ID Number</th>
+                                                    <th>MRN</th>
                                                     {{--<th>Country</th>--}}
                                                     {{--<th>State</th>--}}
                                                     <th>Phone</th>

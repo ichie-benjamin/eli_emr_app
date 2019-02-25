@@ -490,3 +490,35 @@ Route::group(
 
 
 
+
+Route::group(
+[
+    'prefix' => 'discharge_summaries',
+], function () {
+
+    Route::get('/', 'DischargeSummariesController@index')
+         ->name('discharge_summaries.discharge_summary.index');
+
+    Route::get('/create','DischargeSummariesController@create')
+         ->name('discharge_summaries.discharge_summary.create');
+
+    Route::get('/show/{dischargeSummary}','DischargeSummariesController@show')
+         ->name('discharge_summaries.discharge_summary.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{dischargeSummary}/edit','DischargeSummariesController@edit')
+         ->name('discharge_summaries.discharge_summary.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'DischargeSummariesController@store')
+         ->name('discharge_summaries.discharge_summary.store');
+               
+    Route::put('discharge_summary/{dischargeSummary}', 'DischargeSummariesController@update')
+         ->name('discharge_summaries.discharge_summary.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/discharge_summary/{dischargeSummary}','DischargeSummariesController@destroy')
+         ->name('discharge_summaries.discharge_summary.destroy')
+         ->where('id', '[0-9]+');
+
+});
