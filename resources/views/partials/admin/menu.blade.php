@@ -263,7 +263,7 @@
                     </li>
 
 
-                        <li class="pcoded-hasmenu {{ active(['settings.setting.*','roles.role.*','sliders.slider.*'], 'pcoded-trigger') }} {{ active(['settings.setting.*','roles.role.*','sliders.slider.*']) }}">
+                        <li class="pcoded-hasmenu {{ active(['settings.setting.*','death_causes.death_cause.*','roles.role.*','sliders.slider.*'], 'pcoded-trigger') }} {{ active(['settings.setting.*','death_causes.death_cause.*','roles.role.*','sliders.slider.*']) }}">
                             <a href="#" class="waves-effect waves-dark">
 <span class="pcoded-micon">
 <i class="fa fa-cog"></i>
@@ -271,9 +271,14 @@
                                 <span class="pcoded-mtext">Settings</span>
                             </a>
                             <ul class="pcoded-submenu">
-                                <li class=" ">
+                                <li class="">
                                     <a href="{{ route('coming') }}" class="waves-effect waves-dark">
                                         <span class="pcoded-mtext">All Reports</span>
+                                    </a>
+                                </li>
+                                <li class=" {{ active('death_causes.death_cause.*') }} ">
+                                    <a href="{{ route('death_causes.death_cause.index') }}" class="waves-effect waves-dark">
+                                        <span class="pcoded-mtext">Death Causes</span>
                                     </a>
                                 </li>
                                 <li class=" ">

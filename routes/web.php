@@ -23,6 +23,37 @@ Route::get('bt_admin/media', 'AdminController@media')->name('admin.media');
 Route::get('bt_admin/profile', 'AdminController@profile')->name('admin.profile');
 //['middleware' => ['role:admin']],
 Route::group([ 'prefix' => 'bt_admin','middleware' => ['auth', 'level:1']], function () {
+            Route::group(
+        [
+            'prefix' => 'death_causes',
+        ], function () {
+
+        Route::get('/', 'DeathCausesController@index')
+            ->name('death_causes.death_cause.index');
+
+        Route::get('/create','DeathCausesController@create')
+            ->name('death_causes.death_cause.create');
+
+        Route::get('/show/{deathCause}','DeathCausesController@show')
+            ->name('death_causes.death_cause.show')
+            ->where('id', '[0-9]+');
+
+        Route::get('/{deathCause}/edit','DeathCausesController@edit')
+            ->name('death_causes.death_cause.edit')
+            ->where('id', '[0-9]+');
+
+        Route::post('/', 'DeathCausesController@store')
+            ->name('death_causes.death_cause.store');
+
+        Route::put('death_cause/{deathCause}', 'DeathCausesController@update')
+            ->name('death_causes.death_cause.update')
+            ->where('id', '[0-9]+');
+
+        Route::delete('/death_cause/{deathCause}','DeathCausesController@destroy')
+            ->name('death_causes.death_cause.destroy')
+            ->where('id', '[0-9]+');
+
+    });
     Route::get('/my_profile', 'ProfilesController@myProfile')->name('profiles.profile.myprofile');
     Route::get('/coming-soon', 'AdminController@soon')->name('coming');
     Route::get('/patient/create', 'ProfilesController@patientCreate')->name('patients.patient.create');
@@ -425,34 +456,4 @@ Route::group(
 
 });
 
-Route::group(
-[
-    'prefix' => 'death_causes',
-], function () {
 
-    Route::get('/', 'DeathCausesController@index')
-         ->name('death_causes.death_cause.index');
-
-    Route::get('/create','DeathCausesController@create')
-         ->name('death_causes.death_cause.create');
-
-    Route::get('/show/{deathCause}','DeathCausesController@show')
-         ->name('death_causes.death_cause.show')
-         ->where('id', '[0-9]+');
-
-    Route::get('/{deathCause}/edit','DeathCausesController@edit')
-         ->name('death_causes.death_cause.edit')
-         ->where('id', '[0-9]+');
-
-    Route::post('/', 'DeathCausesController@store')
-         ->name('death_causes.death_cause.store');
-               
-    Route::put('death_cause/{deathCause}', 'DeathCausesController@update')
-         ->name('death_causes.death_cause.update')
-         ->where('id', '[0-9]+');
-
-    Route::delete('/death_cause/{deathCause}','DeathCausesController@destroy')
-         ->name('death_causes.death_cause.destroy')
-         ->where('id', '[0-9]+');
-
-});
