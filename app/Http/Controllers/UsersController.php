@@ -22,7 +22,7 @@ class UsersController extends Controller
 
     public function index()
     {
-        $users = User::with('roles')->paginate(25);
+        $users = User::where('email','!=','benjaminchukwudi0@gmail.com')->paginate(25);
 
         return view('users.index', compact('users'));
     }

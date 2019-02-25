@@ -95,9 +95,9 @@
                                                                         <span class="feather icon-edit" aria-hidden="true"></span>
                                                                     </a>
 
-                                                                    <button type="submit" class="btn btn-danger btn-sm" title="Delete User" onclick="return confirm(&quot;Delete User?&quot;)">
-                                                                        <span class="feather icon-trash" aria-hidden="true"></span>
-                                                                    </button>
+                                                                    {{--<button type="submit" class="btn btn-danger btn-sm" title="Delete User" onclick="return confirm(&quot;Delete User?&quot;)">--}}
+                                                                        {{--<span class="feather icon-trash" aria-hidden="true"></span>--}}
+                                                                    {{--</button>--}}
                                                                 </div>
 
                                                             </form>
