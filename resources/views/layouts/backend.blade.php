@@ -126,6 +126,9 @@
     .form-group .has-error select {
         border-color: red;
     }
+    #home .page-wrapper .card-body {
+        padding-left: 30%;
+    }
 </style>
 
 {{--<script src="https://cloud.tinymce.com/5/tinymce.min.js"></script>--}}
