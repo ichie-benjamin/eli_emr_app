@@ -130,9 +130,9 @@
         padding-left: 30%;
     }
 
-    .pcoded-main-container {
-        background:  #0077be;
-    }
+    /*.pcoded-main-container {*/
+        /*background:  #0077be;*/
+    /*}*/
 
 </style>
 
