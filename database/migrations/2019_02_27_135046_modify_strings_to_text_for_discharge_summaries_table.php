@@ -22,6 +22,7 @@ class ModifyStringsToTextForDischargeSummariesTable extends Migration
             $table->text('relevant_legal_information')->change();
             $table->text('information_given_to_patient')->change();
             $table->text('GP_actions')->change();
+            $table->text('GP_details')->change();
             $table->text('strategies_for_potential_problems')->change();
         });
     }
