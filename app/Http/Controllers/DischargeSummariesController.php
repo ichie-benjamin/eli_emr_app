@@ -44,7 +44,7 @@ class DischargeSummariesController extends Controller
      */
     public function store(Request $request)
     {
-        try {
+//        try {
             
             $data = $this->getData($request);
             
@@ -53,11 +53,11 @@ class DischargeSummariesController extends Controller
             return redirect()->route('discharge_summaries.discharge_summary.index')
                              ->with('success_message', 'Discharge Summary was successfully added!');
 
-        } catch (Exception $exception) {
-
-            return back()->withInput()
-                         ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request!']);
-        }
+//        } catch (Exception $exception) {
+//
+//            return back()->withInput()
+//                         ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request!']);
+//        }
     }
 
     /**
@@ -152,14 +152,14 @@ class DischargeSummariesController extends Controller
             'patient_id' => 'nullable',
             'surname' => 'string|min:1|nullable',
             'forname' => 'string|min:1|nullable',
-            'date_of_birth' => 'date_format:j/n/Y|nullable',
+            'date_of_birth' => 'required',
             'NHS' => 'string|min:1|nullable',
-            'address' => 'string|min:1|nullable',
-            'phone' => 'string|min:1|nullable',
+            'address' => 'required|string',
+            'phone' => 'required|string',
             'discharging_consultant' => 'string|min:1|nullable',
             'discharging_specialty' => 'string|min:1|nullable',
             'method_of_admission' => 'string|min:1|nullable',
-            'date_of_discharge' => 'nullable|date_format:j/n/Y',
+            'date_of_discharge' => 'required',
             'GP_details' => 'string|min:1|nullable',
             'diagnosis_at_discharge' => 'string|min:1|nullable',
             'operation_and_procedures' => 'string|min:1|nullable',

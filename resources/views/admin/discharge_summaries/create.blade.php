@@ -71,9 +71,9 @@
                                             'dischargeSummary' => null,
                                           ])
 
-                <div class="form-group">
+                <div class="form-group row">
                     <div class="col-md-offset-2 col-md-10">
-                        <input class="btn btn-primary" type="submit" value="Add">
+                        <input class="btn btn-primary" type="submit" value="Create Summary">
                     </div>
                 </div>
 

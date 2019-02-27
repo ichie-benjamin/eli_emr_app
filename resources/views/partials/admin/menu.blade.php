@@ -176,9 +176,9 @@
 
                 </li>
 
-                <li class="">
-                    {{--<li class=" {{ active(['patient', 'users/*', 'posts.*', 'pages.contact']) }} pcoded-trigger">--}}
-                    <a href="" class="waves-effect waves-dark">
+                {{--<li class="">--}}
+                    <li class=" {{ active(['discharge_summaries.discharge_summary.*']) }} pcoded-trigger">
+                    <a href="{{ route('discharge_summaries.discharge_summary.index') }}" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-home"></i></span>
                         <span class="pcoded-mtext">Discharge Log</span>
                     </a>

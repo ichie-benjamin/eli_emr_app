@@ -94,18 +94,18 @@
                             <td>{{ $dischargeSummary->NHS }}</td>
                             <td>{{ $dischargeSummary->address }}</td>
                             <td>{{ $dischargeSummary->phone }}</td>
-                            <td>{{ $dischargeSummary->discharging_consultant }}</td>
-                            <td>{{ $dischargeSummary->discharging_specialty }}</td>
+                            <td>{!!  $dischargeSummary->discharging_consultant !!} </td>
+                            <td>{{ $dischargeSummary->discharging_specialty }} </td>
                             <td>{{ $dischargeSummary->method_of_admission }}</td>
                             <td>{{ $dischargeSummary->date_of_discharge }}</td>
-                            <td>{{ $dischargeSummary->GP_details }}</td>
-                            <td>{{ $dischargeSummary->diagnosis_at_discharge }}</td>
-                            <td>{{ $dischargeSummary->relevant_investigation_and_result }}</td>
-                            <td>{{ $dischargeSummary->discharge_destination }}</td>
-                            <td>{{ $dischargeSummary->relevant_legal_information }}</td>
-                            <td>{{ $dischargeSummary->information_given_to_patient }}</td>
-                            <td>{{ $dischargeSummary->GP_actions }}</td>
-                            <td>{{ $dischargeSummary->strategies_for_potential_problems }}</td>
+                            <td>{!! $dischargeSummary->GP_details !!}</td>
+                            <td>{!! $dischargeSummary->diagnosis_at_discharge !!} </td>
+                            <td>{!! $dischargeSummary->relevant_investigation_and_result !!} </td>
+                            <td>{!! $dischargeSummary->discharge_destination !!}</td>
+                            <td>{!! $dischargeSummary->relevant_legal_information !!}</td>
+                            <td>{!! $dischargeSummary->information_given_to_patient !!} </td>
+                            <td>{!! $dischargeSummary->GP_actions !!}</td>
+                            <td>{!! $dischargeSummary->strategies_for_potential_problems !!} </td>
                             <td>{{ $dischargeSummary->discharging_doctor_name }}</td>
                             <td>{{ $dischargeSummary->bleep_no }}</td>
 

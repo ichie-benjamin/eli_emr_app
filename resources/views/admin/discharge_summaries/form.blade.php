@@ -1,20 +1,20 @@
-<div class="form-group {{ $errors->has('patient_id') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="patient_id" class="block">Patient</label>
-</div>
-    <div class="col-md-12">
-        <select class="form-control" id="patient_id" name="patient_id">
-        	    <option value="" style="display: none;" {{ old('patient_id', optional($dischargeSummary)->patient_id ?: '') == '' ? 'selected' : '' }} disabled selected>Select patient</option>
-        	@foreach ($patients as $key => $patient)
-			    <option value="{{ $key }}" {{ old('patient_id', optional($dischargeSummary)->patient_id) == $key ? 'selected' : '' }}>
-			    	{{ $patient }}
-			    </option>
-			@endforeach
-        </select>
-        
-        {!! $errors->first('patient_id', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
+{{--<div class="form-group {{ $errors->has('patient_id') ? 'has-error' : '' }}">--}}
+{{--<div class="col-md-12">--}}
+    {{--<label for="patient_id" class="block">Patient</label>--}}
+{{--</div>--}}
+    {{--<div class="col-md-12">--}}
+        {{--<select class="form-control" id="patient_id" name="patient_id">--}}
+        	    {{--<option value="" style="display: none;" {{ old('patient_id', optional($dischargeSummary)->patient_id ?: '') == '' ? 'selected' : '' }} disabled selected>Select patient</option>--}}
+        	{{--@foreach ($patients as $key => $patient)--}}
+			    {{--<option value="{{ $key }}" {{ old('patient_id', optional($dischargeSummary)->patient_id) == $key ? 'selected' : '' }}>--}}
+			    	{{--{{ $patient }}--}}
+			    {{--</option>--}}
+			{{--@endforeach--}}
+        {{--</select>--}}
+        {{----}}
+        {{--{!! $errors->first('patient_id', '<p class="help-block">:message</p>') !!}--}}
+    {{--</div>--}}
+{{--</div>--}}
 
 <div class="form-group row">
     <div class="col-md-6 row {{ $errors->has('surname') ? 'has-error' : '' }}">
@@ -42,7 +42,7 @@
     <label for="date_of_birth" class="block">Date Of Birth</label>
 </div>
     <div class="col-md-12">
-        <input class="form-control" name="date_of_birth" type="text" id="date_of_birth" value="{{ old('date_of_birth', optional($dischargeSummary)->date_of_birth) }}" placeholder="Enter date of birth here...">
+        <input class="form-control" name="date_of_birth" type="date" id="date_of_birth" value="{{ old('date_of_birth', optional($dischargeSummary)->date_of_birth) }}" placeholder="Enter date of birth here...">
         {!! $errors->first('date_of_birth', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
@@ -106,8 +106,8 @@
         <div class="col-md-12">
             <select class="form-control" id="medication_stopped" name="medication_stopped">
                 <option value="" style="display: none;" {{ old('medication_stopped', optional($dischargeSummary)->medication_stopped ?: '') == '' ? 'selected' : '' }} disabled selected>Select medication stopped</option>
-                @foreach (['Yes' => 'Yes',
-    'No' => 'No'] as $key => $text)
+                @foreach (['Stopped' => 'Stopped',
+    'Changed' => 'Changed'] as $key => $text)
                     <option value="{{ $key }}" {{ old('medication_stopped', optional($dischargeSummary)->medication_stopped) == $key ? 'selected' : '' }}>
                         {{ $text }}
                     </option>
@@ -131,7 +131,7 @@
     <label for="date_of_discharge" class="block">Date Of Discharge</label>
 </div>
     <div class="col-md-12">
-        <input class="form-control" name="date_of_discharge" type="text" id="date_of_discharge" value="{{ old('date_of_discharge', optional($dischargeSummary)->date_of_discharge) }}" placeholder="Enter date of discharge here...">
+        <input class="form-control" name="date_of_discharge" type="date" id="date_of_discharge" value="{{ old('date_of_discharge', optional($dischargeSummary)->date_of_discharge) }}" placeholder="Enter date of discharge here...">
         {!! $errors->first('date_of_discharge', '<p class="help-block">:message</p>') !!}
     </div>
 </div>

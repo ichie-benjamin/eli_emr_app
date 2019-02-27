@@ -89,10 +89,10 @@ class DischargeSummary extends Model
      * @param  string  $value
      * @return void
      */
-    public function setDateOfBirthAttribute($value)
-    {
-        $this->attributes['date_of_birth'] = !empty($value) ? \DateTime::createFromFormat($this->getDateFormat(), $value) : null;
-    }
+//    public function setDateOfBirthAttribute($value)
+//    {
+//        $this->attributes['date_of_birth'] = !empty($value) ? \DateTime::createFromFormat($this->getDateFormat(), $value) : null;
+//    }
 
     /**
      * Set the date_of_discharge.
@@ -111,11 +111,11 @@ class DischargeSummary extends Model
      * @param  string  $value
      * @return array
      */
-    public function getDateOfBirthAttribute($value)
-    {
-        return \DateTime::createFromFormat('j/n/Y', $value);
-
-    }
+//    public function getDateOfBirthAttribute($value)
+//    {
+//        return \DateTime::createFromFormat('j/n/Y', $value);
+//
+//    }
 
     /**
      * Get date_of_discharge in array format
@@ -123,11 +123,11 @@ class DischargeSummary extends Model
      * @param  string  $value
      * @return array
      */
-    public function getDateOfDischargeAttribute($value)
-    {
-        return \DateTime::createFromFormat('j/n/Y', $value);
-
-    }
+//    public function getDateOfDischargeAttribute($value)
+//    {
+//        return \DateTime::createFromFormat('j/n/Y', $value);
+//
+//    }
 
     /**
      * Get deleted_at in array format
@@ -135,10 +135,10 @@ class DischargeSummary extends Model
      * @param  string  $value
      * @return array
      */
-    public function getDeletedAtAttribute($value)
-    {
-        return \DateTime::createFromFormat('j/n/Y g:i A', $value);
-
-    }
+//    public function getDeletedAtAttribute($value)
+//    {
+//        return \DateTime::createFromFormat('j/n/Y g:i A', $value);
+//
+//    }
 
 }
