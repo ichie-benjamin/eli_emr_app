@@ -129,7 +129,9 @@
     #home .page-wrapper .card-body {
         padding-left: 30%;
     }
-
+#home .card {
+    background-color: #09a8f2cf;
+}
     /*.pcoded-main-container {*/
         /*background:  #0077be;*/
     /*}*/
