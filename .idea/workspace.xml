@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7861fb1a-2fb1-484c-8386-186c13a6677e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,26 +42,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/backend.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="648" column="56" selection-start-line="648" selection-start-column="17" selection-end-line="648" selection-end-column="56" />
+            <state relative-caret-position="87">
+              <caret line="134" selection-start-line="134" selection-end-line="139" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="541" lean-forward="true" selection-start-line="541" selection-end-line="541" />
+              <folding>
+                <element signature="e#889#1787#0#PHP" />
+                <element signature="e#935#1786#1#PHP" />
+                <element signature="e#1790#2716#0#PHP" />
+                <element signature="e#1837#2715#1#PHP" />
+                <element signature="e#2719#3561#0#PHP" />
+                <element signature="e#2763#3560#1#PHP" />
+                <element signature="e#3564#4406#0#PHP" />
+                <element signature="e#3608#4405#1#PHP" />
+                <element signature="e#4409#5380#0#PHP" />
+                <element signature="e#4458#5379#1#PHP" />
+                <element signature="e#5383#6539#0#PHP" />
+                <element signature="e#5439#6538#1#PHP" />
+                <element signature="e#6542#7715#0#PHP" />
+                <element signature="e#6593#7714#1#PHP" />
+                <element signature="e#7718#8997#0#PHP" />
+                <element signature="e#7778#8996#1#PHP" />
+                <element signature="e#9000#10083#0#PHP" />
+                <element signature="e#9014#9051#0#PHP" />
+                <element signature="e#10086#11421#0#PHP" />
+                <element signature="e#10148#11420#1#PHP" />
+                <element signature="e#11424#12591#0#PHP" />
+                <element signature="e#11480#12590#1#PHP" />
+                <element signature="e#12594#13804#0#PHP" />
+                <element signature="e#12652#13803#1#PHP" />
+                <element signature="e#13807#14776#0#PHP" />
+                <element signature="e#13856#14775#1#PHP" />
+                <element signature="e#14779#15776#0#PHP" />
+                <element signature="e#14829#15775#1#PHP" />
+                <element signature="e#15779#16961#0#PHP" />
+                <element signature="e#15836#16960#1#PHP" />
+                <element signature="e#16964#18202#0#PHP" />
+                <element signature="e#17023#18201#1#PHP" />
+                <element signature="e#895#1996#0#PHP" />
+                <element signature="e#2010#2926#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="51" column="87" selection-start-line="51" selection-start-column="87" selection-end-line="51" selection-end-column="87" />
+            <state relative-caret-position="122">
+              <caret line="230" column="36" lean-forward="true" selection-start-line="230" selection-start-column="36" selection-end-line="230" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -184,7 +221,6 @@
         <option value="$PROJECT_DIR$/resources/views/admin/drugs/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/drugs/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DrugsController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/drugs/form.blade.php" />
         <option value="$PROJECT_DIR$/resources/laravel-code-generator/sources/discharge_summaries.json" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_25_101217_create_discharge_summaries_table.php" />
@@ -217,8 +253,9 @@
         <option value="$PROJECT_DIR$/app/Models/MaternalMortality.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MaternalMortalitiesController.php" />
         <option value="$PROJECT_DIR$/resources/views/maternal_mortalities/form.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
       </list>
     </option>
   </component>
@@ -578,15 +615,16 @@
       <workItem from="1551151219465" duration="5372000" />
       <workItem from="1551244158741" duration="6916000" />
       <workItem from="1551278558150" duration="9676000" />
-      <workItem from="1551312458695" duration="9909000" />
+      <workItem from="1551312458695" duration="12141000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="274005000" />
+    <option name="totallyTimeSpent" value="276237000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <frame x="0" y="-4" width="1366" height="772" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21601209" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -602,7 +640,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49924472" visible="true" weight="0.21909232" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49924472" visible="true" weight="0.2316119" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007553" side_tool="true" weight="0.26604068" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="12" visible="true" weight="0.3286385" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -992,24 +1030,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="230" column="36" lean-forward="true" selection-start-line="230" selection-start-column="36" selection-end-line="230" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/backend.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
+        <state relative-caret-position="87">
+          <caret line="134" selection-start-line="134" selection-end-line="139" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="648" column="56" selection-start-line="648" selection-start-column="17" selection-end-line="648" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="51" column="87" selection-start-line="51" selection-start-column="87" selection-end-line="51" selection-end-column="87" />
+        <state relative-caret-position="378">
+          <caret line="541" lean-forward="true" selection-start-line="541" selection-end-line="541" />
+          <folding>
+            <element signature="e#889#1787#0#PHP" />
+            <element signature="e#935#1786#1#PHP" />
+            <element signature="e#1790#2716#0#PHP" />
+            <element signature="e#1837#2715#1#PHP" />
+            <element signature="e#2719#3561#0#PHP" />
+            <element signature="e#2763#3560#1#PHP" />
+            <element signature="e#3564#4406#0#PHP" />
+            <element signature="e#3608#4405#1#PHP" />
+            <element signature="e#4409#5380#0#PHP" />
+            <element signature="e#4458#5379#1#PHP" />
+            <element signature="e#5383#6539#0#PHP" />
+            <element signature="e#5439#6538#1#PHP" />
+            <element signature="e#6542#7715#0#PHP" />
+            <element signature="e#6593#7714#1#PHP" />
+            <element signature="e#7718#8997#0#PHP" />
+            <element signature="e#7778#8996#1#PHP" />
+            <element signature="e#9000#10083#0#PHP" />
+            <element signature="e#9014#9051#0#PHP" />
+            <element signature="e#10086#11421#0#PHP" />
+            <element signature="e#10148#11420#1#PHP" />
+            <element signature="e#11424#12591#0#PHP" />
+            <element signature="e#11480#12590#1#PHP" />
+            <element signature="e#12594#13804#0#PHP" />
+            <element signature="e#12652#13803#1#PHP" />
+            <element signature="e#13807#14776#0#PHP" />
+            <element signature="e#13856#14775#1#PHP" />
+            <element signature="e#14779#15776#0#PHP" />
+            <element signature="e#14829#15775#1#PHP" />
+            <element signature="e#15779#16961#0#PHP" />
+            <element signature="e#15836#16960#1#PHP" />
+            <element signature="e#16964#18202#0#PHP" />
+            <element signature="e#17023#18201#1#PHP" />
+            <element signature="e#895#1996#0#PHP" />
+            <element signature="e#2010#2926#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>

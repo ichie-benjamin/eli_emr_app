@@ -133,7 +133,7 @@
     background-color: #09a8f2cf;
 }
     .pcoded-main-container {
-        background-image:  url("/images/bg.jpeg");
+        background-image:  url("/images/bg1.jpg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
