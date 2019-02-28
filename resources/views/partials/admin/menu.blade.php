@@ -56,14 +56,14 @@
                         </li>
                         <li class="{{ active('infant_mortalities.infant_mortality.*') }}">
                             <a href="{{ route('infant_mortalities.infant_mortality.index') }}" class="waves-effect waves-dark">
-                                <span class="pcoded-mtext">Infant mortality rate</span>
+                                <span class="pcoded-mtext">Infant Mortality</span>
                             </a>
                         </li>
-                        <li class="">
-                            <a href="{{ route('coming') }}" class="waves-effect waves-dark">
-                                <span class="pcoded-mtext">General mortality rate</span>
-                            </a>
-                        </li>
+                        {{--<li class="">--}}
+                            {{--<a href="{{ route('coming') }}" class="waves-effect waves-dark">--}}
+                                {{--<span class="pcoded-mtext">General mortality </span>--}}
+                            {{--</a>--}}
+                        {{--</li>--}}
                     </ul>
                 </li>
 

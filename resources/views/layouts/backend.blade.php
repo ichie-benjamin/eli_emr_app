@@ -132,9 +132,12 @@
 #home .card {
     background-color: #09a8f2cf;
 }
-    /*.pcoded-main-container {*/
-        /*background:  #0077be;*/
-    /*}*/
+    .pcoded-main-container {
+        background-image:  url("/images/bg.jpeg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
 </style>
 

@@ -42,7 +42,7 @@
     <label for="date_of_birth" class="block">Date Of Birth</label>
 </div>
     <div class="col-md-12">
-        <input class="form-control" name="date_of_birth" type="date" id="date_of_birth" value="{{ old('date_of_birth', optional($dischargeSummary)->date_of_birth) }}" placeholder="Enter date of birth here...">
+        <input class="form-control" name="date_of_birth" type="datetime-local" id="date_of_birth" value="{{ old('date_of_birth', optional($dischargeSummary)->date_of_birth) }}" placeholder="Enter date of birth here...">
         {!! $errors->first('date_of_birth', '<p class="help-block">:message</p>') !!}
     </div>
 </div>

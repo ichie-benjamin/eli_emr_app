@@ -618,3 +618,35 @@ Route::group(
          ->where('id', '[0-9]+');
 
 });
+
+Route::group(
+[
+    'prefix' => 'maternal_mortalities',
+], function () {
+
+    Route::get('/', 'MaternalMortalitiesController@index')
+         ->name('maternal_mortalities.maternal_mortality.index');
+
+    Route::get('/create','MaternalMortalitiesController@create')
+         ->name('maternal_mortalities.maternal_mortality.create');
+
+    Route::get('/show/{maternalMortality}','MaternalMortalitiesController@show')
+         ->name('maternal_mortalities.maternal_mortality.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{maternalMortality}/edit','MaternalMortalitiesController@edit')
+         ->name('maternal_mortalities.maternal_mortality.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'MaternalMortalitiesController@store')
+         ->name('maternal_mortalities.maternal_mortality.store');
+               
+    Route::put('maternal_mortality/{maternalMortality}', 'MaternalMortalitiesController@update')
+         ->name('maternal_mortalities.maternal_mortality.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/maternal_mortality/{maternalMortality}','MaternalMortalitiesController@destroy')
+         ->name('maternal_mortalities.maternal_mortality.destroy')
+         ->where('id', '[0-9]+');
+
+});
