@@ -49,8 +49,8 @@
                         <span class="pcoded-mtext">Mortality Rate</span>
                     </a>
                     <ul class="pcoded-submenu">
-                        <li class="{{ active('patients.patient.create') }}">
-                            <a href="{{ route('coming') }}" class="waves-effect waves-dark">
+                        <li class="{{ active('maternal_mortalities.maternal_mortality.*') }}">
+                            <a href="{{ route('maternal_mortalities.maternal_mortality.index') }}" class="waves-effect waves-dark">
                                 <span class="pcoded-mtext">Maternal Mortality</span>
                             </a>
                         </li>

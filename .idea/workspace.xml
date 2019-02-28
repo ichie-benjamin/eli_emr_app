@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7861fb1a-2fb1-484c-8386-186c13a6677e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/system/migration_tracker.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/system/migration_tracker.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/discharge_summaries/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/discharge_summaries/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/infant_mortalities/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/infant_mortalities/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,15 +30,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_28_083107_create_maternal_mortalities_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/maternal_mortalities/form.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-105">
@@ -53,11 +38,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/backend.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="137" column="36" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
+            <state relative-caret-position="225">
+              <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="648" column="56" selection-start-line="648" selection-start-column="17" selection-end-line="648" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="51" column="87" selection-start-line="51" selection-start-column="87" selection-end-line="51" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -111,18 +114,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="50">
               <caret line="111" column="214" selection-start-line="111" selection-start-column="214" selection-end-line="111" selection-end-column="214" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/discharge_summaries/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="42" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#3959#0#Blade" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -218,7 +209,6 @@
         <option value="$PROJECT_DIR$/resources/views/admin/discharge_summaries/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/DischargeSummary.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_27_135046_modify_strings_to_text_for_discharge_summaries_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/discharge_summaries/form.blade.php" />
         <option value="$PROJECT_DIR$/resources/laravel-code-generator/sources/maternal_mortalities.json" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_28_083107_create_maternal_mortalities_table.php" />
@@ -228,6 +218,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/MaternalMortalitiesController.php" />
         <option value="$PROJECT_DIR$/resources/views/maternal_mortalities/form.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php" />
       </list>
     </option>
   </component>
@@ -587,18 +578,17 @@
       <workItem from="1551151219465" duration="5372000" />
       <workItem from="1551244158741" duration="6916000" />
       <workItem from="1551278558150" duration="9676000" />
-      <workItem from="1551312458695" duration="9424000" />
+      <workItem from="1551312458695" duration="9909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273520000" />
+    <option name="totallyTimeSpent" value="274005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21601209" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21601209" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -612,7 +602,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924472" visible="true" weight="0.21909232" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49924472" visible="true" weight="0.21909232" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007553" side_tool="true" weight="0.26604068" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="12" visible="true" weight="0.3286385" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -877,20 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11270">
-          <caret line="499" column="60" selection-start-line="499" selection-start-column="17" selection-end-line="499" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1426">
-          <caret line="62" column="100" selection-start-line="62" selection-start-column="100" selection-end-line="62" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/discharge_summaries/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2461">
@@ -1018,8 +994,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/backend.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="137" column="36" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
+        <state relative-caret-position="225">
+          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="648" column="56" selection-start-line="648" selection-start-column="17" selection-end-line="648" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="51" column="87" selection-start-line="51" selection-start-column="87" selection-end-line="51" selection-end-column="87" />
         </state>
       </provider>
     </entry>
