@@ -1,6 +1,7 @@
 @extends('layouts.front-end')
 
 @section('content')
+
     <!--Main Slider-->
     <section class="main-slider">
 
@@ -8,8 +9,8 @@
             <div class="tp-banner">
                 <ul>
 
-                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/1.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
-                        <img src="images/main-slider/1.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/1.png"  data-saveperformance="off"  data-title="Awesome Title Here">
+                        <img src="images/main-slider/1.png"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                         <div class="tp-caption sfl sfb tp-resizeme"
                              data-x="left" data-hoffset="15"
@@ -66,8 +67,8 @@
 
                     </li>
 
-                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/2.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
-                        <img src="images/main-slider/2.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/2.png"  data-saveperformance="off"  data-title="Awesome Title Here">
+                        <img src="images/main-slider/2.png"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                         <div class="tp-caption sft sfb tp-resizeme"
                              data-x="right" data-hoffset="-137"
@@ -124,8 +125,8 @@
 
                     </>
 
-                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/3.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
-                        <img src="images/main-slider/3.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/3.png"  data-saveperformance="off"  data-title="Awesome Title Here">
+                        <img src="images/main-slider/3.png"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                         <div class="tp-caption sft sfb tp-resizeme"
                              data-x="right" data-hoffset="-55"
@@ -182,7 +183,7 @@
     <section class="call-to-action home-one">
         <div class="container-fluid">
             <div class="clearfix">
-                <div class="call-to-action-corner col-md-4" style="background-image: url(images/call-to-action/left-box-bg.jpg);">
+                <div class="call-to-action-corner col-md-6" style="background-image: url(images/call-to-action/left-box-bg.jpg);">
                     <div class="single-call-to-action open-hours">
                         <div class="icon-box">
                             <div class="inner-box">
@@ -199,7 +200,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="call-to-action-center col-md-4" style="background-image: url(images/call-to-action/center-box-bg.jpg);">
+                <div class="call-to-action-center col-md-6" style="background-image: url(images/call-to-action/center-box-bg.jpg);">
                     <div class="single-call-to-action">
                         <div class="icon-box">
                             <div class="inner-box">
@@ -213,19 +214,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="call-to-action-corner col-md-4" style="background-image: url(images/call-to-action/right-box-bg.jpg);">
-                    <div class="single-call-to-action">
-                        <div class="icon-box">
-                            <div class="inner-box">
-                                <i class="flaticon-speech-bubble"></i>
-                            </div>
-                        </div>
-                        <div class="content-box">
-                            <h3>ONLINE BILL SYSTEM</h3>
-                            <p>There are many variations of lorem <br>passagei of Lorem Ipsum availabl <br> but the majority have </p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -244,8 +233,8 @@
                 </div>
 
                 <div class="text">Eli Health System (EHS) is an emerging community global healthcare organization founded on the need to serve vulnerable populations through primary care in high-risk disease burden countries in Sub-Sahara Africa. EHS provides essential health services (EHS) in both outpatient and inpatient care, emergency service, treatment and prevention of infectious disease (Hepatitis B,C, HIV/AIDS and TB), Chronic disease, infant and maternal care, reproductive health, disability care, prescription drugs, preventive services, vaccination programs, and mental health that are indicative of improving population health. EHS has a priority to make healthcare coverage a universal right.</div>
-                <div class="link-box"><a href="contact.html" class="theme-btn normal-link">Request A Quote</a></div>
             </div>
+
 
 
         </div>
@@ -274,7 +263,7 @@
                         <div class="content">
                             <h3>Medical History</h3>
                             <p>This unit is responsible for all  <br>Patient Medical History.
-                                <a href="service-details.html">Read More</a>
+                                <!-- <a href="service-details.html">Read More</a> -->
                         </div>
                     </div>
                 </div>
@@ -288,7 +277,7 @@
                         <div class="content">
                             <h3>Doctor's Report</h3>
                             <p>Efficient Doctor's are on <br> ground to work on patient history reports </p>
-                            <a href="service-details.html">Read More</a>
+                            <!-- <a href="service-details.html">Read More</a> -->
                         </div>
                     </div>
                 </div>
@@ -302,7 +291,7 @@
                         <div class="content">
                             <h3>Nurses</h3>
                             <p>Our Nurses provide adequate care for patients <br> and provide rapid response. </p>
-                            <a href="service-details.html">Read More</a>
+                            <!-- <a href="service-details.html">Read More</a> -->
                         </div>
                     </div>
                 </div>
@@ -316,7 +305,7 @@
                         <div class="content">
                             <h3>Database Administrators</h3>
                             <p>As a way of providing support, <br>our database unit is available with database backend support.</p>
-                            <a href="service-details.html">Read More</a>
+                            <!-- <a href="service-details.html">Read More</a> -->
                         </div>
                     </div>
                 </div>
@@ -426,5 +415,7 @@
             </div>
         </div>
     </section>
+
+
 
 @endsection

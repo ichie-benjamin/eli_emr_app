@@ -108,10 +108,10 @@
 
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li class="current dropdown"><a href="{{ route('home') }}">Home</a>
+                                <li class="{{ active(['home'], 'current') }}"><a href="{{ route('home') }}">Home</a>
 
                                 </li>
-                                <li class="dropdown"><a href="about.html">About Us</a>
+                                <li class="dropdown"><a href="">About Us</a>
 
                                 </li>
                                 <li class="dropdown"><a href="#">Patient Management</a>
@@ -136,7 +136,7 @@
                                     </ul>
                                 </li>
 
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li class="{{ active(['contact'], 'current') }}"><a href="{{ url('contact') }}">Contact Us</a></li>
                                 @guest
                                     {{--<li class="dropdown"><a href="#">Account</a>--}}
                                         {{--<ul>--}}
