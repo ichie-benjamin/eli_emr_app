@@ -209,7 +209,7 @@
                         <div class="content-box">
                             <h3>Appointment</h3>
                             <p>Appointment are available, call us <br> today or book a appoinment</p>
-                            <a href="contact.html" class="thm-btn inverse">Book Now</a>
+                            <a href="{{ url('contact') }}" class="thm-btn inverse">Book Now</a>
                         </div>
                     </div>
                 </div>
