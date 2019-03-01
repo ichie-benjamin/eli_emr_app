@@ -49,7 +49,7 @@
                              data-elementdelay="0.01"
                              data-endelementdelay="0.3"
                              data-endspeed="1200"
-                             data-endeasing="Power4.easeIn"><a href="contact.html" class="theme-btn btn-style-two">contact us</a></div>
+                             data-endeasing="Power4.easeIn"><a href="/contact" class="theme-btn btn-style-two">contact us</a></div>
 
                         <div class="tp-caption sfr sfb tp-resizeme"
                              data-x="left" data-hoffset="180"
@@ -210,7 +210,7 @@
                         <div class="content-box">
                             <h3>Appointment</h3>
                             <p>Appointment are available, call us <br> today or book a appoinment</p>
-                            <a href="contact.html" class="thm-btn inverse">Book Now</a>
+                            <a href="{{ url('contact') }}" class="thm-btn inverse">Book Now</a>
                         </div>
                     </div>
                 </div>

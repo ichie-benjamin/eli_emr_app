@@ -225,7 +225,7 @@
 
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="{{ url('contact') }}">Contact Us</a></li>
                                 @guest
                                 <li class="dropdown"><a href="#">Account</a>
                                     <ul>
