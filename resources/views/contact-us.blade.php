@@ -32,7 +32,7 @@
                 <div class="info-box">
                     <div class="upper-content">
                         <h3>Feel Free to contact us</h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ullam tempore ratione distinctio ex omnis. <br>consectetur ipsum dolor sit amet, consectetur adipisicing elit. Quos ut, repudiandae iusto!</div>
+                        {{-- <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ullam tempore ratione distinctio ex omnis. <br>consectetur ipsum dolor sit amet, consectetur adipisicing elit. Quos ut, repudiandae iusto!</div> --}}
                     </div>
 
                     <div class="default-form">
