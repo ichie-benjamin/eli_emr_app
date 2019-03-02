@@ -62,8 +62,8 @@
                             <div class="icon-box"><span class="flaticon-placeholder"></span></div>
                             <ul>
                                 <li><strong>Our Location</strong></li>
-                                <li>Charlottesville, Va 22903</li>
-                                <li>Lofa County Republic of Liberia</li>
+                                <li>Parker paint junction,</li>
+                                <li> Paynesville City, Monrovia, Liberia</li>
 
                             </ul>
                         </div>
