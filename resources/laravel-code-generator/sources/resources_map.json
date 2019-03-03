@@ -94,5 +94,9 @@
     {
         "model-name": "InfantMortality",
         "resource-file": "infant_mortalities.json"
+    },
+    {
+        "model-name": "DiseaseReport",
+        "resource-file": "disease_reports.json"
     }
 ]

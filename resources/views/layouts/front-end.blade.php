@@ -62,8 +62,8 @@
                             <div class="icon-box"><span class="flaticon-placeholder"></span></div>
                             <ul>
                                 <li><strong>Our Location</strong></li>
-                                <li>Parker paint junction,</li>
-                                <li> Paynesville City, Monrovia, Liberia</li>
+                                <li>Charlottesville, Va 22903, USA</li>
+                                <li>Parker paint junction, Paynesville City, Monrovia, Liberia</li>
 
                             </ul>
                         </div>
@@ -80,7 +80,7 @@
                         <!--Info Box-->
                         <div class="upper-column info-box">
                             <div class="link-btn">
-                                <a href="#" class="theme-btn btn-style-one">get a quote</a>
+                                {{--<a href="#" class="theme-btn btn-style-one">get a quote</a>--}}
                             </div>
                         </div>
 
