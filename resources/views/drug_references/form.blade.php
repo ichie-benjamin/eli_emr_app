@@ -14,7 +14,7 @@
             <label for="unit" class="block">Unit</label>
         </div>
         <div class="col-md-12">
-            <input class="form-control" name="unit" type="number" id="unit" value="{{ old('unit', optional($drugReference)->unit) }}" minlength="1" placeholder="Enter unit here...">
+            <input class="form-control" name="unit" type="text" id="unit" value="{{ old('unit', optional($drugReference)->unit) }}" minlength="1" placeholder="Enter unit here...">
             {!! $errors->first('unit', '<p class="help-block">:message</p>') !!}
         </div>
     </div>
