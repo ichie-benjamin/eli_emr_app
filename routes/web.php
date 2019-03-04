@@ -682,3 +682,35 @@ Route::group(
          ->where('id', '[0-9]+');
 
 });
+
+Route::group(
+[
+    'prefix' => 'drug_references',
+], function () {
+
+    Route::get('/', 'DrugReferencesController@index')
+         ->name('drug_references.drug_reference.index');
+
+    Route::get('/create','DrugReferencesController@create')
+         ->name('drug_references.drug_reference.create');
+
+    Route::get('/show/{drugReference}','DrugReferencesController@show')
+         ->name('drug_references.drug_reference.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{drugReference}/edit','DrugReferencesController@edit')
+         ->name('drug_references.drug_reference.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'DrugReferencesController@store')
+         ->name('drug_references.drug_reference.store');
+               
+    Route::put('drug_reference/{drugReference}', 'DrugReferencesController@update')
+         ->name('drug_references.drug_reference.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/drug_reference/{drugReference}','DrugReferencesController@destroy')
+         ->name('drug_references.drug_reference.destroy')
+         ->where('id', '[0-9]+');
+
+});
