@@ -108,7 +108,7 @@
 
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li class="{{ active(['home'], 'current') }}"><a href="{{ route('home') }}">Home</a>
+                                <li class="{{ active(['home','/'], 'current') }}"><a href="{{ url('/') }}">Home</a>
 
                                 </li>
                                 <li class="dropdown"><a href="">About Us</a>

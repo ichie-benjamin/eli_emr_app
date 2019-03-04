@@ -15,7 +15,7 @@
             <div class="pull-left"><h3>Contact Us</h3></div>
             <div class="pull-right">
                 <ul class="bread-crumb clearfix">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="{{ url('/') }}">Home</a></li>
                     <li>Contact Us</li>
                 </ul>
             </div>
@@ -36,7 +36,7 @@
                     </div>
 
                     <div class="default-form">
-                        <form method="post" action="http://world5.commonsupport.com/html2/HealthEra/contact.html" id="contact-form">
+                        <form method="post" action="" id="contact-form">
                             <div class="row clearfix">
 
                                 <div class="col-md-6 col-sm-6 col-xs-12">
@@ -63,7 +63,7 @@
                                         <textarea name="message" placeholder="Your Requirement" required></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="theme-btn btn-style-one">send Message</button>
+                                        <button type="button" class="theme-btn btn-style-one">send Message</button>
                                     </div>
                                 </div>
 

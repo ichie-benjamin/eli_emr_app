@@ -48,7 +48,7 @@
                              data-elementdelay="0.01"
                              data-endelementdelay="0.3"
                              data-endspeed="1200"
-                             data-endeasing="Power4.easeIn"><a href="contact.html" class="theme-btn btn-style-two">contact us</a></div>
+                             data-endeasing="Power4.easeIn"><a href="{{ url('contact') }}" class="theme-btn btn-style-two">contact us</a></div>
 
                         <div class="tp-caption sfr sfb tp-resizeme"
                              data-x="left" data-hoffset="180"
