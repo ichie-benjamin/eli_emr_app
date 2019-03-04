@@ -59,27 +59,27 @@
                     <table class="table table-striped" id="datatable">
                         <thead>
                         <tr>
-                                                        <th>Patient</th>
+                                                        {{--<th>Patient</th>--}}
                             <th>Surname</th>
                             <th>Forname</th>
                             <th>Date Of Birth</th>
                             <th>N H S</th>
                             <th>Address</th>
                             <th>Phone</th>
-                            <th>Discharging Consultant</th>
-                            <th>Discharging Specialty</th>
-                            <th>Method Of Admission</th>
-                            <th>Date Of Discharge</th>
-                            <th>G P Details</th>
-                            <th>Diagnosis At Discharge</th>
-                            <th>Relevant Investigation And Result</th>
-                            <th>Discharge Destination</th>
-                            <th>Relevant Legal Information</th>
-                            <th>Information Given To Patient</th>
-                            <th>G P Actions (Pls Specify Date)</th>
-                            <th>Strategies For Potential Problems</th>
-                            <th>Discharging Doctor Name</th>
-                            <th>Bleep No</th>
+                            {{--<th>Discharging Consultant</th>--}}
+                            {{--<th>Discharging Specialty</th>--}}
+                            {{--<th>Method Of Admission</th>--}}
+                            {{--<th>Date Of Discharge</th>--}}
+                            {{--<th>G P Details</th>--}}
+                            {{--<th>Diagnosis At Discharge</th>--}}
+                            {{--<th>Relevant Investigation And Result</th>--}}
+                            {{--<th>Discharge Destination</th>--}}
+                            {{--<th>Relevant Legal Information</th>--}}
+                            {{--<th>Information Given To Patient</th>--}}
+                            {{--<th>G P Actions (Pls Specify Date)</th>--}}
+                            {{--<th>Strategies For Potential Problems</th>--}}
+                            {{--<th>Discharging Doctor Name</th>--}}
+                            {{--<th>Bleep No</th>--}}
 
                             <th></th>
                         </tr>
@@ -87,27 +87,27 @@
                         <tbody>
                         @foreach($dischargeSummaries as $dischargeSummary)
                             <tr>
-                                                            <td>{{ optional($dischargeSummary->patient)->id }}</td>
+{{--                                                            <td>{{ optional($dischargeSummary->patient)->id }}</td>--}}
                             <td>{{ $dischargeSummary->surname }}</td>
                             <td>{{ $dischargeSummary->forname }}</td>
                             <td>{{ $dischargeSummary->date_of_birth }}</td>
                             <td>{{ $dischargeSummary->NHS }}</td>
                             <td>{{ $dischargeSummary->address }}</td>
                             <td>{{ $dischargeSummary->phone }}</td>
-                            <td>{!!  $dischargeSummary->discharging_consultant !!} </td>
-                            <td>{{ $dischargeSummary->discharging_specialty }} </td>
-                            <td>{{ $dischargeSummary->method_of_admission }}</td>
-                            <td>{{ $dischargeSummary->date_of_discharge }}</td>
-                            <td>{!! $dischargeSummary->GP_details !!}</td>
-                            <td>{!! $dischargeSummary->diagnosis_at_discharge !!} </td>
-                            <td>{!! $dischargeSummary->relevant_investigation_and_result !!} </td>
-                            <td>{!! $dischargeSummary->discharge_destination !!}</td>
-                            <td>{!! $dischargeSummary->relevant_legal_information !!}</td>
-                            <td>{!! $dischargeSummary->information_given_to_patient !!} </td>
-                            <td>{!! $dischargeSummary->GP_actions !!}</td>
-                            <td>{!! $dischargeSummary->strategies_for_potential_problems !!} </td>
-                            <td>{{ $dischargeSummary->discharging_doctor_name }}</td>
-                            <td>{{ $dischargeSummary->bleep_no }}</td>
+                            {{--<td>{!!  $dischargeSummary->discharging_consultant !!} </td>--}}
+                            {{--<td>{{ $dischargeSummary->discharging_specialty }} </td>--}}
+                            {{--<td>{{ $dischargeSummary->method_of_admission }}</td>--}}
+                            {{--<td>{{ $dischargeSummary->date_of_discharge }}</td>--}}
+                            {{--<td>{!! $dischargeSummary->GP_details !!}</td>--}}
+                            {{--<td>{!! $dischargeSummary->diagnosis_at_discharge !!} </td>--}}
+                            {{--<td>{!! $dischargeSummary->relevant_investigation_and_result !!} </td>--}}
+                            {{--<td>{!! $dischargeSummary->discharge_destination !!}</td>--}}
+                            {{--<td>{!! $dischargeSummary->relevant_legal_information !!}</td>--}}
+                            {{--<td>{!! $dischargeSummary->information_given_to_patient !!} </td>--}}
+                            {{--<td>{!! $dischargeSummary->GP_actions !!}</td>--}}
+                            {{--<td>{!! $dischargeSummary->strategies_for_potential_problems !!} </td>--}}
+                            {{--<td>{{ $dischargeSummary->discharging_doctor_name }}</td>--}}
+                            {{--<td>{{ $dischargeSummary->bleep_no }}</td>--}}
 
                                 <td>
 

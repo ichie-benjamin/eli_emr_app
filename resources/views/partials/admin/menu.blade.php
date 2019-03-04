@@ -176,8 +176,8 @@
 
                 </li>
 
-                {{--<li class="">--}}
-                    <li class=" {{ active(['discharge_summaries.discharge_summary.*']) }} pcoded-trigger">
+                <li class="">
+                    {{--<li class=" {{ active(['discharge_summaries.discharge_summary.*']) }} pcoded-trigger">--}}
                     <a href="{{ route('discharge_summaries.discharge_summary.index') }}" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-home"></i></span>
                         <span class="pcoded-mtext">Discharge Log</span>
@@ -186,14 +186,14 @@
                 </li>
 
 
-                <li class="pcoded-hasmenu ">
+                <li class="pcoded-hasmenu {{ active(['disease_reports.disease_report.*'])}} {{ active(['disease_reports.disease_report.*'], 'pcoded-trigger') }} pcoded-trigger">
                     <a href="#" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span>
                         <span class="pcoded-mtext">Doctors Service</span>
                     </a>
                     <ul class="pcoded-submenu">
-                        <li class="active pcoded-hasmenu">
-                            <a href="{{ route('coming') }}" class="waves-effect waves-dark">
+                        <li class=" pcoded-hasmenu">
+                            <a href="#" class="waves-effect waves-dark">
                                 <span class="pcoded-mtext">Patient Report</span>
                             </a>
                             <ul class="pcoded-submenu">
@@ -205,6 +205,15 @@
 
 
                             </ul>
+                        </li>
+
+                        <li class="{{ active('disease_reports.disease_report.*') }}">
+                            {{--<li class=" {{ active(['patient', 'users/*', 'posts.*', 'pages.contact']) }} pcoded-trigger">--}}
+                            <a href="{{ route('disease_reports.disease_report.index') }}" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                                <span class="pcoded-mtext">Disease Reports</span>
+                            </a>
+
                         </li>
 
 

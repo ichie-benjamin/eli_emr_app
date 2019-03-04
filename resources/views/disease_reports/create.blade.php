@@ -10,7 +10,7 @@
                     <div class="page-header-title pull-left">
                         <i class="feather icon-plus bg-c-blue"></i>
                         <div class="d-inline">
-                            <h4 class="mt-5 mb-5">Add New Ethnicity</h4>
+                            <h4 class="mt-5 mb-5">Add New Disease Report</h4>
                         </div>
                     </div>
                 </div>
@@ -18,7 +18,7 @@
                     <div class="page-header-breadcrumb">
                         <ul class=" breadcrumb breadcrumb-title">
                             <li class="breadcrumb-item">
-                                <a href="{{ route('ethnicities.ethnicity.index') }}" class="btn btn-primary" title="Show All Ethnicity">
+                                <a href="{{ route('disease_reports.disease_report.index') }}" class="btn btn-primary" title="Show All Disease Report">
                                     <span class="feather icon-list" aria-hidden="true"></span>
                                 </a>
                             </li>
@@ -34,9 +34,12 @@
             <div class="main-body">
                 <div class="page-wrapper">
                     <div class="page-body">
-
-                        <div class="row">
-                            <div class="col-md-12 col-xl-12">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="row">
+                                    <div class="col-md-12 col-xl-12">
+                                        <div id="wizard">
+                                            <section>
 
             @if ($errors->any())
                 <ul class="alert alert-danger">
@@ -46,10 +49,10 @@
                 </ul>
             @endif
 
-            <form method="POST" action="{{ route('ethnicities.ethnicity.store') }}" accept-charset="UTF-8" id="create_ethnicity_form" name="create_ethnicity_form" class="form-horizontal">
+            <form method="POST" action="{{ route('disease_reports.disease_report.store') }}" accept-charset="UTF-8" id="create_disease_report_form" name="create_disease_report_form" class="form-horizontal">
                 {{ csrf_field() }}
-                @include ('ethnicities.form', [
-                                            'ethnicity' => null,
+                @include ('disease_reports.form', [
+                                            'diseaseReport' => null,
                                           ])
 
                 <div class="form-group">
@@ -59,6 +62,10 @@
                 </div>
 
             </form>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

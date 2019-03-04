@@ -650,3 +650,35 @@ Route::group([ 'prefix' => 'bt_admin','middleware' => ['auth', 'level:1']], func
 
 });
 });
+
+Route::group(
+[
+    'prefix' => 'disease_reports',
+], function () {
+
+    Route::get('/', 'DiseaseReportsController@index')
+         ->name('disease_reports.disease_report.index');
+
+    Route::get('/create','DiseaseReportsController@create')
+         ->name('disease_reports.disease_report.create');
+
+    Route::get('/show/{diseaseReport}','DiseaseReportsController@show')
+         ->name('disease_reports.disease_report.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{diseaseReport}/edit','DiseaseReportsController@edit')
+         ->name('disease_reports.disease_report.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'DiseaseReportsController@store')
+         ->name('disease_reports.disease_report.store');
+               
+    Route::put('disease_report/{diseaseReport}', 'DiseaseReportsController@update')
+         ->name('disease_reports.disease_report.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/disease_report/{diseaseReport}','DiseaseReportsController@destroy')
+         ->name('disease_reports.disease_report.destroy')
+         ->where('id', '[0-9]+');
+
+});
