@@ -13,17 +13,17 @@
         <div class="col-md-12">
             <label for="unit" class="block">Unit</label>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 ">
             <input class="form-control" name="unit" type="text" id="unit" value="{{ old('unit', optional($drugReference)->unit) }}" minlength="1" placeholder="Enter unit here...">
             {!! $errors->first('unit', '<p class="help-block">:message</p>') !!}
         </div>
     </div>
-    <div class="col-md-6 row {{ $errors->has('quantity') ? 'has-error' : '' }}">
-        <div class="col-md-12">
+    <div class="col-md-6 {{ $errors->has('quantity') ? 'has-error' : '' }}">
+        <div class="col-md-12 row">
             <label for="quantity" class="block">Quantity</label>
         </div>
         <div class="col-md-12">
-            <input class="form-control" name="quantity" type="number" id="quantity" value="{{ old('quantity', optional($drugReference)->quantity) }}" minlength="1" placeholder="Enter quantity here...">
+            <input class="form-control" name="quantity" type="text" id="quantity" value="{{ old('quantity', optional($drugReference)->quantity) }}" minlength="1" placeholder="Enter quantity here...">
             {!! $errors->first('quantity', '<p class="help-block">:message</p>') !!}
         </div>
     </div>
