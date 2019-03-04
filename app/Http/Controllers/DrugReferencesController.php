@@ -43,7 +43,7 @@ class DrugReferencesController extends Controller
      */
     public function store(Request $request)
     {
-        try {
+//        try {
             
             $data = $this->getData($request);
             
@@ -52,11 +52,11 @@ class DrugReferencesController extends Controller
             return redirect()->route('drug_references.drug_reference.index')
                              ->with('success_message', 'Drug Reference was successfully added!');
 
-        } catch (Exception $exception) {
-
-            return back()->withInput()
-                         ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request!']);
-        }
+//        } catch (Exception $exception) {
+//
+//            return back()->withInput()
+//                         ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request!']);
+//        }
     }
 
     /**
@@ -151,7 +151,7 @@ class DrugReferencesController extends Controller
             'name' => 'string|min:1|max:255|nullable',
             'unit' => 'string|min:1|nullable',
             'quantity' => 'string|min:1|nullable',
-            'wholesale_price' => 'string|min:1|nullable',
+            'description' => 'string|min:1|nullable',
      
         ];
         

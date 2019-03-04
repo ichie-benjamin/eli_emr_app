@@ -35,7 +35,7 @@ class DrugReference extends Model
                   'name',
                   'unit',
                   'quantity',
-                  'wholesale_price'
+                  'description'
               ];
 
     /**

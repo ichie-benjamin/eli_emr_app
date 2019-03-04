@@ -30,13 +30,12 @@
 </div>
 
 
-<div class="form-group {{ $errors->has('wholesale_price') ? 'has-error' : '' }}">
+<div class="form-group {{ $errors->has('description') ? 'has-error' : '' }}">
 <div class="col-md-12">
-    <label for="wholesale_price" class="block">Wholesale Price</label>
+    <label for="description" class="block">Description</label>
 </div>
     <div class="col-md-12">
-        <input class="form-control" name="wholesale_price" type="text" id="wholesale_price" value="{{ old('wholesale_price', optional($drugReference)->wholesale_price) }}" minlength="1" placeholder="Enter wholesale price here...">
-        {!! $errors->first('wholesale_price', '<p class="help-block">:message</p>') !!}
+        <textarea class="form-control" name="description" id="description" minlength="1" placeholder="Enter description price here...">{{ old('description', optional($drugReference)->description) }}</textarea>
     </div>
 </div>
 

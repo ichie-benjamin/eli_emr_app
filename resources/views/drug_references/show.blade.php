@@ -50,8 +50,8 @@
             <dd>{{ $drugReference->unit }}</dd>
             <dt>Quantity</dt>
             <dd>{{ $drugReference->quantity }}</dd>
-            <dt>Wholesale Price</dt>
-            <dd>{{ $drugReference->wholesale_price }}</dd>
+            <dt>Description</dt>
+            <dd>{{ $drugReference->description }}</dd>
 
             </dl>
                                     <form method="POST" action="{!! route('drug_references.drug_reference.destroy', $drugReference->id) !!}" accept-charset="UTF-8">

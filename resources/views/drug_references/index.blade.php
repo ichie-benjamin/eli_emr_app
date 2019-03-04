@@ -62,7 +62,7 @@
                                                         <th>Name</th>
                             <th>Unit</th>
                             <th>Quantity</th>
-                            <th>Wholesale Price</th>
+                            <th>Description</th>
 
                             <th></th>
                         </tr>
@@ -73,7 +73,7 @@
                                                             <td>{{ $drugReference->name }}</td>
                             <td>{{ $drugReference->unit }}</td>
                             <td>{{ $drugReference->quantity }}</td>
-                            <td>{{ $drugReference->wholesale_price }}</td>
+                            <td>{{ $drugReference->description }}</td>
 
                                 <td>
 
