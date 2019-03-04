@@ -63,15 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/drug_references/form.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="34" column="62" lean-forward="true" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
-              <folding>
-                <element signature="n#div#0;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#!!top" />
-              </folding>
+            <state relative-caret-position="267">
+              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -97,13 +93,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DrugReferencesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+            <state relative-caret-position="115">
+              <caret line="151" column="32" selection-start-line="151" selection-start-column="32" selection-end-line="151" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Models/DrugReference.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="805">
@@ -220,11 +216,11 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_03_04_140716_create_drug_references_table.php" />
         <option value="$PROJECT_DIR$/resources/views/drug_references/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/drug_references/form.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/drug_references/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/drug_references/show.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DrugReferencesController.php" />
         <option value="$PROJECT_DIR$/app/Models/DrugReference.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/DrugReferencesController.php" />
+        <option value="$PROJECT_DIR$/resources/views/drug_references/form.blade.php" />
       </list>
     </option>
   </component>
@@ -610,12 +606,12 @@
       <workItem from="1551368974508" duration="701000" />
       <workItem from="1551393237227" duration="2418000" />
       <workItem from="1551529381364" duration="16298000" />
-      <workItem from="1551687039876" duration="5155000" />
+      <workItem from="1551687039876" duration="5540000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301026000" />
+    <option name="totallyTimeSpent" value="301411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
@@ -1023,17 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/drug_references/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="34" column="62" lean-forward="true" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
-          <folding>
-            <element signature="n#div#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/drug_references/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1048,17 +1033,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DrugReferencesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/DrugReference.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="805">
           <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DrugReferencesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="151" column="32" selection-start-line="151" selection-start-column="32" selection-end-line="151" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/drug_references/form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
         </state>
       </provider>
     </entry>

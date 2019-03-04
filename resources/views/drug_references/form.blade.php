@@ -23,7 +23,7 @@
             <label for="quantity" class="block">Quantity</label>
         </div>
         <div class="col-md-12">
-            <input class="form-control" required name="quantity" type="text" id="quantity" value="{{ old('quantity', optional($drugReference)->quantity) }}" minlength="1" placeholder="Enter quantity here...">
+            <input class="form-control" name="quantity" type="text" id="quantity" value="{{ old('quantity', optional($drugReference)->quantity) }}" minlength="1" placeholder="Enter quantity here...">
             {!! $errors->first('quantity', '<p class="help-block">:message</p>') !!}
         </div>
     </div>
