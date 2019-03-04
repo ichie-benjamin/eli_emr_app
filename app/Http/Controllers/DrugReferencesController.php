@@ -148,8 +148,8 @@ class DrugReferencesController extends Controller
     protected function getData(Request $request)
     {
         $rules = [
-            'name' => 'string|min:1|max:255|nullable',
-            'unit' => 'string|min:1|nullable',
+            'name' => 'required|string|max:255',
+            'unit' => 'required|string',
             'quantity' => 'string|min:1|nullable',
             'description' => 'string|min:1|nullable',
      

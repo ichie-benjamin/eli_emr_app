@@ -3,7 +3,7 @@
     <label for="name" class="block">Name</label>
 </div>
     <div class="col-md-12">
-        <input class="form-control" name="name" type="text" id="name" value="{{ old('name', optional($drugReference)->name) }}" minlength="1" maxlength="255" placeholder="Enter name here...">
+        <input class="form-control" required name="name" type="text" id="name" value="{{ old('name', optional($drugReference)->name) }}" minlength="1" maxlength="255" placeholder="Enter name here...">
         {!! $errors->first('name', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
@@ -14,7 +14,7 @@
             <label for="unit" class="block">Unit</label>
         </div>
         <div class="col-md-12 ">
-            <input class="form-control" name="unit" type="text" id="unit" value="{{ old('unit', optional($drugReference)->unit) }}" minlength="1" placeholder="Enter unit here...">
+            <input class="form-control" required name="unit" type="text" id="unit" value="{{ old('unit', optional($drugReference)->unit) }}" minlength="1" placeholder="Enter unit here...">
             {!! $errors->first('unit', '<p class="help-block">:message</p>') !!}
         </div>
     </div>
@@ -23,7 +23,7 @@
             <label for="quantity" class="block">Quantity</label>
         </div>
         <div class="col-md-12">
-            <input class="form-control" name="quantity" type="text" id="quantity" value="{{ old('quantity', optional($drugReference)->quantity) }}" minlength="1" placeholder="Enter quantity here...">
+            <input class="form-control" required name="quantity" type="text" id="quantity" value="{{ old('quantity', optional($drugReference)->quantity) }}" minlength="1" placeholder="Enter quantity here...">
             {!! $errors->first('quantity', '<p class="help-block">:message</p>') !!}
         </div>
     </div>
