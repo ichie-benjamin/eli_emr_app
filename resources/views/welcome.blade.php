@@ -374,6 +374,20 @@
             </div>
         </div>
     </section>
+
+    <section class="">
+        <div class="auto-container text-center">
+            <div class="row clearfix">
+                <div class="tm-blog">
+                    <h2 class="text-center">Operations for 2018</h2>
+                    <div class="tm-blog-image">
+                        <img src="https://hsnow.org/storage/settings/March2019/8D8xRtNcylhg0kFHmMD6.JPG" alt="Operations for 2018">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
     
 
 
