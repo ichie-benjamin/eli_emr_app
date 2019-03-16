@@ -102,5 +102,9 @@
     {
         "model-name": "DrugReference",
         "resource-file": "drug_references.json"
+    },
+    {
+        "model-name": "NurseNote",
+        "resource-file": "nurse_notes.json"
     }
 ]

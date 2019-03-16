@@ -714,3 +714,35 @@ Route::group(
          ->where('id', '[0-9]+');
 
 });
+
+Route::group(
+[
+    'prefix' => 'nurse_notes',
+], function () {
+
+    Route::get('/', 'NurseNotesController@index')
+         ->name('nurse_notes.nurse_note.index');
+
+    Route::get('/create','NurseNotesController@create')
+         ->name('nurse_notes.nurse_note.create');
+
+    Route::get('/show/{nurseNote}','NurseNotesController@show')
+         ->name('nurse_notes.nurse_note.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{nurseNote}/edit','NurseNotesController@edit')
+         ->name('nurse_notes.nurse_note.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'NurseNotesController@store')
+         ->name('nurse_notes.nurse_note.store');
+               
+    Route::put('nurse_note/{nurseNote}', 'NurseNotesController@update')
+         ->name('nurse_notes.nurse_note.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/nurse_note/{nurseNote}','NurseNotesController@destroy')
+         ->name('nurse_notes.nurse_note.destroy')
+         ->where('id', '[0-9]+');
+
+});

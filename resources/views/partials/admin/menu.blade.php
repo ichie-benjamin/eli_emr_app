@@ -222,7 +222,7 @@
                     </ul>
                 </li>
                 <ul class="pcoded-item  pcoded-left-item">
-                    <li class="pcoded-hasmenu {{ active(['case_notes.case_note.*','drugs.drug.*'], 'pcoded-trigger') }} {{ active(['case_notes.case_note.*','drugs.drug.*']) }} ">
+                    <li class="pcoded-hasmenu {{ active(['case_notes.case_note.*','drugs.drug.*','nurse_notes.nurse_note.*'], 'pcoded-trigger') }} {{ active(['case_notes.case_note.*','drugs.drug.*','nurse_notes.nurse_note.*']) }} ">
                         <a href="javascript:void(0)" class="waves-effect waves-dark">
 <span class="pcoded-micon">
 <i class="feather icon-credit-card"></i>
@@ -243,6 +243,11 @@
                             <li class="{{ active('case_notes.case_note.index') }}">
                                 <a href="{{ route('case_notes.case_note.index') }}" class="waves-effect waves-dark">
                                     <span class="pcoded-mtext">Cases Notes</span>
+                                </a>
+                            </li>
+                            <li class="{{ active('nurse_notes.nurse_note.*') }}">
+                                <a href="{{ route('nurse_notes.nurse_note.index') }}" class="waves-effect waves-dark">
+                                    <span class="pcoded-mtext">Nurse Notes</span>
                                 </a>
                             </li>
  <li class="{{ active('case_notes.case_note.create') }}">
