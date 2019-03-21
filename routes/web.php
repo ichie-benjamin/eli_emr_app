@@ -746,3 +746,35 @@ Route::group(
          ->where('id', '[0-9]+');
 
 });
+
+Route::group(
+[
+    'prefix' => 'documentation_and_physical_exams',
+], function () {
+
+    Route::get('/', 'DocumentationAndPhysicalExamsController@index')
+         ->name('documentation_and_physical_exams.documentation_and_physical_exam.index');
+
+    Route::get('/create','DocumentationAndPhysicalExamsController@create')
+         ->name('documentation_and_physical_exams.documentation_and_physical_exam.create');
+
+    Route::get('/show/{documentationAndPhysicalExam}','DocumentationAndPhysicalExamsController@show')
+         ->name('documentation_and_physical_exams.documentation_and_physical_exam.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{documentationAndPhysicalExam}/edit','DocumentationAndPhysicalExamsController@edit')
+         ->name('documentation_and_physical_exams.documentation_and_physical_exam.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'DocumentationAndPhysicalExamsController@store')
+         ->name('documentation_and_physical_exams.documentation_and_physical_exam.store');
+               
+    Route::put('documentation_and_physical_exam/{documentationAndPhysicalExam}', 'DocumentationAndPhysicalExamsController@update')
+         ->name('documentation_and_physical_exams.documentation_and_physical_exam.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/documentation_and_physical_exam/{documentationAndPhysicalExam}','DocumentationAndPhysicalExamsController@destroy')
+         ->name('documentation_and_physical_exams.documentation_and_physical_exam.destroy')
+         ->where('id', '[0-9]+');
+
+});

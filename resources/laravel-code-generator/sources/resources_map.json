@@ -106,5 +106,9 @@
     {
         "model-name": "NurseNote",
         "resource-file": "nurse_notes.json"
+    },
+    {
+        "model-name": "DocumentationAndPhysicalExam",
+        "resource-file": "documentation_and_physical_exams.json"
     }
 ]

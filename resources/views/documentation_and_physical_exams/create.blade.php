@@ -10,7 +10,7 @@
                     <div class="page-header-title pull-left">
                         <i class="feather icon-plus bg-c-blue"></i>
                         <div class="d-inline">
-                            <h4 class="mt-5 mb-5">[% create_model %]</h4>
+                            <h4 class="mt-5 mb-5">Create New Documentation And Physical Exam</h4>
                         </div>
                     </div>
                 </div>
@@ -18,7 +18,7 @@
                     <div class="page-header-breadcrumb">
                         <ul class=" breadcrumb breadcrumb-title">
                             <li class="breadcrumb-item">
-                                <a href="{{ route('[% index_route_name %]') }}" class="btn btn-primary" title="[% show_all_models %]">
+                                <a href="{{ route('documentation_and_physical_exams.documentation_and_physical_exam.index') }}" class="btn btn-primary" title="Show All Documentation And Physical Exam">
                                     <span class="feather icon-list" aria-hidden="true"></span>
                                 </a>
                             </li>
@@ -50,15 +50,15 @@
                                     </ul>
                                 @endif
 
-                                <form method="POST" action="{{ route('[% store_route_name %]') }}" accept-charset="UTF-8" id="[% form_id %]" name="[% form_name %]" class="form-horizontal"[% upload_files %]>
+                                <form method="POST" action="{{ route('documentation_and_physical_exams.documentation_and_physical_exam.store') }}" accept-charset="UTF-8" id="create_documentation_and_physical_exam_form" name="create_documentation_and_physical_exam_form" class="form-horizontal">
                                     {{ csrf_field() }}
-                                    @include ('[% form_view_name %]', [
-                                                                '[% model_name_singular_variable %]' => null,
+                                    @include ('documentation_and_physical_exams.form', [
+                                                                'documentationAndPhysicalExam' => null,
                                                               ])
 
                                     <div class="form-group">
                                         <div class="col-md-offset-2 col-md-10">
-                                            <input class="btn btn-primary" type="submit" value="[% add %]">
+                                            <input class="btn btn-primary" type="submit" value="Add">
                                         </div>
                                     </div>
 
