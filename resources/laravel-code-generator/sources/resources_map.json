@@ -110,5 +110,13 @@
     {
         "model-name": "DocumentationAndPhysicalExam",
         "resource-file": "documentation_and_physical_exams.json"
+    },
+    {
+        "model-name": "DailySchedule",
+        "resource-file": "daily_schedules.json"
+    },
+    {
+        "model-name": "Appointment",
+        "resource-file": "appointments.json"
     }
 ]

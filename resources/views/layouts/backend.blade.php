@@ -109,6 +109,8 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 
 <script src="{{ asset('vendor/laravel-filemanager/js/lfm.js') }}"></script>
+
+@yield('script')
 <style>
     .wizard>.content {
         min-height: 32em;
@@ -129,7 +131,7 @@
     #home .page-wrapper .card-body {
         padding-left: 30%;
     }
-#home .card {
+#home .comp-card {
     background-color: #09a8f2cf;
 }
     .pcoded-main-container {

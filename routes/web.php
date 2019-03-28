@@ -28,6 +28,7 @@ Route::get('bt_admin/profile', 'AdminController@profile')->name('admin.profile')
 //['middleware' => ['role:admin']],
 
 Route::group([ 'prefix' => 'bt_admin','middleware' => ['auth', 'level:1']], function () {
+    Route::get('/api/patient/{id}','UsersController@patientInfo')->name('api.patient.show')->where('id', '[0-9]+');
 
     Route::group(
         [
@@ -606,6 +607,37 @@ Route::group([ 'prefix' => 'bt_admin','middleware' => ['auth', 'level:1']], func
             ->where('id', '[0-9]+');
 
     });
+    Route::group(
+        [
+            'prefix' => 'appointments',
+        ], function () {
+
+        Route::get('/', 'AppointmentsController@index')
+            ->name('appointments.appointments.index');
+
+        Route::get('/create','AppointmentsController@create')
+            ->name('appointments.appointments.create');
+
+        Route::get('/show/{appointments}','AppointmentsController@show')
+            ->name('appointments.appointments.show')
+            ->where('id', '[0-9]+');
+
+        Route::get('/{appointments}/edit','AppointmentsController@edit')
+            ->name('appointments.appointments.edit')
+            ->where('id', '[0-9]+');
+
+        Route::post('/', 'AppointmentsController@store')
+            ->name('appointments.appointments.store');
+
+        Route::put('appointments/{appointments}', 'AppointmentsController@update')
+            ->name('appointments.appointments.update')
+            ->where('id', '[0-9]+');
+
+        Route::delete('/appointments/{appointments}','AppointmentsController@destroy')
+            ->name('appointments.appointments.destroy')
+            ->where('id', '[0-9]+');
+
+    });
     Route::get('/my_profile', 'ProfilesController@myProfile')->name('profiles.profile.myprofile');
     Route::get('/coming-soon', 'AdminController@soon')->name('coming');
     Route::get('/patient/create', 'ProfilesController@patientCreate')->name('patients.patient.create');
@@ -639,6 +671,7 @@ Route::group([ 'prefix' => 'bt_admin','middleware' => ['auth', 'level:1']], func
             ->where('id', '[0-9]+');
 
     });
+
     Route::group(['prefix' => 'profiles',], function () {
     Route::get('/', 'ProfilesController@index')->name('profiles.profile.index');
     Route::get('/create','ProfilesController@create')->name('profiles.profile.create');
@@ -648,7 +681,8 @@ Route::group([ 'prefix' => 'bt_admin','middleware' => ['auth', 'level:1']], func
     Route::put('profile/{profile}', 'ProfilesController@update')->name('profiles.profile.update')->where('id', '[0-9]+');
     Route::delete('/profile/{profile}','ProfilesController@destroy')->name('profiles.profile.destroy')->where('id', '[0-9]+');
 
-});
+
+    });
 });
 
 Route::group(
@@ -775,6 +809,40 @@ Route::group(
 
     Route::delete('/documentation_and_physical_exam/{documentationAndPhysicalExam}','DocumentationAndPhysicalExamsController@destroy')
          ->name('documentation_and_physical_exams.documentation_and_physical_exam.destroy')
+         ->where('id', '[0-9]+');
+
+});
+
+
+
+Route::group(
+[
+    'prefix' => 'daily_schedules',
+], function () {
+
+    Route::get('/', 'DailySchedulesController@index')
+         ->name('daily_schedules.daily_schedule.index');
+
+    Route::get('/create','DailySchedulesController@create')
+         ->name('daily_schedules.daily_schedule.create');
+
+    Route::get('/show/{dailySchedule}','DailySchedulesController@show')
+         ->name('daily_schedules.daily_schedule.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{dailySchedule}/edit','DailySchedulesController@edit')
+         ->name('daily_schedules.daily_schedule.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'DailySchedulesController@store')
+         ->name('daily_schedules.daily_schedule.store');
+               
+    Route::put('daily_schedule/{dailySchedule}', 'DailySchedulesController@update')
+         ->name('daily_schedules.daily_schedule.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/daily_schedule/{dailySchedule}','DailySchedulesController@destroy')
+         ->name('daily_schedules.daily_schedule.destroy')
          ->where('id', '[0-9]+');
 
 });

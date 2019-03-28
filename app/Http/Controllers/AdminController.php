@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Models\DailySchedule;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -15,7 +16,8 @@ class AdminController extends Controller
     }
     public function index()
     {
-        return view('admin.index');
+        $dailySchedules = DailySchedule::with('patient')->paginate(25);
+        return view('admin.index',compact('dailySchedules'));
     }
 public function soon(){
         return view('admin.coming');

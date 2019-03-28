@@ -16,6 +16,13 @@
                     </a>
 
                 </li>
+                <li class="{{ active('appointments.appointments.create') }}">
+                    <a href="{{ route('appointments.appointments.create') }}" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="feather icon-calendar"></i></span>
+                        <span class="pcoded-mtext">New Appointments</span>
+                    </a>
+
+                </li>
 
 
                 <li class="{{ active(['patients.patient.*'], 'pcoded-trigger') }} {{ active(['patients.patient.*']) }} pcoded-hasmenu">

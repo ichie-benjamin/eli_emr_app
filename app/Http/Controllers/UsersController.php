@@ -92,6 +92,13 @@ class UsersController extends Controller
 
         return view('users.show', compact('user'));
     }
+    public function patientInfo($id)
+    {
+        $user = User::findOrFail($id);
+
+        return $user;
+//        return view('users.show', compact('user'));
+    }
     public function showPatient($id)
     {
         $user = User::findOrFail($id);
