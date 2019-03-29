@@ -30,6 +30,71 @@ Route::get('bt_admin/profile', 'AdminController@profile')->name('admin.profile')
 Route::group([ 'prefix' => 'bt_admin','middleware' => ['auth', 'level:1']], function () {
     Route::get('/api/patient/{id}','UsersController@patientInfo')->name('api.patient.show')->where('id', '[0-9]+');
 
+Route::group(
+[
+    'prefix' => 'nursing_visits',
+], function () {
+
+    Route::get('/', 'NursingVisitsController@index')
+         ->name('nursing_visits.nursing_visit.index');
+
+    Route::get('/create','NursingVisitsController@create')
+         ->name('nursing_visits.nursing_visit.create');
+
+    Route::get('/show/{nursingVisit}','NursingVisitsController@show')
+         ->name('nursing_visits.nursing_visit.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{nursingVisit}/edit','NursingVisitsController@edit')
+         ->name('nursing_visits.nursing_visit.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'NursingVisitsController@store')
+         ->name('nursing_visits.nursing_visit.store');
+               
+    Route::put('nursing_visit/{nursingVisit}', 'NursingVisitsController@update')
+         ->name('nursing_visits.nursing_visit.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/nursing_visit/{nursingVisit}','NursingVisitsController@destroy')
+         ->name('nursing_visits.nursing_visit.destroy')
+         ->where('id', '[0-9]+');
+
+});
+
+Route::group(
+[
+    'prefix' => 'patient_histories',
+], function () {
+
+    Route::get('/', 'PatientHistoriesController@index')
+         ->name('patient_histories.patient_history.index');
+
+    Route::get('/create','PatientHistoriesController@create')
+         ->name('patient_histories.patient_history.create');
+
+    Route::get('/show/{patientHistory}','PatientHistoriesController@show')
+         ->name('patient_histories.patient_history.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{patientHistory}/edit','PatientHistoriesController@edit')
+         ->name('patient_histories.patient_history.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'PatientHistoriesController@store')
+         ->name('patient_histories.patient_history.store');
+               
+    Route::put('patient_history/{patientHistory}', 'PatientHistoriesController@update')
+         ->name('patient_histories.patient_history.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/patient_history/{patientHistory}','PatientHistoriesController@destroy')
+         ->name('patient_histories.patient_history.destroy')
+         ->where('id', '[0-9]+');
+
+});
+
+
     Route::group(
         [
             'prefix' => 'sliders',
@@ -846,3 +911,4 @@ Route::group(
          ->where('id', '[0-9]+');
 
 });
+

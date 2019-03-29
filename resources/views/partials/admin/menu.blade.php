@@ -25,7 +25,7 @@
                 </li>
 
 
-                <li class="{{ active(['patients.patient.*'], 'pcoded-trigger') }} {{ active(['patients.patient.*']) }} pcoded-hasmenu">
+                <li class="{{ active(['patients.patient.*','patient_histories.patient_history.*'], 'pcoded-trigger') }} {{ active(['patients.patient.*','patient_histories.patient_history.*']) }} pcoded-hasmenu">
                     <a href="#" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-user-check"></i></span>
                         <span class="pcoded-mtext">Manage Patients</span>
@@ -41,8 +41,8 @@
                                 <span class="pcoded-mtext">View Patient</span>
                             </a>
                         </li>
-                        <li class="">
-                            <a href="{{ route('coming') }}" class="waves-effect waves-dark">
+                    <li class="{{ active('patient_histories.patient_history.*') }}">
+                            <a href="{{ route('patient_histories.patient_history.index') }}" class="waves-effect waves-dark">
                                 <span class="pcoded-mtext">Patient History</span>
                             </a>
                         </li>
@@ -229,7 +229,7 @@
                     </ul>
                 </li>
                 <ul class="pcoded-item  pcoded-left-item">
-                    <li class="pcoded-hasmenu {{ active(['case_notes.case_note.*','drugs.drug.*','nurse_notes.nurse_note.*'], 'pcoded-trigger') }} {{ active(['case_notes.case_note.*','drugs.drug.*','nurse_notes.nurse_note.*']) }} ">
+                    <li class="pcoded-hasmenu {{ active(['case_notes.case_note.*','nursing_visits.nursing_visit.*','drugs.drug.*','nurse_notes.nurse_note.*'], 'pcoded-trigger') }} {{ active(['nursing_visits.nursing_visit.*','case_notes.case_note.*','drugs.drug.*','nurse_notes.nurse_note.*']) }} ">
                         <a href="javascript:void(0)" class="waves-effect waves-dark">
 <span class="pcoded-micon">
 <i class="feather icon-credit-card"></i>
@@ -242,8 +242,8 @@
                                     <span class="pcoded-mtext">Manage Drugs </span>
                                 </a>
                             </li>
-                            <li class="{{ active('case_notes.case_note') }}">
-                                <a href="{{ route('coming') }}" class="waves-effect waves-dark">
+                            <li class="{{ active('nursing_visits.nursing_visit.*') }}">
+                                <a href="{{ route('nursing_visits.nursing_visit.index') }}" class="waves-effect waves-dark">
                                     <span class="pcoded-mtext">Nursing Visits Record</span>
                                 </a>
                             </li>

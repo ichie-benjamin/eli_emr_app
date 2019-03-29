@@ -118,5 +118,13 @@
     {
         "model-name": "Appointment",
         "resource-file": "appointments.json"
+    },
+    {
+        "model-name": "NursingVisit",
+        "resource-file": "nursing_visits.json"
+    },
+    {
+        "model-name": "PatientHistory",
+        "resource-file": "patient_histories.json"
     }
 ]
