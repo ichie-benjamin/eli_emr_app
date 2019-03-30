@@ -82,8 +82,18 @@
     <label for="no_show" class="block">No Show</label>
 </div>
     <div class="col-md-12">
-        <input class="form-control" name="no_show" type="text" id="no_show" value="{{ old('no_show', optional($appointments)->no_show) }}" minlength="1" placeholder="Enter no show here...">
+        {{-- <input class="form-control" name="no_show" type="text" id="no_show" value="{{ old('no_show', optional($appointments)->no_show) }}" minlength="1" placeholder="Enter no show here..."> --}}
         {!! $errors->first('no_show', '<p class="help-block">:message</p>') !!}
+
+        <select class="form-control" id="no_show" name="no_show">
+        	    <option value="" style="display: none;" {{ old('no_show', optional($appointments)->no_show ?: '') == '' ? 'selected' : '' }} disabled selected>Enter patient status here...</option>
+        	@foreach (['1' => 'Yes',
+'0' => 'No'] as $key => $text)
+			    <option value="{{ $key }}" {{ old('no_show', optional($appointments)->no_show) == $key ? 'selected' : '' }}>
+			    	{{ $text }}
+			    </option>
+			@endforeach
+        </select>
     </div>
 </div>
 </div>

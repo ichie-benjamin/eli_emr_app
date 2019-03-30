@@ -48,8 +48,7 @@
             <dd>{{ $appointments->m_r_n }}</dd>
             <dt>Patient Name</dt>
             <dd>{{ $appointments->patient_name }}</dd>
-            <dt>Patient</dt>
-            <dd>{{ optional($appointments->patient)->id }}</dd>
+        
             <dt>Appointment Time</dt>
             <dd>{{ $appointments->appointment_time }}</dd>
             <dt>Appointment Date</dt>
@@ -59,7 +58,7 @@
             <dt>Time Check Out</dt>
             <dd>{{ $appointments->time_check_out }}</dd>
             <dt>No Show</dt>
-            <dd>{{ $appointments->no_show }}</dd>
+            <dd>{{ $appointments->no_show ? 'YES' : 'No' }}</dd>
             <dt>Patient Address</dt>
             <dd>{{ $appointments->patient_address }}</dd>
             <dt>Contact Number</dt>
