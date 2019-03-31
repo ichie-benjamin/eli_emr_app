@@ -312,7 +312,7 @@
                                                                             <th>Appointment Time</th>
                                                                             <th>Time Check In</th>
                                                                             <th>Time Check Out</th>
-                                                                            <th>No Show</th>
+                                                                            <th width="5">No Show</th>
                                                                         </tr>
                                                                         </thead>
                                                                         <tbody>
@@ -326,7 +326,7 @@
                                                                                 <td>{{ $dailySchedule->appointment_time }}</td>
                                                                                 <td>{{ $dailySchedule->time_check_in }}</td>
                                                                                 <td>{{ $dailySchedule->time_check_out }}</td>
-                                                                                <td style="background-color: yellow"></td>
+                                                                                <td style="background-color: {{ $dailySchedule->no_show ? 'green' : 'red' }}"></td>
 {{--                                                                                <td>{{ $dailySchedule->no_show }}</td>--}}
                                                                             </tr>
                                                                         @endforeach
