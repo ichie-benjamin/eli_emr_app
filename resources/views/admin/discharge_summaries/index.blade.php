@@ -29,7 +29,7 @@
     <div class="pcoded-inner-content">
         <div class="main-body">
             <div class="page-wrapper">
-                <div class="page-body">
+                <div class="page-body bg-white">
 
                     <div class="row">
 

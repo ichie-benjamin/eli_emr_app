@@ -194,13 +194,13 @@
                 </li>
 
 
-                <li class="pcoded-hasmenu {{ active(['disease_reports.disease_report.*','discharge_summaries.discharge_summary.*'])}} {{ active(['disease_reports.disease_report.*','discharge_summaries.discharge_summary.*'], 'pcoded-trigger') }} pcoded-trigger">
+                <li class="pcoded-hasmenu {{ active(['disease_reports.disease_report.*','discharge_summaries.discharge_summary.*','documentation_and_physical_exams.documentation_and_physical_exam.*'])}} {{ active(['disease_reports.disease_report.*','discharge_summaries.discharge_summary.*','documentation_and_physical_exams.documentation_and_physical_exam.*'], 'pcoded-trigger') }} pcoded-trigger">
                     <a href="#" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span>
                         <span class="pcoded-mtext">Doctors Service</span>
                     </a>
                     <ul class="pcoded-submenu">
-                        <li class="{{ active(['disease_reports.disease_report.*','discharge_summaries.discharge_summary.*'])}} pcoded-hasmenu">
+                        <li class="{{ active(['disease_reports.disease_report.*','discharge_summaries.discharge_summary.*','documentation_and_physical_exams.documentation_and_physical_exam.*'])}} pcoded-hasmenu">
                             <a href="#" class="waves-effect waves-dark">
                                 <span class="pcoded-mtext">Patient Report</span>
                             </a>
@@ -224,6 +224,15 @@
 
                         </li>
 
+
+                        <li class="{{ active('documentation_and_physical_exams.documentation_and_physical_exam.*') }}">
+                            {{--<li class=" {{ active(['patient', 'users/*', 'posts.*', 'pages.contact']) }} pcoded-trigger">--}}
+                            <a href="{{ route('documentation_and_physical_exams.documentation_and_physical_exam.index') }}" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                                <span class="pcoded-mtext">Documentation Of History</span>
+                            </a>
+
+                        </li>
 
 
                     </ul>
