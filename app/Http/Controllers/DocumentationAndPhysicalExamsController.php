@@ -43,7 +43,7 @@ class DocumentationAndPhysicalExamsController extends Controller
      */
     public function store(Request $request)
     {
-        try {
+        // try {
             
             $data = $this->getData($request);
             
@@ -52,11 +52,11 @@ class DocumentationAndPhysicalExamsController extends Controller
             return redirect()->route('documentation_and_physical_exams.documentation_and_physical_exam.index')
                              ->with('success_message', 'Documentation And Physical Exam was successfully added!');
 
-        } catch (Exception $exception) {
+        // } catch (Exception $exception) {
 
-            return back()->withInput()
-                         ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request!']);
-        }
+        //     return back()->withInput()
+        //                  ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request!']);
+        // }
     }
 
     /**
@@ -149,7 +149,7 @@ class DocumentationAndPhysicalExamsController extends Controller
     {
         $rules = [
             'patient_name' => 'string|min:1|nullable',
-            'date_examined' => 'nullable|date_format:j/n/Y',
+            'date_examined' => 'nullable',
             'preceptor_name' => 'string|min:1|nullable',
             'chief_complaint' => 'string|nullable|min:0',
             'history_of_illnes' => 'string|min:1|nullable',

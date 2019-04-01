@@ -37,7 +37,7 @@
             </div>
             <div class="pcoded-inner-content">
                 <div class="main-body">
-                    <div class="page-wrapper">
+                    <div class="page-wrapper bg-white">
                         <div class="page-body">
 
                             <div class="row">
@@ -51,23 +51,16 @@
             <dt>Preceptor Name</dt>
             <dd>{{ $documentationAndPhysicalExam->preceptor_name }}</dd>
             <dt>Chief Complaint</dt>
-            <dd>{{ $documentationAndPhysicalExam->chief_complaint }}</dd>
+            <dd>{!! $documentationAndPhysicalExam->chief_complaint !!}</dd>
             <dt>History Of Present Illness</dt>
-            <dd>{{ $documentationAndPhysicalExam->history_of_illnes }}</dd>
+            <dd>{!! $documentationAndPhysicalExam->history_of_illnes !!}</dd>
             <dt>Past Medical History</dt>
-            <dd>{{ $documentationAndPhysicalExam->past_medical_history }}</dd>
-            <dt>Immunization</dt>
-            <dd>{{ $documentationAndPhysicalExam->immunization }}</dd>
-            <dt>Phemonia</dt>
-            <dd>{{ $documentationAndPhysicalExam->phemonia }}</dd>
-            <dt>TDap</dt>
-            <dd>{{ $documentationAndPhysicalExam->t_dap }}</dd>
-            <dt>Zoster</dt>
-            <dd>{{ $documentationAndPhysicalExam->zoster }}</dd>
+            <dd>{!! $documentationAndPhysicalExam->past_medical_history !!}</dd>
+            
             <dt>Family History</dt>
-            <dd>{{ $documentationAndPhysicalExam->family_history }}</dd>
+            <dd>{!! $documentationAndPhysicalExam->family_history !!}</dd>
             <dt>Social History</dt>
-            <dd>{{ $documentationAndPhysicalExam->social_history }}</dd>
+            <dd>{!! $documentationAndPhysicalExam->social_history !!}</dd>
             <dt>HT</dt>
             <dd>{{ $documentationAndPhysicalExam->h_t }}</dd>
             <dt>WT</dt>
@@ -84,36 +77,10 @@
             <dd>{{ $documentationAndPhysicalExam->r_r }}</dd>
             <dt>Pain</dt>
             <dd>{{ $documentationAndPhysicalExam->pain }}</dd>
-            <dt>Head</dt>
-            <dd>{{ $documentationAndPhysicalExam->head }}</dd>
-            <dt>Eyes</dt>
-            <dd>{{ $documentationAndPhysicalExam->eyes }}</dd>
-            <dt>Ears/Nose/Throat</dt>
-            <dd>{{ $documentationAndPhysicalExam->ears_nose_throat }}</dd>
-            <dt>Mouth</dt>
-            <dd>{{ $documentationAndPhysicalExam->mouth }}</dd>
-            <dt>Neck</dt>
-            <dd>{{ $documentationAndPhysicalExam->neck }}</dd>
-            <dt>Respiratory</dt>
-            <dd>{{ $documentationAndPhysicalExam->respiratory }}</dd>
-            <dt>CadioVascular</dt>
-            <dd>{{ $documentationAndPhysicalExam->cadio_vascular }}</dd>
-            <dt>Gastrointestinal</dt>
-            <dd>{{ $documentationAndPhysicalExam->gastrointestinal }}</dd>
-            <dt>Lymphatic</dt>
-            <dd>{{ $documentationAndPhysicalExam->lymphatic }}</dd>
-            <dt>Skin And Subcutaneous Tissue</dt>
-            <dd>{{ $documentationAndPhysicalExam->skin_and_subcutaneus_tissue }}</dd>
-            <dt>Back Extremities Musculoskeletal</dt>
-            <dd>{{ $documentationAndPhysicalExam->back_musculoskeletal }}</dd>
-            <dt>Neurological</dt>
-            <dd>{{ $documentationAndPhysicalExam->neurological }}</dd>
-            <dt>Psychiatric</dt>
-            <dd>{{ $documentationAndPhysicalExam->psychiatric }}</dd>
-            <dt>Observations (Patient)</dt>
-            <dd>{{ $documentationAndPhysicalExam->observations }}</dd>
-            <dt>Sign</dt>
-            <dd>{{ $documentationAndPhysicalExam->sign }}</dd>
+           
+            <dt>Other Observations (Patient)</dt>
+            <dd>{!! $documentationAndPhysicalExam->observations !!}</dd>
+        
 
             </dl>
                                     <form method="POST" action="{!! route('documentation_and_physical_exams.documentation_and_physical_exam.destroy', $documentationAndPhysicalExam->id) !!}" accept-charset="UTF-8">

@@ -92,10 +92,10 @@ class DocumentationAndPhysicalExam extends Model
      * @param  string  $value
      * @return void
      */
-    public function setDateExaminedAttribute($value)
-    {
-        $this->attributes['date_examined'] = !empty($value) ? \DateTime::createFromFormat($this->getDateFormat(), $value) : null;
-    }
+    // public function setDateExaminedAttribute($value)
+    // {
+    //     $this->attributes['date_examined'] = !empty($value) ? \DateTime::createFromFormat($this->getDateFormat(), $value) : null;
+    // }
 
     /**
      * Get date_examined in array format
@@ -103,11 +103,11 @@ class DocumentationAndPhysicalExam extends Model
      * @param  string  $value
      * @return array
      */
-    public function getDateExaminedAttribute($value)
-    {
-        return \DateTime::createFromFormat('j/n/Y', $value);
+    // public function getDateExaminedAttribute($value)
+    // {
+    //     return \DateTime::createFromFormat('j/n/Y', $value);
 
-    }
+    // }
 
     /**
      * Get deleted_at in array format

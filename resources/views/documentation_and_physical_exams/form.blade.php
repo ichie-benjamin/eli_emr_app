@@ -1,4 +1,5 @@
-<div class="form-group {{ $errors->has('patient_name') ? 'has-error' : '' }}">
+<div class="form-group row">
+<div class="col-md-4 {{ $errors->has('patient_name') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="patient_name" class="block">Patient Name</label>
 </div>
@@ -7,16 +8,17 @@
         {!! $errors->first('patient_name', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('date_examined') ? 'has-error' : '' }}">
+<div class="col-md-4 {{ $errors->has('date_examined') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="date_examined" class="block">Date Examined</label>
 </div>
     <div class="col-md-12">
-        <input class="form-control" name="date_examined" type="text" id="date_examined" value="{{ old('date_examined', optional($documentationAndPhysicalExam)->date_examined) }}" placeholder="Enter date examined here...">
+        <input class="form-control" name="date_examined" type="date" id="date_examined" value="{{ old('date_examined', optional($documentationAndPhysicalExam)->date_examined) }}" placeholder="Enter date examined here...">
         {!! $errors->first('date_examined', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('preceptor_name') ? 'has-error' : '' }}">
+
+<div class="col-md-4  {{ $errors->has('preceptor_name') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="preceptor_name" class="block">Preceptor Name</label>
 </div>
@@ -25,33 +27,146 @@
         {!! $errors->first('preceptor_name', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('chief_complaint') ? 'has-error' : '' }}">
+
+</div>
+
+<div class="form-group row">
+
+<div class="col-md-6 {{ $errors->has('history_of_illnes') ? 'has-error' : '' }}">
 <div class="col-md-12">
-    <label for="chief_complaint" class="block">Chief Complaint</label>
+    <label for="history_of_illnes" class="block">History Of Present Illness (Narration) </label>
 </div>
     <div class="col-md-12">
-        <textarea class="form-control" name="chief_complaint" cols="50" rows="10" id="chief_complaint" placeholder="Enter chief complaint here...">{{ old('chief_complaint', optional($documentationAndPhysicalExam)->chief_complaint) }}</textarea>
-        {!! $errors->first('chief_complaint', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
-<div class="form-group {{ $errors->has('history_of_illnes') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="history_of_illnes" class="block">History Of Present Illness</label>
-</div>
-    <div class="col-md-12">
-        <textarea class="form-control" name="history_of_illnes" cols="50" rows="10" id="history_of_illnes" minlength="1" placeholder="Enter history of illnes here...">{{ old('history_of_illnes', optional($documentationAndPhysicalExam)->history_of_illnes) }}</textarea>
+        <textarea class="form-control textarea" name="history_of_illnes" cols="50" rows="10" id="history_of_illnes" minlength="1" placeholder="Enter history of illnes here...">{{ old('history_of_illnes', optional($documentationAndPhysicalExam)->history_of_illnes) }}</textarea>
         {!! $errors->first('history_of_illnes', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('past_medical_history') ? 'has-error' : '' }}">
+<div class="col-md-6  {{ $errors->has('chief_complaint') ? 'has-error' : '' }}">
+<div class="col-md-12">
+    <label for="chief_complaint" class="block">Chief Complaint (Patient Case)</label>
+</div>
+    <div class="col-md-12">
+        <textarea class="form-control textarea" name="chief_complaint" cols="50" rows="10" id="chief_complaint" placeholder="Enter chief complaint here...">{{ old('chief_complaint', optional($documentationAndPhysicalExam)->chief_complaint) }}</textarea>
+        {!! $errors->first('chief_complaint', '<p class="help-block">:message</p>') !!}
+    </div>
+</div>
+</div>
+
+<div class="form-group row">
+<div class="col-md-6 {{ $errors->has('past_medical_history') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="past_medical_history" class="block">Past Medical History</label>
 </div>
     <div class="col-md-12">
-        <textarea class="form-control" name="past_medical_history" cols="50" rows="10" id="past_medical_history" minlength="1" placeholder="Enter past medical history here...">{{ old('past_medical_history', optional($documentationAndPhysicalExam)->past_medical_history) }}</textarea>
+        <textarea class="form-control textarea" name="past_medical_history" cols="50" rows="10" id="past_medical_history" minlength="1" placeholder="Enter past medical history here...">{{ old('past_medical_history', optional($documentationAndPhysicalExam)->past_medical_history) }}</textarea>
         {!! $errors->first('past_medical_history', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
+
+<div class="col-md-6 {{ $errors->has('family_history') ? 'has-error' : '' }}">
+<div class="col-md-12">
+    <label for="family_history" class="block">Family History</label>
+</div>
+    <div class="col-md-12">
+        <textarea class="form-control textarea" name="family_history" cols="50" rows="10" id="family_history" minlength="1" placeholder="Enter family history here...">{{ old('family_history', optional($documentationAndPhysicalExam)->family_history) }}</textarea>
+        {!! $errors->first('family_history', '<p class="help-block">:message</p>') !!}
+    </div>
+</div>
+</div>
+
+
+
+<div class="form-group {{ $errors->has('social_history') ? 'has-error' : '' }}">
+<div class="col-md-12">
+    <label for="social_history" class="block">Social History</label>
+</div>
+    <div class="col-md-12">
+        <textarea class="form-control textarea" name="social_history" cols="50" rows="10" id="social_history" minlength="1" placeholder="Enter social history here...">{{ old('social_history', optional($documentationAndPhysicalExam)->social_history) }}</textarea>
+        {!! $errors->first('social_history', '<p class="help-block">:message</p>') !!}
+    </div>
+</div>
+
+<h3>Vital Signs</h3>
+<div class='form-group row'>
+
+<div class="col-md-3 {{ $errors->has('h_t') ? 'has-error' : '' }}">
+<div class="col-md-12">
+    <label for="h_t" class="block">HT</label>
+</div>
+    <div class="col-md-12">
+        <input class="form-control" name="h_t" type="text" id="h_t" value="{{ old('h_t', optional($documentationAndPhysicalExam)->h_t) }}" minlength="1" placeholder="Enter h t here...">
+        {!! $errors->first('h_t', '<p class="help-block">:message</p>') !!}
+    </div>
+</div>
+<div class="col-md-3 {{ $errors->has('w_t') ? 'has-error' : '' }}">
+<div class="col-md-12">
+    <label for="w_t" class="block">WT</label>
+</div>
+    <div class="col-md-12">
+        <input class="form-control" name="w_t" type="text" id="w_t" value="{{ old('w_t', optional($documentationAndPhysicalExam)->w_t) }}" minlength="1" placeholder="Enter w t here...">
+        {!! $errors->first('w_t', '<p class="help-block">:message</p>') !!}
+    </div>
+</div>
+<div class="col-md-3 {{ $errors->has('b_m_i') ? 'has-error' : '' }}">
+<div class="col-md-12">
+    <label for="b_m_i" class="block">BMI</label>
+</div>
+    <div class="col-md-12">
+        <input class="form-control" name="b_m_i" type="text" id="b_m_i" value="{{ old('b_m_i', optional($documentationAndPhysicalExam)->b_m_i) }}" minlength="1" placeholder="Enter b m i here...">
+        {!! $errors->first('b_m_i', '<p class="help-block">:message</p>') !!}
+    </div>
+</div>
+<div class="col-md-3 {{ $errors->has('temp') ? 'has-error' : '' }}">
+<div class="col-md-12">
+    <label for="temp" class="block">Temp</label>
+</div>
+    <div class="col-md-12">
+        <input class="form-control" name="temp" type="text" id="temp" value="{{ old('temp', optional($documentationAndPhysicalExam)->temp) }}" minlength="1" placeholder="Enter temp here...">
+        {!! $errors->first('temp', '<p class="help-block">:message</p>') !!}
+    </div>
+</div>
+<div class="col-md-3 {{ $errors->has('pulse') ? 'has-error' : '' }}">
+<div class="col-md-12">
+    <label for="pulse" class="block">Pulse</label>
+</div>
+    <div class="col-md-12">
+        <input class="form-control" name="pulse" type="text" id="pulse" value="{{ old('pulse', optional($documentationAndPhysicalExam)->pulse) }}" minlength="1" placeholder="Enter pulse here...">
+        {!! $errors->first('pulse', '<p class="help-block">:message</p>') !!}
+    </div>
+</div>
+<div class="col-md-3 {{ $errors->has('b_p') ? 'has-error' : '' }}">
+<div class="col-md-12">
+    <label for="b_p" class="block">BP</label>
+</div>
+    <div class="col-md-12">
+        <input class="form-control" name="b_p" type="text" id="b_p" value="{{ old('b_p', optional($documentationAndPhysicalExam)->b_p) }}" minlength="1" placeholder="Enter b p here...">
+        {!! $errors->first('b_p', '<p class="help-block">:message</p>') !!}
+    </div>
+</div>
+<div class="col-md-3 {{ $errors->has('r_r') ? 'has-error' : '' }}">
+<div class="col-md-12">
+    <label for="r_r" class="block">RR</label>
+</div>
+    <div class="col-md-12">
+        <input class="form-control" name="r_r" type="text" id="r_r" value="{{ old('r_r', optional($documentationAndPhysicalExam)->r_r) }}" minlength="1" placeholder="Enter r r here...">
+        {!! $errors->first('r_r', '<p class="help-block">:message</p>') !!}
+    </div>
+</div>
+<div class="col-md-3 {{ $errors->has('pain') ? 'has-error' : '' }}">
+<div class="col-md-12">
+    <label for="pain" class="block">Pain</label>
+</div>
+    <div class="col-md-12">
+        <input class="form-control" name="pain" type="text" id="pain" value="{{ old('pain', optional($documentationAndPhysicalExam)->pain) }}" minlength="1" placeholder="Enter pain here...">
+        {!! $errors->first('pain', '<p class="help-block">:message</p>') !!}
+    </div>
+</div>
+
+</div>
+
+
+
+{{--  
 <div class="form-group {{ $errors->has('immunization') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="immunization" class="block">Immunization</label>
@@ -88,96 +203,9 @@
         {!! $errors->first('zoster', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('family_history') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="family_history" class="block">Family History</label>
-</div>
-    <div class="col-md-12">
-        <textarea class="form-control" name="family_history" cols="50" rows="10" id="family_history" minlength="1" placeholder="Enter family history here...">{{ old('family_history', optional($documentationAndPhysicalExam)->family_history) }}</textarea>
-        {!! $errors->first('family_history', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
-<div class="form-group {{ $errors->has('social_history') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="social_history" class="block">Social History</label>
-</div>
-    <div class="col-md-12">
-        <textarea class="form-control" name="social_history" cols="50" rows="10" id="social_history" minlength="1" placeholder="Enter social history here...">{{ old('social_history', optional($documentationAndPhysicalExam)->social_history) }}</textarea>
-        {!! $errors->first('social_history', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
-<div class="form-group {{ $errors->has('h_t') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="h_t" class="block">HT</label>
-</div>
-    <div class="col-md-12">
-        <input class="form-control" name="h_t" type="text" id="h_t" value="{{ old('h_t', optional($documentationAndPhysicalExam)->h_t) }}" minlength="1" placeholder="Enter h t here...">
-        {!! $errors->first('h_t', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
-<div class="form-group {{ $errors->has('w_t') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="w_t" class="block">WT</label>
-</div>
-    <div class="col-md-12">
-        <input class="form-control" name="w_t" type="text" id="w_t" value="{{ old('w_t', optional($documentationAndPhysicalExam)->w_t) }}" minlength="1" placeholder="Enter w t here...">
-        {!! $errors->first('w_t', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
-<div class="form-group {{ $errors->has('b_m_i') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="b_m_i" class="block">BMI</label>
-</div>
-    <div class="col-md-12">
-        <input class="form-control" name="b_m_i" type="text" id="b_m_i" value="{{ old('b_m_i', optional($documentationAndPhysicalExam)->b_m_i) }}" minlength="1" placeholder="Enter b m i here...">
-        {!! $errors->first('b_m_i', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
-<div class="form-group {{ $errors->has('temp') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="temp" class="block">Temp</label>
-</div>
-    <div class="col-md-12">
-        <input class="form-control" name="temp" type="text" id="temp" value="{{ old('temp', optional($documentationAndPhysicalExam)->temp) }}" minlength="1" placeholder="Enter temp here...">
-        {!! $errors->first('temp', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
-<div class="form-group {{ $errors->has('pulse') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="pulse" class="block">Pulse</label>
-</div>
-    <div class="col-md-12">
-        <input class="form-control" name="pulse" type="text" id="pulse" value="{{ old('pulse', optional($documentationAndPhysicalExam)->pulse) }}" minlength="1" placeholder="Enter pulse here...">
-        {!! $errors->first('pulse', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
-<div class="form-group {{ $errors->has('b_p') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="b_p" class="block">BP</label>
-</div>
-    <div class="col-md-12">
-        <input class="form-control" name="b_p" type="text" id="b_p" value="{{ old('b_p', optional($documentationAndPhysicalExam)->b_p) }}" minlength="1" placeholder="Enter b p here...">
-        {!! $errors->first('b_p', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
-<div class="form-group {{ $errors->has('r_r') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="r_r" class="block">RR</label>
-</div>
-    <div class="col-md-12">
-        <input class="form-control" name="r_r" type="text" id="r_r" value="{{ old('r_r', optional($documentationAndPhysicalExam)->r_r) }}" minlength="1" placeholder="Enter r r here...">
-        {!! $errors->first('r_r', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
-<div class="form-group {{ $errors->has('pain') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="pain" class="block">Pain</label>
-</div>
-    <div class="col-md-12">
-        <input class="form-control" name="pain" type="text" id="pain" value="{{ old('pain', optional($documentationAndPhysicalExam)->pain) }}" minlength="1" placeholder="Enter pain here...">
-        {!! $errors->first('pain', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
+
+
+
 <div class="form-group {{ $errors->has('head') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="head" class="block">Head</label>
@@ -294,17 +322,17 @@
         <input class="form-control" name="psychiatric" type="text" id="psychiatric" value="{{ old('psychiatric', optional($documentationAndPhysicalExam)->psychiatric) }}" minlength="1" placeholder="Enter psychiatric here...">
         {!! $errors->first('psychiatric', '<p class="help-block">:message</p>') !!}
     </div>
-</div>
+</div>  --}}
 <div class="form-group {{ $errors->has('observations') ? 'has-error' : '' }}">
 <div class="col-md-12">
-    <label for="observations" class="block">Observations (Patient)</label>
+    <label for="observations" class="block">Other Observations (Patient)</label>
 </div>
     <div class="col-md-12">
-        <textarea class="form-control" name="observations" cols="50" rows="10" id="observations" minlength="1" placeholder="Enter observations here...">{{ old('observations', optional($documentationAndPhysicalExam)->observations) }}</textarea>
+        <textarea class="form-control textarea" name="observations" cols="50" rows="10" id="observations" minlength="1" placeholder="Enter observations here...">{{ old('observations', optional($documentationAndPhysicalExam)->observations) }}</textarea>
         {!! $errors->first('observations', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('sign') ? 'has-error' : '' }}">
+{{--  <div class="form-group {{ $errors->has('sign') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="sign" class="block">Sign</label>
 </div>
@@ -312,5 +340,5 @@
         <input class="form-control" name="sign" type="text" id="sign" value="{{ old('sign', optional($documentationAndPhysicalExam)->sign) }}" minlength="1" placeholder="Enter sign here...">
         {!! $errors->first('sign', '<p class="help-block">:message</p>') !!}
     </div>
-</div>
+</div>  --}}
 

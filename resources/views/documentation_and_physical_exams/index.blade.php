@@ -68,38 +68,12 @@
                                                                                 <th>Patient Name</th>
                             <th>Date Examined</th>
                             <th>Preceptor Name</th>
-                            <th>Chief Complaint</th>
-                            <th>History Of Present Illness</th>
-                            <th>Past Medical History</th>
-                            <th>Immunization</th>
-                            <th>Phemonia</th>
-                            <th>TDap</th>
-                            <th>Zoster</th>
-                            <th>Family History</th>
-                            <th>Social History</th>
+                            
+                          
                             <th>HT</th>
                             <th>WT</th>
                             <th>BMI</th>
-                            <th>Temp</th>
-                            <th>Pulse</th>
-                            <th>BP</th>
-                            <th>RR</th>
-                            <th>Pain</th>
-                            <th>Head</th>
-                            <th>Eyes</th>
-                            <th>Ears/Nose/Throat</th>
-                            <th>Mouth</th>
-                            <th>Neck</th>
-                            <th>Respiratory</th>
-                            <th>CadioVascular</th>
-                            <th>Gastrointestinal</th>
-                            <th>Lymphatic</th>
-                            <th>Skin And Subcutaneous Tissue</th>
-                            <th>Back Extremities Musculoskeletal</th>
-                            <th>Neurological</th>
-                            <th>Psychiatric</th>
-                            <th>Observations (Patient)</th>
-                            <th>Sign</th>
+                            
 
                                                     <th></th>
                                                 </tr>
@@ -110,38 +84,12 @@
                                                                                     <td>{{ $documentationAndPhysicalExam->patient_name }}</td>
                             <td>{{ $documentationAndPhysicalExam->date_examined }}</td>
                             <td>{{ $documentationAndPhysicalExam->preceptor_name }}</td>
-                            <td>{{ $documentationAndPhysicalExam->chief_complaint }}</td>
-                            <td>{{ $documentationAndPhysicalExam->history_of_illnes }}</td>
-                            <td>{{ $documentationAndPhysicalExam->past_medical_history }}</td>
-                            <td>{{ $documentationAndPhysicalExam->immunization }}</td>
-                            <td>{{ $documentationAndPhysicalExam->phemonia }}</td>
-                            <td>{{ $documentationAndPhysicalExam->t_dap }}</td>
-                            <td>{{ $documentationAndPhysicalExam->zoster }}</td>
-                            <td>{{ $documentationAndPhysicalExam->family_history }}</td>
-                            <td>{{ $documentationAndPhysicalExam->social_history }}</td>
+                        
+                    
                             <td>{{ $documentationAndPhysicalExam->h_t }}</td>
                             <td>{{ $documentationAndPhysicalExam->w_t }}</td>
                             <td>{{ $documentationAndPhysicalExam->b_m_i }}</td>
-                            <td>{{ $documentationAndPhysicalExam->temp }}</td>
-                            <td>{{ $documentationAndPhysicalExam->pulse }}</td>
-                            <td>{{ $documentationAndPhysicalExam->b_p }}</td>
-                            <td>{{ $documentationAndPhysicalExam->r_r }}</td>
-                            <td>{{ $documentationAndPhysicalExam->pain }}</td>
-                            <td>{{ $documentationAndPhysicalExam->head }}</td>
-                            <td>{{ $documentationAndPhysicalExam->eyes }}</td>
-                            <td>{{ $documentationAndPhysicalExam->ears_nose_throat }}</td>
-                            <td>{{ $documentationAndPhysicalExam->mouth }}</td>
-                            <td>{{ $documentationAndPhysicalExam->neck }}</td>
-                            <td>{{ $documentationAndPhysicalExam->respiratory }}</td>
-                            <td>{{ $documentationAndPhysicalExam->cadio_vascular }}</td>
-                            <td>{{ $documentationAndPhysicalExam->gastrointestinal }}</td>
-                            <td>{{ $documentationAndPhysicalExam->lymphatic }}</td>
-                            <td>{{ $documentationAndPhysicalExam->skin_and_subcutaneus_tissue }}</td>
-                            <td>{{ $documentationAndPhysicalExam->back_musculoskeletal }}</td>
-                            <td>{{ $documentationAndPhysicalExam->neurological }}</td>
-                            <td>{{ $documentationAndPhysicalExam->psychiatric }}</td>
-                            <td>{{ $documentationAndPhysicalExam->observations }}</td>
-                            <td>{{ $documentationAndPhysicalExam->sign }}</td>
+                           
 
                                                         <td>
 
