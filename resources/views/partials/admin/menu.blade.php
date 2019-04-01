@@ -194,19 +194,19 @@
                 </li>
 
 
-                <li class="pcoded-hasmenu {{ active(['disease_reports.disease_report.*'])}} {{ active(['disease_reports.disease_report.*'], 'pcoded-trigger') }} pcoded-trigger">
+                <li class="pcoded-hasmenu {{ active(['disease_reports.disease_report.*','discharge_summaries.discharge_summary.*'])}} {{ active(['disease_reports.disease_report.*','discharge_summaries.discharge_summary.*'], 'pcoded-trigger') }} pcoded-trigger">
                     <a href="#" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span>
                         <span class="pcoded-mtext">Doctors Service</span>
                     </a>
                     <ul class="pcoded-submenu">
-                        <li class=" pcoded-hasmenu">
+                        <li class="{{ active(['disease_reports.disease_report.*','discharge_summaries.discharge_summary.*'])}} pcoded-hasmenu">
                             <a href="#" class="waves-effect waves-dark">
                                 <span class="pcoded-mtext">Patient Report</span>
                             </a>
                             <ul class="pcoded-submenu">
                                 <li class="">
-                                    <a href="{{ route('coming') }}" class="waves-effect waves-dark">
+                                    <a href="{{ route('discharge_summaries.discharge_summary.index') }}" class="waves-effect waves-dark">
                                         <span class="pcoded-mtext">Discharge Note</span>
                                     </a>
                                 </li>
