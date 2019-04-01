@@ -257,11 +257,6 @@
                                     <span class="pcoded-mtext">Nurse Notes</span>
                                 </a>
                             </li>
- <li class="{{ active('case_notes.case_note.create') }}">
-                                <a href="{{ route('case_notes.case_note.create') }}" class="waves-effect waves-dark">
-                                    <span class="pcoded-mtext">Add Case Note</span>
-                                </a>
-                            </li>
 
 
                         </ul>
