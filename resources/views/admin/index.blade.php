@@ -83,7 +83,7 @@
                                         <div class="row align-items-center">
 
                                             <div class="col-auto align-content-center">
-                                                <i class="fas fa-users bg-c-blue"></i>
+                                                <a href="{{ route('patients.patient.index') }}"<i class="fas fa-users bg-c-blue"></i></a>
                                             </div>
                                         </div>
                                     </div>
