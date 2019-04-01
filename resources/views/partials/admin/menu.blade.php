@@ -247,16 +247,21 @@
                                     <span class="pcoded-mtext">Nursing Visits Record</span>
                                 </a>
                             </li>
-                            <li class="{{ active('case_notes.case_note.index') }}">
+                            {{--  <li class="{{ active('case_notes.case_note.index') }}">
                                 <a href="{{ route('case_notes.case_note.index') }}" class="waves-effect waves-dark">
                                     <span class="pcoded-mtext">Cases Notes</span>
                                 </a>
-                            </li>
+                            </li>  --}}
                             <li class="{{ active('nurse_notes.nurse_note.*') }}">
                                 <a href="{{ route('nurse_notes.nurse_note.index') }}" class="waves-effect waves-dark">
                                     <span class="pcoded-mtext">Nurse Notes</span>
                                 </a>
                             </li>
+ {{--  <li class="{{ active('case_notes.case_note.create') }}">
+                                <a href="{{ route('case_notes.case_note.create') }}" class="waves-effect waves-dark">
+                                    <span class="pcoded-mtext">Add Case Note</span>
+                                </a>
+                            </li>  --}}
 
 
                         </ul>
