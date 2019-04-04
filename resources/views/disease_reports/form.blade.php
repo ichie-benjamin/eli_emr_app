@@ -25,23 +25,7 @@
         {!! $errors->first('country', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('patients_id') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="patients_id" class="block">Patients</label>
-</div>
-    <div class="col-md-12">
-        <select class="form-control" id="patients_id" name="patients_id">
-        	    <option value="" style="display: none;" {{ old('patients_id', optional($diseaseReport)->patients_id ?: '') == '' ? 'selected' : '' }} disabled selected>Select patients</option>
-        	@foreach ($patients as $key => $patient)
-			    <option value="{{ $key }}" {{ old('patients_id', optional($diseaseReport)->patients_id) == $key ? 'selected' : '' }}>
-			    	{{ $patient }}
-			    </option>
-			@endforeach
-        </select>
-        
-        {!! $errors->first('patients_id', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
+
 <div class="form-group {{ $errors->has('patient_first_name') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="patient_first_name" class="block">Patient First Name</label>
@@ -126,24 +110,7 @@
         {!! $errors->first('ethic_origin', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('area_code') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="area_code" class="block">Area Code</label>
-</div>
-    <div class="col-md-12">
-        <input class="form-control" name="area_code" type="text" id="area_code" value="{{ old('area_code', optional($diseaseReport)->area_code) }}" minlength="1" placeholder="Enter area code here...">
-        {!! $errors->first('area_code', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
-<div class="form-group {{ $errors->has('phone') ? 'has-error' : '' }}">
-<div class="col-md-12">
-    <label for="phone" class="block">Phone</label>
-</div>
-    <div class="col-md-12">
-        <input class="form-control" name="phone" type="text" id="phone" value="{{ old('phone', optional($diseaseReport)->phone) }}" minlength="1" placeholder="Enter phone here...">
-        {!! $errors->first('phone', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
+
 <div class="form-group {{ $errors->has('time') ? 'has-error' : '' }}">
 <div class="col-md-12">
     <label for="time" class="block">Time</label>
