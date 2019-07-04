@@ -62,7 +62,8 @@
                             <div class="icon-box"><span class="flaticon-placeholder"></span></div>
                             <ul>
                                 <li><strong>Our Location</strong></li>
-                                <li>Charlottesville, Va 22903, USA</li>
+                                <li>1020 Carrington Place, Suite F
+                                    Charlottesville, Virginia 22901</li>
                                 <li>Parker paint junction, Paynesville City, Monrovia, Liberia</li>
 
                             </ul>
