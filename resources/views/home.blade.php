@@ -191,12 +191,12 @@
                       <img src="images/icons/icon.png" alt="Awesome Image">
                   </div>
                 </div>
-                
+
                 <div class="text">Eli Health System (EHS) is an emerging community global healthcare organization founded on the need to serve vulnerable populations through primary care in high-risk disease burden countries in Sub-Sahara Africa. EHS provides essential health services (EHS) in both outpatient and inpatient care, emergency service, treatment and prevention of infectious disease (Hepatitis B,C, HIV/AIDS and TB), Chronic disease, infant and maternal care, reproductive health, disability care, prescription drugs, preventive services, vaccination programs, and mental health that are indicative of improving population health. EHS has a priority to make healthcare coverage a universal right.</div>
-            </div>    	
-            
-            
-            
+            </div>
+
+
+
         </div>
     </section>
 
@@ -269,14 +269,14 @@
               </div>
             </div>
           </div>
-         
-         
+
+
         </div>
       </div>
     </section>
     <!--end We Specialize section-->
-    
-    
+
+
     <!--Team Style One-->
     <section class="team-style-one">
     	<div class="auto-container">
@@ -289,7 +289,7 @@
                         <div class="link-box"><a href="#" class="theme-btn normal-link">meet all members</a></div>
                     </div>
                 </div>
-                
+
                 <!--Team Member-->
                 <div class="member-style-one col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
@@ -316,12 +316,12 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!--Team Member-->
                 <div class="member-style-one col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box wow fadeInDown" data-wow-delay="0ms" data-wow-duration="1500ms">
                     	<div class="image-box">
-                        	<figure class="image"><img src="images/resource/eli.jpg" alt=""></figure>
+                        	<figure class="image"><img src="images/resource/el.jpg" alt=""></figure>
                             <!-- <div class="overlay">
                             	<div class="content">
                                 	<ul class="info">
@@ -339,11 +339,11 @@
                         </div>
                         <div class="lower-content">
                         	<h3>Elisha Caldwell</h3>
-                            <div class="designation">President and CEO</div>
+                            <div class="designation">Founder and CEO</div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!--Team Member-->
                 <div class="member-style-one col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
@@ -366,12 +366,12 @@
                         </div>
                         <div class="lower-content">
                         	<h3>Francis V. Zayzay, BSN/MPH</h3>
-                            <div class="designation">Vice President</div>
+                            <div class="designation">Country Director</div>
                         </div>
                     </div>
                 </div>
-                
-                
+
+
             </div>
         </div>
     </section>
@@ -389,6 +389,6 @@
             </div>
         </div>
     </section>
-    
+
 
 @endsection

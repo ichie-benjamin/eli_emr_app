@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7861fb1a-2fb1-484c-8386-186c13a6677e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front-end.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front-end.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,211 +32,101 @@
     <expand />
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PatientHistoriesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2090">
-              <caret line="100" column="5" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HivPatientsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/front-end.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/nursing_visits/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/nursing_visits/form.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/maternal_mortalities/form.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/hiv_patients/form.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/documentation_and_physical_exams/form.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4884">
-              <caret line="222" column="137" selection-start-line="222" selection-start-column="134" selection-end-line="222" selection-end-column="137" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>patient/all</find>
-      <find>view('death</find>
-      <find>view('drugs</find>
-      <find>view('discharge</find>
-      <find>view('facilities</find>
-      <find>edit</find>
-      <find>emer</find>
-      <find>pat</find>
-      <find>drug</find>
-      <find>med</find>
-      <find>sett</find>
-      <find>$infantMortality</find>
-      <find>add</find>
-      <find>date</find>
-      <find>Phar</find>
-      <find>contact.html</find>
-      <find>data</find>
-      <find>datatab</find>
-      <find>multipleS</find>
-      <find>case</find>
-      <find>1!</find>
-      <find>2!</find>
-      <find>form-group {</find>
-      <find>no</find>
-      <find>appo</find>
-      <find>laravel</find>
-      <find>1</find>
-      <find>ye</find>
-      <find>yes</find>
-      <find>Liberia</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>admin.slider</replace>
-      <replace>admin.sliders</replace>
-      <replace>w('admin.setting</replace>
-      <replace>w('admin.roles</replace>
-      <replace>view('admin.p</replace>
-      <replace>view('admin/em</replace>
-      <replace>view('admin.death</replace>
-      <replace>view('admin.drugs</replace>
-      <replace>view('admin.discharge</replace>
-      <replace>view('admin.facilities</replace>
-      <replace>$maternalMortality</replace>
-      <replace>&lt;div class=&quot;form-group row&quot;&gt;</replace>
-      <replace>&lt;/div&gt;</replace>
-      <replace>col-md-6 row {</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/laravel-code-generator/sources/disease_reports.json" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_03_03_182713_create_disease_reports_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/ethnicities/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/disease_reports/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Models/DiseaseReport.php" />
-        <option value="$PROJECT_DIR$/resources/views/disease_reports/form.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DiseaseReportsController.php" />
-        <option value="$PROJECT_DIR$/resources/views/disease_reports/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/discharge_summaries/index.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_03_04_140716_create_drug_references_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/drug_references/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/drug_references/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/drug_references/show.blade.php" />
-        <option value="$PROJECT_DIR$/app/Models/DrugReference.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DrugReferencesController.php" />
-        <option value="$PROJECT_DIR$/resources/views/drug_references/form.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/contact-us.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_03_16_120830_create_nurse_notes_table.php" />
-        <option value="$PROJECT_DIR$/resources/laravel-code-generator/sources/nurse_notes.json" />
-        <option value="$PROJECT_DIR$/resources/views/nurse_notes/form.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/nurse_notes/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/NurseNotesController.php" />
-        <option value="$PROJECT_DIR$/resources/views/nurse_notes/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/nurse_notes/show.blade.php" />
-        <option value="$PROJECT_DIR$/resources/laravel-code-generator/sources/documentation_and_physical_exams.json" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_03_19_062416_create_documentation_and_physical_exams_table.php" />
-        <option value="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/create.blade.stub" />
-        <option value="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/show.blade.stub" />
-        <option value="$PROJECT_DIR$/resources/laravel-code-generator/templates/emr/create.blade.stub" />
-        <option value="$PROJECT_DIR$/resources/views/admin/discharge_summaries/t.blade.php" />
-        <option value="$PROJECT_DIR$/resources/laravel-code-generator/templates/emr/index.blade.stub" />
-        <option value="$PROJECT_DIR$/resources/laravel-code-generator/sources/appointments.json" />
-        <option value="$PROJECT_DIR$/resources/views/art_treatments/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/appointments/form.blade.php" />
-        <option value="$PROJECT_DIR$/app/Models/Appointments.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_03_28_071918_create_appointments_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/appointments/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/appointments/index.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_03_28_095301_create_daily_schedules_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AppointmentsController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
-        <option value="$PROJECT_DIR$/resources/laravel-code-generator/sources/daily_schedules.json" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/front-end.blade.php" />
-      </list>
-    </option>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
+      <path value="$PROJECT_DIR$/../../emr/vendor/laravel/nexmo-notification-channel" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/laravel/slack-notification-channel" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/php-http/promise" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/php-http/guzzle6-adapter" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/php-http/httplug" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/symfony/contracts" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/composer" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/zendframework/zend-diactoros" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/beyondcode/laravel-dump-server" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/nexmo/client" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/../../emr/vendor/monolog/monolog" />
       <path value="$USER_HOME$/emr/vendor/laravel/nexmo-notification-channel" />
       <path value="$USER_HOME$/emr/vendor/laravel/framework" />
       <path value="$USER_HOME$/emr/vendor/nesbot/carbon" />
@@ -330,140 +221,9 @@
     <option name="width" value="1366" />
     <option name="height" value="744" />
   </component>
+  <component name="ProjectId" id="1QSVLAk1gVTh2WhGBrn3Q8Q6k5v" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel-code-generator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel-code-generator" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="disease_reports" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="documentation_and_physical_exams" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="hiv_patients" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="maternal_mortalities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="nursing_visits" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="partials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="partials" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="treatment_interruptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emr" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="treatment_records" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -597,479 +357,25 @@
       <workItem from="1558893197635" duration="134000" />
       <workItem from="1558912278229" duration="558000" />
       <workItem from="1558940837260" duration="528000" />
-      <workItem from="1562224557470" duration="141000" />
+      <workItem from="1562224557470" duration="780000" />
+      <workItem from="1562322353781" duration="566000" />
+      <workItem from="1567763929552" duration="44000" />
+      <workItem from="1569606779583" duration="262000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="396492000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20896657" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="npm" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924472" visible="true" weight="0.21482602" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007553" side_tool="true" weight="0.26604068" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="12" visible="true" weight="0.3286385" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/laravel-code-generator/sources/appointments.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="138" column="32" selection-start-line="138" selection-start-column="32" selection-end-line="138" selection-end-column="32" />
-          <folding>
-            <element signature="e#26#1072#0" />
-            <element signature="e#7886#8983#0" />
-            <element signature="e#8993#10069#0" />
-            <element signature="e#10079#11179#0" />
-            <element signature="e#11189#12283#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/nurse_notes/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#5814#0#Blade" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Appointments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="83" column="7" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/art_treatments/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1075">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/art_treatments/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-          <folding>
-            <element signature="e#54#4267#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/appointments/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="81" column="54" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#!!top" />
-            <element signature="n#div#1;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#!!top" />
-            <element signature="n#div#3;n#!!top" />
-            <element signature="n#div#0;n#div#2;n#!!top" />
-            <element signature="n#div#5;n#!!top" />
-            <element signature="n#div#0;n#div#5;n#!!top" />
-            <element signature="n#div#1;n#div#5;n#!!top" />
-            <element signature="n#div#8;n#!!top" />
-            <element signature="n#div#1;n#div#4;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_28_071918_create_appointments_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/appointments/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="107" column="10" selection-start-line="107" selection-start-column="10" selection-end-line="107" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#3317#0#Blade" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_28_095301_create_daily_schedules_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/appointments/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="105" column="131" selection-start-line="105" selection-start-column="71" selection-end-line="105" selection-end-column="131" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/daily_schedules/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="135" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AppointmentsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
-          <folding>
-            <element signature="e#40#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_27_135046_modify_strings_to_text_for_discharge_summaries_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-361">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_03_182713_create_disease_reports_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7238">
-          <caret line="329" column="64" selection-start-line="329" selection-start-column="64" selection-end-line="329" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13244">
-          <caret line="611" selection-start-line="611" selection-end-line="611" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DailySchedulesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DiseaseReportsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
-          <caret line="106" column="28" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="e#41#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/DiseaseReport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2574">
-          <caret line="119" column="57" selection-start-line="119" selection-start-column="48" selection-end-line="119" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding>
-            <element signature="e#7#46#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/PermissionsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="54" selection-start-line="54" selection-end-line="56" selection-end-column="5" />
-          <folding>
-            <element signature="e#23#63#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/RolesTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3168">
-          <caret line="153" column="48" selection-start-line="153" selection-start-column="32" selection-end-line="153" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/backend.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2464">
-          <caret line="112" selection-start-line="112" selection-end-line="112" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/admin/head.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/admin/menu.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7370">
-          <caret line="335" column="32" selection-start-line="335" selection-start-column="32" selection-end-line="340" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/laravel-code-generator/sources/daily_schedules.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
-          <folding>
-            <element signature="e#26#1072#0" />
-            <element signature="e#1082#2152#0" />
-            <element signature="e#2162#3253#0" />
-            <element signature="e#3263#4546#0" />
-            <element signature="e#4556#5656#0" />
-            <element signature="e#5666#6769#0" />
-            <element signature="e#6779#7873#0" />
-            <element signature="e#7883#8980#0" />
-            <element signature="e#8990#10066#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/laravel-code-generator/sources/documentation_and_physical_exams.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#26#1072#0" />
-            <element signature="e#1082#2173#0" />
-            <element signature="e#2183#3268#0" />
-            <element signature="e#3278#4375#0" />
-            <element signature="e#4385#5483#0" />
-            <element signature="e#5493#6612#0" />
-            <element signature="e#6622#7741#0" />
-            <element signature="e#7751#8842#0" />
-            <element signature="e#8852#9931#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/laravel-code-generator/sources/disease_reports.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="721" column="21" selection-start-line="721" selection-start-column="21" selection-end-line="721" selection-end-column="21" />
-          <folding>
-            <element signature="e#26#1072#0" />
-            <element signature="e#1082#2182#0" />
-            <element signature="e#2192#3259#0" />
-            <element signature="e#3269#4339#0" />
-            <element signature="e#4349#5636#0" />
-            <element signature="e#5646#6755#0" />
-            <element signature="e#6765#7871#0" />
-            <element signature="e#7881#8974#0" />
-            <element signature="e#8984#10140#0" />
-            <element signature="e#10150#11428#0" />
-            <element signature="e#11438#12520#0" />
-            <element signature="e#12530#13600#0" />
-            <element signature="e#13610#14677#0" />
-            <element signature="e#14687#15763#0" />
-            <element signature="e#15773#16840#0" />
-            <element signature="e#16850#17929#0" />
-            <element signature="e#17939#19018#0" />
-            <element signature="e#19028#20294#0" />
-            <element signature="e#20304#21488#0" />
-            <element signature="e#21498#22641#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/patient/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4246">
-          <caret line="193" column="64" selection-start-line="193" selection-start-column="64" selection-end-line="209" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3234">
-          <caret line="147" column="29" selection-start-line="147" selection-start-column="29" selection-end-line="147" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/admin/nav.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="78" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/treatment_interruptions/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/treatment_records/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/disease_reports/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3630">
-          <caret line="165" column="47" selection-start-line="165" selection-start-column="44" selection-end-line="165" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PatientHistoriesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2090">
-          <caret line="100" column="5" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HivPatientsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/nursing_visits/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/nursing_visits/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/maternal_mortalities/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/hiv_patients/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/documentation_and_physical_exams/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4884">
-          <caret line="222" column="137" selection-start-line="222" selection-start-column="134" selection-end-line="222" selection-end-column="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/front-end.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
